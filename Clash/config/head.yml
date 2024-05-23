@@ -3,8 +3,6 @@ allow-lan: true
 bind-address: '*'
 mode: rule
 log-level: info
-#hosts:
-# 'geosite:category-ads-all': [127.0.0.1]
 dns:
   enable: true
   listen: :7874
