@@ -24,8 +24,7 @@ dns:
     - "dns.msftncsi.com"
     - "www.msftncsi.com"
     - "www.msftconnecttest.com"
-    - 'geosite:openai'
-    - '+.googleusercontent.com'
+    - "+.cloudflare.com"
 profile:
   store-selected: true
   store-fake-ip: true
