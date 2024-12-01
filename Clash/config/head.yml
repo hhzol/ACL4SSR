@@ -25,6 +25,7 @@ dns:
     - "www.msftncsi.com"
     - "www.msftconnecttest.com"
     - "+.cloudflare.com"
+    - "+.microsoft.com"
 profile:
   store-selected: true
   store-fake-ip: true
