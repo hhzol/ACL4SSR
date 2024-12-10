@@ -15,3 +15,4 @@ DOMAIN-SUFFIX,redirector.googlevideo.com
 DOMAIN-SUFFIX,firebaseremoteconfig.googleapis.com
 DOMAIN-SUFFIX,pubsub.googleapis.com
 DOMAIN-SUFFIX,content-autofill.googleapis.com
+GEOSITE,category-ads-all
