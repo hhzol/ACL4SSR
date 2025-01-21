@@ -1,4 +1,4 @@
 payload:
-  - DOMAIN-KEYWORD,letsencrypt.org
-  - DOMAIN-SUFFIX,play.926123.tv
-  - DOMAIN-SUFFIX,zhibodou.com
+- DOMAIN-KEYWORD,letsencrypt.org
+- DOMAIN-SUFFIX,play.926123.tv
+- DOMAIN-SUFFIX,zhibodou.com
