@@ -11,7 +11,6 @@ dns:
   nameserver-policy:
     geosite:cn,private: [tls://dot.pub,tls://223.5.5.5]
     geosite:category-ads-all: rcode://success
-    rule-set:https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/zhilian.list: [tls://dot.pub,tls://223.5.5.5]
   nameserver: [1.1.1.1#🚀 节点选择, 1.0.0.1#🚀 节点选择, 9.9.9.9#🚀 节点选择, 149.112.112.112#🚀 节点选择, 45.11.45.11#🚀 节点选择, 208.67.222.222#🚀 节点选择, 208.67.220.220#🚀 节点选择, 8.8.8.8#🚀 节点选择, 8.8.4.4#🚀 节点选择]
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
