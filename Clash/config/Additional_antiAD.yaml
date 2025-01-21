@@ -3,3 +3,17 @@ payload:
   - DOMAIN-SUFFIX,magsrv.com
   - DOMAIN-SUFFIX,twlxxl.cn
   - DOMAIN-SUFFIX,glum-mortgage.com
+  - DOMAIN-SUFFIX,s.youtube.com
+  - DOMAIN-SUFFIX,doubleclick.net
+  - DOMAIN-SUFFIX,googleadservices.com
+  - DOMAIN-SUFFIX,pagead2.googlesyndication.com
+  - DOMAIN-SUFFIX,ade.googlesyndication.com
+  - DOMAIN-SUFFIX,redirector.googlevideo.com
+  - DOMAIN-SUFFIX,s.ytimg.com
+  - DOMAIN-SUFFIX,ad.youtube.com
+  - DOMAIN-SUFFIX,ads.youtube.com
+  - DOMAIN-SUFFIX,clients1.google.com
+  - DOMAIN-SUFFIX,clients4.google.com
+  - DOMAIN-SUFFIX,pagead2.googlesyndication.com
+  - DOMAIN-SUFFIX,pagead1.googlesyndication.com
+  - DOMAIN-SUFFIX,pagead.googlesyndication.com
