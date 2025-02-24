@@ -3,6 +3,8 @@ payload:
   - DOMAIN-SUFFIX,magsrv.com
   - DOMAIN-SUFFIX,twlxxl.cn
   - DOMAIN-SUFFIX,glum-mortgage.com
+  - DOMAIN-SUFFIX,clientlogsf.music.163.com
+  - DOMAIN-SUFFIX,clientlogdep.music.163.com
 #https://github.com/ewpratten/youtube_ad_blocklist/blob/master/blocklist.txt
   - DOMAIN-SUFFIX,www.googletagservices.com
   - DOMAIN-SUFFIX,www-googletagmanager.l.google.com
