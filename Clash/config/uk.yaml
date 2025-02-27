@@ -2,8 +2,8 @@ payload:
 - DOMAIN-KEYWORD,cambridge.org
 - DOMAIN-SUFFIX,bbcx-internal.com
 - GEOSITE,bbc
-- DOMAIN-SUFFIX,urbanairship.com
-- DOMAIN-SUFFIX,gboxlab.com
-- DOMAIN-SUFFIX,appsflyersdk.com
-- DOMAIN-SUFFIX,privacy-mgmt.com
+#- DOMAIN-SUFFIX,urbanairship.com
+#- DOMAIN-SUFFIX,gboxlab.com
+#- DOMAIN-SUFFIX,appsflyersdk.com
+#- DOMAIN-SUFFIX,privacy-mgmt.com
 - DOMAIN-SUFFIX,live.bidi.net.uk
