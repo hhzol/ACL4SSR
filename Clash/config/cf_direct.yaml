@@ -22,6 +22,6 @@ payload:
 - DOMAIN-SUFFIX,nas.136605.xyz
 - DOMAIN-SUFFIX,zhtcl.mydns.bz
 #- DOMAIN-SUFFIX,urbanairship.com
-- DOMAIN-SUFFIX,gboxlab.com
+#- DOMAIN-SUFFIX,gboxlab.com
 #- DOMAIN-SUFFIX,appsflyersdk.com
 #- DOMAIN-SUFFIX,privacy-mgmt.com
