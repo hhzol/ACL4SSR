@@ -2,10 +2,6 @@ payload:
 - DOMAIN-KEYWORD,cambridge.org
 - GEOSITE,bbc
 - DOMAIN-SUFFIX,bbcx-internal.com
-#- DOMAIN-SUFFIX,urbanairship.com
-#- DOMAIN-SUFFIX,gboxlab.com
-#- DOMAIN-SUFFIX,appsflyersdk.com
-#- DOMAIN-SUFFIX,privacy-mgmt.com
-- DOMAIN-SUFFIX,live.bidi.net.uk
-- DOMAIN-SUFFIX,vod-dash-uk-live.akamaized.net
-- DOMAIN-SUFFIX,vod-sub-uk-live.akamaized.net
+#- DOMAIN-SUFFIX,live.bidi.net.uk
+#- DOMAIN-SUFFIX,vod-dash-uk-live.akamaized.net
+#- DOMAIN-SUFFIX,vod-sub-uk-live.akamaized.net
