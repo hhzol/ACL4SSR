@@ -21,9 +21,5 @@ payload:
 - DOMAIN-SUFFIX,hhz.pgw.jp
 - DOMAIN-SUFFIX,nas.136605.xyz
 - DOMAIN-SUFFIX,zhtcl.mydns.bz
-#- DOMAIN-SUFFIX,api.permutive.app
-#- DOMAIN-SUFFIX,census-app.scorecardresearch.com
-#- DOMAIN-SUFFIX,api.lab.amplitude.com
-#- DOMAIN-SUFFIX,7f077.v.fwmrm.net
-#- DOMAIN-SUFFIX,app-measurement.com
 - DOMAIN-SUFFIX,imasdk.googleapis.com
+- DOMAIN-SUFFIX,ntp.aliyun.com
