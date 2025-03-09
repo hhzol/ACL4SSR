@@ -3,14 +3,5 @@ payload:
   - DOMAIN-SUFFIX,magsrv.com
   - DOMAIN-SUFFIX,twlxxl.cn
   - DOMAIN-SUFFIX,glum-mortgage.com
-  - DOMAIN-SUFFIX,d0.sina.com.cn
-  - DOMAIN-SUFFIX,d1.sina.com.cn
-  - DOMAIN-SUFFIX,d2.sina.com.cn
-  - DOMAIN-SUFFIX,d3.sina.com.cn
-  - DOMAIN-SUFFIX,d4.sina.com.cn
-  - DOMAIN-SUFFIX,d5.sina.com.cn
-  - DOMAIN-SUFFIX,d6.sina.com.cn
-  - DOMAIN-SUFFIX,d7.sina.com.cn
-  - DOMAIN-SUFFIX,d8.sina.com.cn
-  - DOMAIN-SUFFIX,d9.sina.com.cn
   - DOMAIN-SUFFIX,mjs.sinaimg.cn
+  - DOMAIN-SUFFIX,d*.sina.com.cn
