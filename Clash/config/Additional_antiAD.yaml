@@ -8,3 +8,4 @@ payload:
   - DOMAIN-SUFFIX,crash.163.com
   - DOMAIN-SUFFIX,ac.dun.163.com
   - DOMAIN-SUFFIX,ac.dun.163yun.com
+  - DOMAIN-SUFFIX,fp-upload.dun.163.com
