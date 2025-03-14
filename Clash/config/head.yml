@@ -9,8 +9,8 @@ dns:
   ipv6: false
   default-nameserver: [119.29.29.29, 223.5.5.5]
   nameserver-policy:
-    geosite:cn,private: [tls://dot.pub,tls://223.5.5.5]
-    geosite:category-ads-all: rcode://success
+    geosite:cn,private: [tls://dot.pub,tls://dns.alidns.com]
+    rule-set:ZHILIAN: [tls://dns.alidns.com,tls://dot.pub]
   nameserver: [1.1.1.1#🚀 节点选择, 1.0.0.1#🚀 节点选择, 9.9.9.9#🚀 节点选择, 149.112.112.112#🚀 节点选择, 45.11.45.11#🚀 节点选择, 208.67.222.222#🚀 节点选择, 208.67.220.220#🚀 节点选择, 8.8.8.8#🚀 节点选择, 8.8.4.4#🚀 节点选择]
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
@@ -23,3 +23,24 @@ dns:
 profile:
   store-selected: true
   store-fake-ip: true
+rule-providers:
+   ANTIAD:
+     type: http
+     behavior: classical
+     url: https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/Additional_antiAD.yaml
+     path: /ANTIAD.yaml
+   ZHILIAN:
+     type: http
+     behavior: classical
+     url: https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/cf_direct.yaml
+     path: /ZHILIAN.yaml
+   US:
+     type: http
+     behavior: classical
+     url: https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/us.yaml
+     path: /US.yaml
+   UK:
+     type: http
+     behavior: classical
+     url: https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/uk.yaml
+     path: /UK.yaml
