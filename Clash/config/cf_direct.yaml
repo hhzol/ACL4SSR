@@ -1,4 +1,5 @@
 payload:
+- GEOIP,lan,no-resolve
 - GEOSITE,youku
 - DOMAIN-KEYWORD,letsencrypt.org
 - DOMAIN-SUFFIX,926123.tv
