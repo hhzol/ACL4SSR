@@ -1,5 +1,6 @@
 payload:
 - GEOSITE,youku
+- GEOSITE,cn
 - DOMAIN-KEYWORD,letsencrypt.org
 - DOMAIN-SUFFIX,926123.tv
 - DOMAIN-SUFFIX,zhibodou.com
