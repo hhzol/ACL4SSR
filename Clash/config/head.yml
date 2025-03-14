@@ -24,8 +24,23 @@ profile:
   store-selected: true
   store-fake-ip: true
 rule-providers:
+   ANTIAD:
+     type: http
+     behavior: classical
+     url: https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/Additional_antiAD.yaml
+     path: ./ANTIAD.yaml
    ZHILIAN:
      type: http
      behavior: classical
      url: https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/cf_direct.yaml
      path: ./ZHILIAN.yaml
+   US:
+     type: http
+     behavior: classical
+     url: https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/us.yaml
+     path: ./US.yaml
+   UK:
+     type: http
+     behavior: classical
+     url: https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/uk.yaml
+     path: ./UK.yaml
