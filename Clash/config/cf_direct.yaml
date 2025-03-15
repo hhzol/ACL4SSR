@@ -1,5 +1,4 @@
 payload:
-- DOMAIN-SUFFIX,openwrt.local
 - GEOSITE,youku
 - DOMAIN-KEYWORD,letsencrypt.org
 - DOMAIN-SUFFIX,926123.tv
