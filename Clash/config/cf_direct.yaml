@@ -27,4 +27,4 @@ payload:
 - DOMAIN-SUFFIX,imasdk.googleapis.com
 - DOMAIN-SUFFIX,ntp.aliyun.com
 - DOMAIN-SUFFIX,126.net
-- SRC-IP-CIDR,192.168.10.0/24
+
