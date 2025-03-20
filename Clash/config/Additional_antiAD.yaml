@@ -1,5 +1,4 @@
 payload:
-#  - GEOSITE,category-ads-all
   - DOMAIN-SUFFIX,bigamybigot.space
   - DOMAIN-SUFFIX,magsrv.com
   - DOMAIN-SUFFIX,twlxxl.cn
@@ -8,3 +7,5 @@ payload:
   - DOMAIN-SUFFIX,yt-adp.ws.126.net
   - DOMAIN-SUFFIX,hongcai.163.com
   - DOMAIN-SUFFIX,secure.internetdownloadmanager.com
+  - DOMAIN-SUFFIX,lupic.cdn.bcebos.com
+#  - GEOSITE,category-ads-all
