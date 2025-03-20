@@ -5,10 +5,8 @@ payload:
   - DOMAIN-SUFFIX,twlxxl.cn
   - DOMAIN-SUFFIX,glum-mortgage.com
   - DOMAIN-SUFFIX,registeridm.com
-  - DOMAIN-SUFFIX,yt-adp.ws.126.net
-  - DOMAIN-SUFFIX,hongcai.163.com
   - DOMAIN-SUFFIX,secure.internetdownloadmanager.com
-  - DOMAIN-SUFFIX,lupic.cdn.bcebos.com
+
   - DOMAIN-SUFFIX,pos.baidu.com
 #youtube去广告
   - DOMAIN-SUFFIX,2975c.v.fwmrm.net
@@ -118,4 +116,8 @@ payload:
   - DOMAIN-SUFFIX,iadmusicmat.music.126.net
   - DOMAIN-SUFFIX,iadmusicmatvideo.music.126.net
   - DOMAIN-SUFFIX,sentry.music.163.com
+  - DOMAIN-SUFFIX,yt-adp.ws.126.net
+  - DOMAIN-SUFFIX,pg-ad-b1.ws.126.net
+  - DOMAIN-SUFFIX,hongcai.163.com
+  - DOMAIN-SUFFIX,lupic.cdn.bcebos.com
 ####
