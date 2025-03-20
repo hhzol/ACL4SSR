@@ -1,5 +1,5 @@
 payload:
-#  - GEOSITE,category-ads-all
+  - GEOSITE,category-ads-all
   - DOMAIN-SUFFIX,bigamybigot.space
   - DOMAIN-SUFFIX,magsrv.com
   - DOMAIN-SUFFIX,twlxxl.cn
