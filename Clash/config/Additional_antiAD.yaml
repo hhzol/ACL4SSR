@@ -7,7 +7,7 @@ payload:
   - DOMAIN-SUFFIX,registeridm.com
   - DOMAIN-SUFFIX,secure.internetdownloadmanager.com
 #youtube去广告
-  - DOMAIN-SUFFIX,2975c.v.fwmrm.net
+
   - DOMAIN-SUFFIX,2mdn.net
   - DOMAIN-SUFFIX,acquisition-tracker.wix.com
   - DOMAIN-SUFFIX,ad-emea.doubleclick.net
