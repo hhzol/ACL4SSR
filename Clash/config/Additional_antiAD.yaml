@@ -7,8 +7,8 @@ payload:
   - DOMAIN-SUFFIX,registeridm.com
   - DOMAIN-SUFFIX,secure.internetdownloadmanager.com
 #youtube去广告
-#  - DOMAIN-SUFFIX,fonts.googleapis.com
-#  - DOMAIN-SUFFIX,fonts.gstatic.com
+  - DOMAIN-SUFFIX,fonts.googleapis.com
+  - DOMAIN-SUFFIX,fonts.gstatic.com
   - DOMAIN-SUFFIX,ad-emea.doubleclick.net
   - DOMAIN-SUFFIX,ad-g.doubleclick.net
   - DOMAIN-SUFFIX,ad.ae.doubleclick.net
