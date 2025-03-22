@@ -94,3 +94,4 @@ payload:
   - DOMAIN-SUFFIX,geller-pa.googleapis.com
   - DOMAIN-SUFFIX,play-fe.googleapis.com
   - DOMAIN-SUFFIX,android.googleapis.com
+  - DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
