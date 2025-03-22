@@ -111,8 +111,8 @@ payload:
   - DOMAIN-SUFFIX,encrypted-tbn1.gstatic.com
   - DOMAIN-SUFFIX,encrypted-tbn3.gstatic.com
   - DOMAIN-SUFFIX,androidpay-users-pa.googleapis.com
-  - DOMAIN-SUFFIX,youtubei.googleapis.com
+#  - DOMAIN-SUFFIX,youtubei.googleapis.com
   - DOMAIN-SUFFIX,federatedcompute-pa.googleapis.com
-#  - DOMAIN-SUFFIX,translate.googleapis.com
-#  - DOMAIN-SUFFIX,mtalk.google.com
+  - DOMAIN-SUFFIX,translate.googleapis.com
+  - DOMAIN-SUFFIX,mtalk.google.com
   - DOMAIN-SUFFIX,taskassist-pa.googleapis.com
