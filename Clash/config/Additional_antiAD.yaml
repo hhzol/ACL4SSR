@@ -95,3 +95,4 @@ payload:
   - DOMAIN-SUFFIX,play-fe.googleapis.com
   - DOMAIN-SUFFIX,android.googleapis.com
   - DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+  - DOMAIN-SUFFIX,xgapromomanager-pa.googleapis.com
