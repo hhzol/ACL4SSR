@@ -96,4 +96,4 @@ payload:
   - DOMAIN-SUFFIX,xgapromomanager-pa.googleapis.com
   - DOMAIN-SUFFIX,firebaseremoteconfig.googleapis.com
   - DOMAIN-SUFFIX,peoplestack-pa.googleapis.com
-    - DOMAIN-SUFFIX,firebaseinstallations.googleapis.com
+  - DOMAIN-SUFFIX,firebaseinstallations.googleapis.com
