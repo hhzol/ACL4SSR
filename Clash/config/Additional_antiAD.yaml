@@ -113,6 +113,6 @@ payload:
   - DOMAIN-SUFFIX,androidpay-users-pa.googleapis.com
   - DOMAIN-SUFFIX,youtubei.googleapis.com
   - DOMAIN-SUFFIX,federatedcompute-pa.googleapis.com
-  - DOMAIN-SUFFIX,translate.googleapis.com
+#  - DOMAIN-SUFFIX,translate.googleapis.com
 #  - DOMAIN-SUFFIX,mtalk.google.com
   - DOMAIN-SUFFIX,taskassist-pa.googleapis.com
