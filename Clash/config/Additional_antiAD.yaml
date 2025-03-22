@@ -49,6 +49,7 @@ payload:
   - DOMAIN-SUFFIX,googleadservices.com
   - DOMAIN-SUFFIX,googletagmanager.com
   - DOMAIN-SUFFIX,i1.ytimg.com
+  - DOMAIN-SUFFIX,i9.ytimg.com 
   - DOMAIN-SUFFIX,innovid.com
   - DOMAIN-SUFFIX,iv.doubleclick.net
   - DOMAIN-SUFFIX,l.doubleclick.net
@@ -102,3 +103,5 @@ payload:
   - DOMAIN-SUFFIX,yts.moatads.com
   - DOMAIN-SUFFIX,yyz10s14-in-f14.1e100.net
   - DOMAIN-SUFFIX,notifications-pa.googleapis.com
+  - DOMAIN-SUFFIX,yyz10s14-in-f14.1e100.net
+  - DOMAIN-SUFFIX,yt3.googleusercontent.com
