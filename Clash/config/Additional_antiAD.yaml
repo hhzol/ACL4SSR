@@ -116,3 +116,4 @@ payload:
   - DOMAIN-SUFFIX,translate.googleapis.com
   - DOMAIN-SUFFIX,mtalk.google.com
   - DOMAIN-SUFFIX,taskassist-pa.googleapis.com
+  - DOMAIN-SUFFIX,alt7-mtalk.google.com
