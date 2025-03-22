@@ -7,8 +7,8 @@ payload:
   - DOMAIN-SUFFIX,registeridm.com
   - DOMAIN-SUFFIX,secure.internetdownloadmanager.com
 #youtube去广告
-  - DOMAIN-SUFFIX,fonts.googleapis.com
-  - DOMAIN-SUFFIX,fonts.gstatic.com
+#  - DOMAIN-SUFFIX,fonts.googleapis.com
+#  - DOMAIN-SUFFIX,fonts.gstatic.com
   - DOMAIN-SUFFIX,ad-emea.doubleclick.net
   - DOMAIN-SUFFIX,ad-g.doubleclick.net
   - DOMAIN-SUFFIX,ad.ae.doubleclick.net
@@ -81,10 +81,10 @@ payload:
   - DOMAIN-SUFFIX,yt3.googleusercontent.com
 #  - DOMAIN-SUFFIX,searchnotifications-pa.googleapis.com
 #  - DOMAIN-SUFFIX,pubsub.googleapis.com
-  - DOMAIN-SUFFIX,encrypted-tbn0.gstatic.com
-  - DOMAIN-SUFFIX,encrypted-tbn1.gstatic.com
-  - DOMAIN-SUFFIX,encrypted-tbn2.gstatic.com
-  - DOMAIN-SUFFIX,encrypted-tbn3.gstatic.com
+#  - DOMAIN-SUFFIX,encrypted-tbn0.gstatic.com
+#  - DOMAIN-SUFFIX,encrypted-tbn1.gstatic.com
+#  - DOMAIN-SUFFIX,encrypted-tbn2.gstatic.com
+#  - DOMAIN-SUFFIX,encrypted-tbn3.gstatic.com
 #  - DOMAIN-SUFFIX,androidpay-users-pa.googleapis.com
 #  - DOMAIN-SUFFIX,federatedcompute-pa.googleapis.com
 #  - DOMAIN-SUFFIX,translate.googleapis.com
