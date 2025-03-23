@@ -31,6 +31,11 @@ rule-providers:
      behavior: classical
      url: https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/Additional_antiAD.yaml
      path: ./ANTIAD.yaml
+   ADBLOCK:
+     type: http
+     behavior: classical
+     url: https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/adblock.yaml
+     path: /adblock.yaml
    ZHILIAN:
      type: http
      behavior: classical
