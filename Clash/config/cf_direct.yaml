@@ -30,5 +30,5 @@ payload:
 - DOMAIN-SUFFIX,feijing-xzbonlinepull.17kq.fun
 - DOMAIN-SUFFIX,msftncsi.com
 - DOMAIN-SUFFIX,msftconnecttest.com
-- DOMAIN-SUFFIX,api.cloudflare.com
-- DOMAIN-SUFFIX,challenges.cloudflare.com
+#- DOMAIN-SUFFIX,api.cloudflare.com
+#- DOMAIN-SUFFIX,challenges.cloudflare.com
