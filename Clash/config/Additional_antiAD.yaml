@@ -21,7 +21,6 @@ payload:
   - DOMAIN-SUFFIX,ad.youtube.com
   - DOMAIN-SUFFIX,clients4.google.com
   - DOMAIN-SUFFIX,stun.l.google.com
-  - DOMAIN-SUFFIX,pagead2.googlesyndication.com
   - DOMAIN-SUFFIX,tpc.googlesyndication.com
   - DOMAIN-SUFFIX,c.pki.goog
   - DOMAIN-SUFFIX,hoisin.ptskysrt.gitv.tv
