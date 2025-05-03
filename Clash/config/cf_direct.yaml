@@ -32,4 +32,3 @@ payload:
 - DOMAIN-SUFFIX,msftncsi.com
 - DOMAIN-SUFFIX,msftconnecttest.com
 - DOMAIN-SUFFIX,api.cloudflare.com
-#- DOMAIN-SUFFIX,azplay.ru.com
