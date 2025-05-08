@@ -26,7 +26,7 @@ payload:
   - DOMAIN-SUFFIX,semanticlocation-pa.googleapis.com
   - DOMAIN-SUFFIX,voilatile-pa.googleapis.com
   - DOMAIN-SUFFIX,play-fe.googleapis.com
-  - DOMAIN-SUFFIX,chromesyncpasswords-pa
+  - DOMAIN-SUFFIX,chromesyncpasswords-pa.googleapis.com
   - DOMAIN-SUFFIX,androidpay-users-pa.googleapis.com
   - DOMAIN-SUFFIX,passwordsleakcheck-pa.googleapis.com
   - DOMAIN-SUFFIX,safebrowsing.googleapis.com
