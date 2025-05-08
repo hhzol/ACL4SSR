@@ -22,16 +22,7 @@ payload:
   - DOMAIN-SUFFIX,beacons.gcp.gvt2.com
   - DOMAIN-SUFFIX,beacons.gvt2.com
   - DOMAIN-SUFFIX,notifications-pa.googleapis.com
-  - DOMAIN-SUFFIX,geller-pa.googleapis.com
-  - DOMAIN-SUFFIX,semanticlocation-pa.googleapis.com
-  - DOMAIN-SUFFIX,voilatile-pa.googleapis.com
-  - DOMAIN-SUFFIX,play-fe.googleapis.com
-  - DOMAIN-SUFFIX,androidpay-users-pa.googleapis.com
-  - DOMAIN-SUFFIX,digitalassetlinks.googleapis.com
-  - DOMAIN-SUFFIX,geomobileservices-pa.googleapis.com
-  - DOMAIN-SUFFIX,finance-pa.googleapis.com
-  - DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
-  - DOMAIN-SUFFIX,searchnotifications-pa.googleapis.com
+
   - DOMAIN-SUFFIX,clientservices.googleapis.com
   - DOMAIN-SUFFIX,www.googleadservices.com
   - DOMAIN-SUFFIX,nearbysharing-pa.googleapis.com
