@@ -3,7 +3,6 @@ payload:
 - GEOSITE,baidu
 - GEOSITE,netease
 - GEOSITE,sina
-- GEOSITE,sohu
 - DOMAIN-KEYWORD,letsencrypt.org
 - DOMAIN-SUFFIX,926123.tv
 - DOMAIN-SUFFIX,zhibodou.com
