@@ -30,6 +30,12 @@ payload:
   - DOMAIN-SUFFIX,androidpay-users-pa.googleapis.com
   - DOMAIN-SUFFIX,passwordsleakcheck-pa.googleapis.com
   - DOMAIN-SUFFIX,safebrowsing.googleapis.com
+  - DOMAIN-SUFFIX,pubsub.googleapis.com
+  - DOMAIN-SUFFIX,digitalassetlinks.googleapis.com
+  - DOMAIN-SUFFIX,geomobileservices-pa.googleapis.com
+  - DOMAIN-SUFFIX,finance-pa.googleapis.com
+  - DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+  - DOMAIN-SUFFIX,searchnotifications-pa.googleapis.com
   - DOMAIN-SUFFIX,clientservices.googleapis.com
   - DOMAIN-SUFFIX,www.googleadservices.com
   - DOMAIN-SUFFIX,nearbysharing-pa.googleapis.com
