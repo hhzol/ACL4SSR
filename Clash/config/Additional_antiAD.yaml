@@ -5,6 +5,7 @@ payload:
   - DOMAIN-SUFFIX,twlxxl.cn
   - DOMAIN-SUFFIX,glum-mortgage.com
   - DOMAIN-SUFFIX,registeridm.com
+  - DOMAIN-SUFFIX,error-report.com 
 #youtube去广告
   - DOMAIN-SUFFIX,ade.googlesyndication.com
   - DOMAIN-SUFFIX,pagead.googlesyndication.com
