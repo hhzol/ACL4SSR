@@ -1,5 +1,6 @@
 payload:
 - DOMAIN-KEYWORD,cambridge.org
+- DOMAIN-SUFFIX,error-report.com
 - GEOSITE,bbc
 - DOMAIN-SUFFIX,bbcx-internal.com
 - DOMAIN-SUFFIX,live.bidi.net.uk
