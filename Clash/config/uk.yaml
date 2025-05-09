@@ -2,8 +2,8 @@ payload:
 - DOMAIN-KEYWORD,cambridge.org
 - DOMAIN-SUFFIX,error-report.com
 - DOMAIN-SUFFIX,geolocation.onetrust.com
-#- DOMAIN-SUFFIX,cdn.cookielaw.org
-#- DOMAIN-SUFFIX,polarbyte.com
+- DOMAIN-SUFFIX,cdn.cookielaw.org
+- DOMAIN-SUFFIX,polarbyte.com
 #- DOMAIN-SUFFIX,www.googletagmanager.com
 #- DOMAIN-SUFFIX,html-load.com
 #- DOMAIN-SUFFIX,content-loader.com
