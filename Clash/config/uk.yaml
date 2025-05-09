@@ -7,7 +7,7 @@ payload:
 #- DOMAIN-SUFFIX,www.googletagmanager.com
 #- DOMAIN-SUFFIX,html-load.com
 #- DOMAIN-SUFFIX,content-loader.com
-#- DOMAIN-SUFFIX,static.hotjar.com
+- DOMAIN-SUFFIX,static.hotjar.com
 - GEOSITE,bbc
 - DOMAIN-SUFFIX,bbcx-internal.com
 - DOMAIN-SUFFIX,live.bidi.net.uk
