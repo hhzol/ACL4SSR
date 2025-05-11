@@ -1,13 +1,13 @@
 payload:
 - DOMAIN-KEYWORD,cambridge.org
-- DOMAIN-SUFFIX,error-report.com
-- DOMAIN-SUFFIX,geolocation.onetrust.com
-#- DOMAIN-SUFFIX,cdn.cookielaw.org
-#- DOMAIN-SUFFIX,polarbyte.com
-- DOMAIN-SUFFIX,www.googletagmanager.com
-#- DOMAIN-SUFFIX,html-load.com
-#- DOMAIN-SUFFIX,content-loader.com
-#- DOMAIN-SUFFIX,static.hotjar.com
+#- DOMAIN-SUFFIX,error-report.com
+#- DOMAIN-SUFFIX,geolocation.onetrust.com
+- DOMAIN-SUFFIX,cdn.cookielaw.org
+- DOMAIN-SUFFIX,polarbyte.com
+#- DOMAIN-SUFFIX,www.googletagmanager.com
+- DOMAIN-SUFFIX,html-load.com
+- DOMAIN-SUFFIX,content-loader.com
+- DOMAIN-SUFFIX,static.hotjar.com
 - GEOSITE,bbc
 - DOMAIN-SUFFIX,bbcx-internal.com
 - DOMAIN-SUFFIX,live.bidi.net.uk
