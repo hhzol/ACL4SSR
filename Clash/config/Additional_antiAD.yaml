@@ -24,7 +24,6 @@ payload:
   - DOMAIN-SUFFIX,geller-pa.googleapis.com
   - DOMAIN-SUFFIX,semanticlocation-pa.googleapis.com
   - DOMAIN-SUFFIX,voilatile-pa.googleapis.com
-  - DOMAIN-SUFFIX,play-fe.googleapis.com
   - DOMAIN-SUFFIX,androidpay-users-pa.googleapis.com
   - DOMAIN-SUFFIX,digitalassetlinks.googleapis.com
   - DOMAIN-SUFFIX,geomobileservices-pa.googleapis.com
