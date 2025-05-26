@@ -36,7 +36,5 @@ payload:
 - DOMAIN-SUFFIX,feijing-xzbonlinepull.17kq.fun
 - DOMAIN-SUFFIX,msftncsi.com
 - DOMAIN-SUFFIX,msftconnecttest.com
-#- DOMAIN-SUFFIX,api.cloudflare.com
-#- DOMAIN-SUFFIX,v6.sync.afraid.org
-#- DOMAIN-SUFFIX,www.mydns.jp
 - DOMAIN-SUFFIX,jdshipin.com
+- DOMAIN-SUFFIX,ip.164746.xyz
