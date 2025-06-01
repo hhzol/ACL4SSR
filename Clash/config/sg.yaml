@@ -1,0 +1,5 @@
+payload:
+- DOMAIN-KEYWORD,cambridge.org
+- DOMAIN-SUFFIX,cloudfront.net
+- DOMAIN-SUFFIX,turnerlive.warnermediacdn.com
+- DOMAIN-SUFFIX,vs-hls-push-ww-live.akamaized.net
