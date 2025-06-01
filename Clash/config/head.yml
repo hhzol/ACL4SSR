@@ -51,3 +51,8 @@ rule-providers:
      behavior: classical
      url: https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/uk.yaml
      path: ./UK.yaml
+   SG:
+     type: http
+     behavior: classical
+     url: https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/sg.yaml
+     path: ./SG.yaml
