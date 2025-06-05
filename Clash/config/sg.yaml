@@ -1,5 +1,5 @@
 payload:
-- DOMAIN-SUFFIX,cloudfront.net
-- DOMAIN-SUFFIX,turnerlive.warnermediacdn.com
-- DOMAIN-SUFFIX,vs-hls-push-ww-live.akamaized.net
-- DOMAIN-SUFFIX,b-nhkwlive-ojp.nhkworld.jp
+#- DOMAIN-SUFFIX,cloudfront.net
+#- DOMAIN-SUFFIX,turnerlive.warnermediacdn.com
+#- DOMAIN-SUFFIX,vs-hls-push-ww-live.akamaized.net
+#- DOMAIN-SUFFIX,b-nhkwlive-ojp.nhkworld.jp
