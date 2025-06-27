@@ -4,4 +4,4 @@ payload:
 - DOMAIN-SUFFIX,vs-hls-push-ww-live.akamaized.net
 - DOMAIN-SUFFIX,b-nhkwlive-ojp.nhkworld.jp
 - DOMAIN-SUFFIX,mine.nu
-- DST-IP-CIDR, 60.248.77.76/32
+- IP-CIDR, 60.248.77.76/32
