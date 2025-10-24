@@ -2,4 +2,5 @@ payload:
 - DOMAIN-KEYWORD,pluto
 - GEOSITE,openai
 - DOMAIN-SUFFIX,nba.com
-- DOMAIN-SUFFIX,tunein.com
+#- DOMAIN-SUFFIX,tunein.com
+- DOMAIN-SUFFIX,radiotime.com
