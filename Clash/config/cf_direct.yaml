@@ -47,3 +47,4 @@ payload:
 - DOMAIN-SUFFIX,bfzyapi.com
 - DOMAIN-SUFFIX,miui.com
 - DOMAIN-SUFFIX,time.windows.com
+- DOMAIN-SUFFIX,pool.ntp.org
