@@ -49,4 +49,4 @@ payload:
 - DOMAIN-SUFFIX,v6.sync.afraid.org
 - DOMAIN-SUFFIX,live.com
 - DOMAIN-SUFFIX,live.net
-- DOMAIN-SUFFIX,login.microsoftonline.com
+#- DOMAIN-SUFFIX,login.microsoftonline.com
