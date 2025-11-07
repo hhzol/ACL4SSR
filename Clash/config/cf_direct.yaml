@@ -52,3 +52,4 @@ payload:
 - DOMAIN-SUFFIX,relay.communication.microsoft.com
 - DOMAIN-SUFFIX,dcg.microsoft.com
 - DOMAIN-SUFFIX,login.microsoftonline.com
+- DOMAIN-SUFFIX,worldaz.turn.teams.microsoft.com
