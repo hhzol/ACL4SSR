@@ -50,5 +50,5 @@ payload:
 #- DOMAIN-SUFFIX,live.net
 #- DOMAIN-SUFFIX,worldaz.turn.teams.microsoft.com
 - DOMAIN-SUFFIX,communication.microsoft.com
-#- DOMAIN-SUFFIX,dcg.microsoft.com
+- DOMAIN-SUFFIX,dcg.microsoft.com
 #- DOMAIN-SUFFIX,login.microsoftonline.com
