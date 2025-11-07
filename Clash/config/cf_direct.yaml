@@ -50,5 +50,6 @@ payload:
 #- DOMAIN-SUFFIX,live.com
 #- DOMAIN-SUFFIX,live.net
 #- DOMAIN-SUFFIX,login.microsoftonline.com
-- relay.communication.microsoft.com
-- dcg.microsoft.com
+- DOMAIN-SUFFIX,relay.communication.microsoft.com
+- DOMAIN-SUFFIX,dcg.microsoft.com
+#- DOMAIN-SUFFIX,login.microsoftonline.com
