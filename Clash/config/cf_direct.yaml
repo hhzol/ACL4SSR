@@ -48,7 +48,3 @@ payload:
 - DOMAIN-SUFFIX,time.windows.com
 - DOMAIN-SUFFIX,pool.ntp.org
 - DOMAIN-SUFFIX,v6.sync.afraid.org
-#- DOMAIN-SUFFIX,live.com
-#- DOMAIN-SUFFIX,live.net
-#- DOMAIN-SUFFIX,worldaz.turn.teams.microsoft.com
-#- DOMAIN-SUFFIX,login.microsoftonline.com
