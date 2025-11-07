@@ -1,7 +1,6 @@
 payload:
 - DST-PORT,5200
 - DST-PORT,5201
-- DST-PORT,3478
 - DOMAIN-SUFFIX,openwrt
 - GEOSITE,youku
 - DOMAIN-SUFFIX,baidu.com
@@ -52,4 +51,4 @@ payload:
 #- DOMAIN-SUFFIX,login.microsoftonline.com
 - DOMAIN-SUFFIX,relay.communication.microsoft.com
 - DOMAIN-SUFFIX,dcg.microsoft.com
-#- DOMAIN-SUFFIX,login.microsoftonline.com
+- DOMAIN-SUFFIX,login.microsoftonline.com
