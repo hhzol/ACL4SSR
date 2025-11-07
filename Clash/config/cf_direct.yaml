@@ -48,7 +48,7 @@ payload:
 - DOMAIN-SUFFIX,v6.sync.afraid.org
 #- DOMAIN-SUFFIX,live.com
 #- DOMAIN-SUFFIX,live.net
-- DOMAIN-SUFFIX,worldaz.turn.teams.microsoft.com
-- DOMAIN-SUFFIX,relay.communication.microsoft.com
-- DOMAIN-SUFFIX,dcg.microsoft.com
-- DOMAIN-SUFFIX,login.microsoftonline.com
+#- DOMAIN-SUFFIX,worldaz.turn.teams.microsoft.com
+#- DOMAIN-SUFFIX,relay.communication.microsoft.com
+#- DOMAIN-SUFFIX,dcg.microsoft.com
+#- DOMAIN-SUFFIX,login.microsoftonline.com
