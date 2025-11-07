@@ -30,7 +30,8 @@ payload:
 - DOMAIN-SUFFIX,mayizhibo.net
 - DOMAIN-SUFFIX,zzzb393.com
 - DOMAIN-SUFFIX,hhz.pgw.jp
-#- DOMAIN-SUFFIX,136605.xyz
+- DOMAIN-SUFFIX,nas.136605.xyz
+- DOMAIN-SUFFIX,nas1.136605.xyz
 - DOMAIN-SUFFIX,zhtcl.mydns.bz
 - DOMAIN-SUFFIX,zhtcl.com
 - DOMAIN-SUFFIX,imasdk.googleapis.com
