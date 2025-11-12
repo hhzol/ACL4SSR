@@ -3,7 +3,6 @@ payload:
 - DST-PORT,5201
 - DOMAIN-SUFFIX,relay.communication.microsoft.com
 - DOMAIN-SUFFIX,dcg.microsoft.com
-- DOMAIN-SUFFIX,openwrt
 - GEOSITE,youku
 - DOMAIN-SUFFIX,baidu.com
 - DOMAIN-SUFFIX,chinamobile.com
