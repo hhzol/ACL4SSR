@@ -3,6 +3,9 @@ payload:
 - DST-PORT,5201
 - DOMAIN-SUFFIX,relay.communication.microsoft.com
 - DOMAIN-SUFFIX,dcg.microsoft.com
+- DOMAIN-SUFFIX,dns.msftncsi.com
+- DOMAIN-SUFFIX,www.msftconnecttest.com
+- DOMAIN-SUFFIX,ipv6.msftconnecttest.com
 - GEOSITE,youku
 - DOMAIN-SUFFIX,baidu.com
 - DOMAIN-SUFFIX,chinamobile.com
