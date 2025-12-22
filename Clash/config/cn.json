@@ -1,0 +1,62 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain_suffix": [
+        "relay.communication.microsoft.com",
+        "dcg.microsoft.com",
+        "dns.msftncsi.com",
+        "www.msftconnecttest.com",
+        "ipv6.msftconnecttest.com",
+        "baidu.com",
+        "chinamobile.com",
+        "is.gd",
+        "926123.tv",
+        "zhibodou.com",
+        "xib.cc",
+        "sportsteam668.com",
+        "sportsteam363.com",
+        "zzzb324.com",
+        "926001.tv",
+        "926002.tv",
+        "926003.tv",
+        "515003.tv",
+        "sportsteam356.com",
+        "bdstatic.com",
+        "yumixiu768.com",
+        "zhibo1.cc",
+        "jiatianxiazhuangshi.com",
+        "xzbonlinepull.pq8.co",
+        "125700.shop",
+        "prdasbb18a1.com",
+        "mayizhibo.net",
+        "zzzb393.com",
+        "hhz.pgw.jp",
+        "nas.136605.xyz",
+        "nas1.136605.xyz",
+        "zhtcl.mydns.bz",
+        "zhtcl.com",
+        "imasdk.googleapis.com",
+        "ntp.aliyun.com",
+        "qqqrqq.com",
+        "feijing-xzbonlinepull.17kq.fun",
+        "ip.164746.xyz",
+        "ii-587.wwentua.com",
+        "miniprogram.lnitv.com",
+        "bxtv.757888.xyz",
+        "rsfcxq.com",
+        "bfzyapi.com",
+        "miui.com",
+        "time.windows.com",
+        "pool.ntp.org",
+        "v6.sync.afraid.org",
+        "natchecker.com",
+        "tmate.io"
+      ],
+      "domain_keyword": [
+        "letsencrypt.org",
+        "tyyszy"
+      ] 
+    }
+  ]
+}
