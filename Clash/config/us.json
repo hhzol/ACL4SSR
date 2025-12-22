@@ -3,23 +3,17 @@
   "rules": [
     {
       "domain": [
-
+        "nba.com"
       ],
       "domain_suffix": [
         "bbc",
-        "bbc-reporting-api.app",
-        "bbcverticals.com",
-        "bbc.com",
-        "bbc.in",
-        "bbcpersian.com",
-        "bbc.net.uk",
-        "bbci.co.uk",
-        "bbcmedia.co.uk",
-        "bbc.mp-pxcdn.com",
-        "bbc.co.uk",
-        "bidi.net.uk",
-        "bbcfmt.s.llnwi.net"
-      ]
+        "tunein.com",
+        "radiotime.com",
+        "tunein.cdnstream1.com"
+      ],
+      "domain_keyword": [
+        "pluto"
+      ] 
     }
   ]
 }
