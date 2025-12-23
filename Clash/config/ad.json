@@ -49,7 +49,27 @@
         "redirector.googlevideo.com",
         "s.ytimg.com",
         "stun.l.google.com",
-        "ad.youtube.com"
+        "ad.youtube.com",
+        "clients0.google.com
+        "clients1.google.com
+        "clients2.google.com
+        "clients3.google.com
+        "clients4.google.com",
+        "clients5.google.com",
+        "clients6.google.com",
+        "clients7.google.com",
+        "clients8.google.com",
+        "clients9.google.com",
+        "yt0.googleusercontent.com",
+        "yt1.googleusercontent.com",
+        "yt2.googleusercontent.com",
+        "yt3.googleusercontent.com",
+        "yt4.googleusercontent.com",
+        "yt5.googleusercontent.com",
+        "yt6.googleusercontent.com",
+        "yt7.googleusercontent.com",
+        "yt8.googleusercontent.com",
+        "yt9.googleusercontent.com"
       ]
     }
   ]
