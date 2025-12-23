@@ -5,9 +5,11 @@
       "domain_suffix": [
         "html-load.com",
         "cdn.ampproject.org",
-        "bbcx-internal.com",
+        "bbcx-internal.com"
+       ],
+       "domain_keyword": [
         "cambridge.org"
-      ]
+       ]
     }
   ]
 }
