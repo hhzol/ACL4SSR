@@ -49,8 +49,7 @@
         "time.windows.com",
         "pool.ntp.org",
         "v6.sync.afraid.org",
-        "natchecker.com",
-        "tmate.io"
+        "natchecker.com"
       ],
       "domain_keyword": [
         "letsencrypt.org",
