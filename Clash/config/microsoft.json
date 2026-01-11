@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain_suffix": [
+        "windows.com",
+        "windows.net",
+        "office.com",
+        "office.net",
+        "office365.com",
+        "sharepoint.com",
+        "microsoft.com",
+        "microsoftonline.com",
+        "outlook.com"
+      ]
+    }
+  ]
+}
