@@ -22,7 +22,6 @@
 	  {"rule_set": ["cfg-cn_site-rule",	"cfg-private_site-rule"], "action": "route", "server": "local"}
     ],
     "final": "foreign",
-    "strategy": "ipv4_only",
     "independent_cache": true,
     "reverse_mapping": true
   },
