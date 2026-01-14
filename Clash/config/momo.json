@@ -52,9 +52,8 @@
 	  {"rule_set": ["cfg-uk_diy-rule", "cfg-bbc-rule"], "action": "route", "outbound": "🇬🇧 英国自动", "tls_record_fragment": true},
 	  {"rule_set": ["cfg-spotify-rule"], "action": "route", "outbound": "🇭🇰 香港自动", "tls_record_fragment": true},
 	  {"rule_set": ["cfg-microsoft-rule", "cfg-apple-rule"], "action": "route",	"outbound": "🚀 默认代理"},
-	  {"rule_set": ["cfg-cn_ip-rule", "cfg-cn_site-rule", "cfg-private_ip-rule", "cfg-private_site-rule", "cfg-cn_diy-rule"], "action": "route", "outbound": "🎯 全球直连"},
-	  {"rule_set": ["cfg-cn_ip-rule", "cfg-cn_site-rule", "cfg-private_ip-rule", "cfg-private_site-rule", "cfg-cn_diy-rule", "cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule", "cfg-us_diy-rule", "cfg-uk_diy-rule", "cfg-ai-rule", "cfg-bbc-rule", "cfg-spotify-rule", "cfg-microsoft-rule", "cfg-apple-rule"], "invert": true, "action": "route", "outbound": "🚀 默认代理", "tls_record_fragment": true},
-	  {"type": "ip", "ip_version": 6, "action": "route", "outbound": "🌥️ cloudflare", "tls_record_fragment": true}
+	  {"rule_set": ["cfg-cn_ip-rule", "cfg-cn_site-rule", "cfg-private_ip-rule", "cfg-private_site-rule", "cfg-cn_diy-rule"], "action": "route", "outbound": "🎯 全球直连"}
+
 	],
     "rule_set": [
 	  {"type": "local",	"tag": "cfg-cn_ip-rule", "format": "binary", "path": "/etc/homeproxy/ruleset/cn_ip.srs"},
