@@ -74,7 +74,7 @@
     ],
     "auto_detect_interface": true,
     "default_domain_resolver": {"action": "resolve", "server": "opendns"},
-    "final": "🐠 漏网之鱼"
+    "final": "🚀 默认代理"
   },
   "inbounds": [
     {
