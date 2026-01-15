@@ -40,7 +40,6 @@
   ],
   "route": {
     "rules": [
-      {"action": "sniff", "sniffer": ["http", "tls", "quic", "dns"]},
       {"inbound": "dns-in", "action": "hijack-dns"},
       {"clash_mode": "direct", "outbound": "🎯 全球直连"},
       {"clash_mode": "global", "outbound": "GLOBAL"},
