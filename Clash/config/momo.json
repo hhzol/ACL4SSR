@@ -4,9 +4,9 @@
       {"tag": "local", "type": "udp", "server": "223.5.5.5"},
       {"tag": "opendns", "type": "udp", "server": "208.67.222.222"},
       {"tag": "foreign", "type": "https", "server": "8.8.8.8", "path": "/dns-query", "detour": "🚀 默认代理"},
-      {"tag": "dns_google", "type": "https", "server": "dns.google", "path": "/dns-query", "domain_resolver": "local", "detour": "🇭🇰 香港自动"},
-      {"tag": "cloudflare", "type": "https", "server": "dns.cloudflare.com", "path": "/dns-query", "domain_resolver": "local", "detour": "🇺🇲 美国自动"},
-      {"tag": "quad9", "type": "https", "server": "dns.quad9.net", "path": "/dns-query", "domain_resolver": "local", "detour": "🇬🇧 英国自动"}
+      {"tag": "dns_google", "type": "https", "server": "dns.google", "path": "/dns-query", "domain_resolver": "opendns", "detour": "🇭🇰 香港自动"},
+      {"tag": "cloudflare", "type": "https", "server": "dns.cloudflare.com", "path": "/dns-query", "domain_resolver": "opendns", "detour": "🇺🇲 美国自动"},
+      {"tag": "quad9", "type": "https", "server": "dns.quad9.net", "path": "/dns-query", "domain_resolver": "opendns", "detour": "🇬🇧 英国自动"}
     ],
     "rules": [
       {"clash_mode": "direct", "server": "local"},
