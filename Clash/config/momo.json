@@ -9,8 +9,6 @@
       {"tag": "quad9", "type": "https", "server": "dns.quad9.net", "path": "/dns-query", "domain_resolver": "local", "detour": "🇬🇧 英国自动"}
     ],
     "rules": [
-      {"clash_mode": "direct", "server": "local"},
-      {"clash_mode": "global", "server": "fakeip"},
       {"rule_set": ["cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule"], "action": "predefined", "rcode": "NOERROR"},
 	  {"rule_set": ["cfg-spotify-rule"], "action": "route", "server": "dns_google", "strategy": "ipv4_only"},
 	  {"rule_set": ["cfg-us_diy-rule", "cfg-ai-rule"], "action": "route", "server": "cloudflare", "strategy": "ipv4_only"},
