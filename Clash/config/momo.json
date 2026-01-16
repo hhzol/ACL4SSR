@@ -112,7 +112,7 @@
         "172.31.0.1/30"
       ],
       "auto_route": false,
-      "auto_redirect": false
+      "sniff": true
     }
   ],
   "experimental": {
