@@ -3,44 +3,46 @@
     "servers": [
       {"tag": "local", "type": "udp", "server": "223.5.5.5"},
       {"tag": "opendns", "type": "udp", "server": "208.67.222.222"},
-      {"tag": "foreign", "type": "https", "server": "dns.google", "path": "/dns-query", "domain_resolver": "opendns", "detour": "🚀 默认代理"},
-      {"tag": "dns_google", "type": "https", "server": "dns.google", "path": "/dns-query", "domain_resolver": "opendns", "detour": "🇭🇰 香港自动"},
-      {"tag": "cloudflare", "type": "https", "server": "dns.cloudflare.com", "path": "/dns-query", "domain_resolver": "opendns", "detour": "🇺🇲 美国自动"},
-      {"tag": "quad9", "type": "https", "server": "dns.quad9.net", "path": "/dns-query", "domain_resolver": "opendns", "detour": "🇬🇧 英国自动"}
+      {"tag": "foreign", "type": "https", "server": "8.8.8.8", "path": "/dns-query", "detour": "🚀 默认代理"},
+      {"tag": "dns_google", "type": "https", "server": "dns.google", "path": "/dns-query", "domain_resolver": "local", "detour": "🇭🇰 香港自动"},
+      {"tag": "cloudflare", "type": "https", "server": "dns.cloudflare.com", "path": "/dns-query", "domain_resolver": "local", "detour": "🇺🇲 美国自动"},
+      {"tag": "quad9", "type": "https", "server": "dns.quad9.net", "path": "/dns-query", "domain_resolver": "local", "detour": "🇬🇧 英国自动"}
     ],
     "rules": [
       {"clash_mode": "direct", "server": "local"},
-      {"clash_mode": "global", "server": "foreign"},
-	  {"rule_set": ["cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule"], "action": "predefined", "rcode": "NOERROR"},
+      {"clash_mode": "global", "server": "fakeip"},
+      {"query_type": "HTTPS", "action": "reject"},
+      {"rule_set": ["cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule"], "action": "predefined", "rcode": "NOERROR"},
 	  {"rule_set": ["cfg-spotify-rule"], "action": "route", "server": "dns_google", "strategy": "ipv4_only"},
 	  {"rule_set": ["cfg-us_diy-rule", "cfg-ai-rule"], "action": "route", "server": "cloudflare", "strategy": "ipv4_only"},
 	  {"rule_set": ["cfg-uk_diy-rule", "cfg-bbc-rule"],	"action": "route", "server": "quad9", "strategy": "ipv4_only"},
 	  {"rule_set": ["cfg-cn_diy-rule"],	"action": "route", "server": "opendns"},
 	  {"rule_set": ["cfg-microsoft-rule", "cfg-apple-rule"], "action": "route", "server": "foreign", "strategy": "ipv4_only"},
-	  {"domain_suffix": ["nodelist-airport.com", "gh-proxy.com", "136605.xyz"], "rule_set": ["cfg-cn_site-rule", "cfg-private_site-rule"], "action": "route", "server": "local"},
+	  {"rule_set": ["cfg-cn_site-rule",	"cfg-private_site-rule"], "action": "route", "server": "local"},
 	  {"rule_set": ["cfg-cn_ip-rule", "cfg-cn_site-rule", "cfg-private_ip-rule", "cfg-private_site-rule", "cfg-cn_diy-rule", "cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule", "cfg-us_diy-rule", "cfg-uk_diy-rule", "cfg-ai-rule", "cfg-bbc-rule", "cfg-spotify-rule", "cfg-microsoft-rule", "cfg-apple-rule"], "invert": true, "action": "route", "server": "foreign", "strategy": "ipv4_only"}
     ],
-	"disable_cache": true,
-    "final": "foreign"
+    "final": "foreign",
+    "independent_cache": true,
+    "reverse_mapping": true
   },
   "outbounds": [
-    {"tag": "🎯 全球直连", "type": "direct", "routing_mark": 100},
-	{"tag": "🛑 全球拦截", "type": "block"},  
     {"tag": "🚀 默认代理", "type": "selector", "outbounds": ["♻️ 自动选择", "🥷🏽 翻墙机场", "🌥️ cloudflare", "🖁 CMCC-IPV6", "🐸 手动选择", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动"]},
-    {"tag": "♻️ 自动选择", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["B Group|cloudflare|CMCC-IPV6"]}]},
-    {"tag": "🥷🏽 翻墙机场", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["B Group"]}]},
-    {"tag": "🌥️ cloudflare", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["cloudflare"]}]},
-    {"tag": "🖁 CMCC-IPV6", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["CMCC-IPV6"]}]},
+    {"tag": "♻️ 自动选择", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["B Group|cloudflare|CMCC-IPV6"]}], "url": "http://connect.rom.miui.com/generate_204", "interrupt_exist_connections": true},
+    {"tag": "🥷🏽 翻墙机场", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["B Group"]}], "url": "http://connect.rom.miui.com/generate_204", "interrupt_exist_connections": true},
+    {"tag": "🌥️ cloudflare", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["cloudflare"]}], "url": "http://connect.rom.miui.com/generate_204", "interrupt_exist_connections": true},
+    {"tag": "🖁 CMCC-IPV6", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["CMCC-IPV6"]}], "url": "http://connect.rom.miui.com/generate_204", "interrupt_exist_connections": true},
     {"tag": "🐸 手动选择", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "exclude", "keywords": ["网站|流量|地址|剩余|过期|免费|时间|有效|Traffic|ExpireDate|Expire Date"]}]},
     {"tag": "🇭🇰 香港自动", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇭🇰|HK|hk|香港|港|HongKong"]}, {"action": "exclude", "keywords": ["免费"]}]},
     {"tag": "🇯🇵 日本自动", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇯🇵|JP|jp|日本|日|Japan"]}, {"action": "exclude", "keywords": ["免费"]}]},
     {"tag": "🇸🇬 狮城自动", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["新加坡|坡|狮城|SG|Singapore"]}, {"action": "exclude", "keywords": ["免费"]}]},
-    {"tag": "🇺🇲 美国自动", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇺🇸|US|us|美国|美|United States"]}, {"action": "exclude", "keywords": ["AUS|RUS|免费"]}]},
-    {"tag": "🇬🇧 英国自动", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇬🇧|GB|gb|英国|英|United Kingdom"]}, {"action": "exclude", "keywords": ["免费"]}]},
-    {"tag": "GLOBAL", "type": "selector", "outbounds": ["🚀 默认代理", "♻️ 自动选择", "🥷🏽 翻墙机场", "🌥️ cloudflare", "🖁 CMCC-IPV6", "🐸 手动选择", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "🎯 全球直连"]}
+    {"tag": "🇺🇲 美国自动", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇺🇸|US|us|美国|美|United States"]}, {"action": "exclude", "keywords": ["AUS|RUS|免费"]}], "url": "http://connect.rom.miui.com/generate_204", "interrupt_exist_connections": true},
+    {"tag": "🇬🇧 英国自动", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇬🇧|GB|gb|英国|英|United Kingdom"]}, {"action": "exclude", "keywords": ["免费"]}], "url": "http://connect.rom.miui.com/generate_204", "interrupt_exist_connections": true},
+    {"tag": "GLOBAL", "type": "selector", "outbounds": ["🚀 默认代理", "♻️ 自动选择", "🥷🏽 翻墙机场", "🌥️ cloudflare", "🖁 CMCC-IPV6", "🐸 手动选择", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "🎯 全球直连"]},
+    {"tag": "🎯 全球直连", "type": "direct"}
   ],
   "route": {
     "rules": [
+      {"action": "sniff", "sniffer": ["http", "tls", "quic", "dns"]},
       {"inbound": "dns-in", "action": "hijack-dns"},
       {"clash_mode": "direct", "outbound": "🎯 全球直连"},
       {"clash_mode": "global", "outbound": "GLOBAL"},
