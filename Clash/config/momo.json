@@ -109,10 +109,9 @@
 	  "tag": "tun-in",
       "interface_name": "momo",
       "address": [
-        "172.31.0.1/30"
+        "172.19.0.1/30"
       ],
-      "auto_route": false,
-	  "sniff": true
+      "auto_route": false
     }
   ],
   "experimental": {
