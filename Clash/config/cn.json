@@ -47,9 +47,7 @@
         "pool.ntp.org",
         "v6.sync.afraid.org",
         "natchecker.com",
-        "tmate.io",
-        "nodelist-airport.com",
-        "gh-proxy.com"
+        "tmate.io"
       ],
       "domain_keyword": [
         "letsencrypt.org",
