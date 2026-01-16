@@ -3,10 +3,10 @@
     "servers": [
       {"tag": "local", "type": "udp", "server": "223.5.5.5"},
       {"tag": "opendns", "type": "udp", "server": "208.67.222.222"},
-      {"tag": "foreign", "type": "https", "server": "dns.google", "path": "/dns-query", "domain_resolver": "opendns", "detour": "🚀 默认代理"},
-      {"tag": "dns_google", "type": "https", "server": "dns.google", "path": "/dns-query", "domain_resolver": "opendns", "detour": "🇭🇰 香港自动"},
-      {"tag": "cloudflare", "type": "https", "server": "dns.cloudflare.com", "path": "/dns-query", "domain_resolver": "opendns", "detour": "🇺🇲 美国自动"},
-      {"tag": "quad9", "type": "https", "server": "dns.quad9.net", "path": "/dns-query", "domain_resolver": "opendns", "detour": "🇬🇧 英国自动"}
+      {"tag": "foreign", "type": "https", "server": "dns.google", "path": "/dns-query", "domain_resolver": ["server": "opendns", "strategy": "ipv4_only"], "detour": "🚀 默认代理"},
+      {"tag": "dns_google", "type": "https", "server": "dns.google", "path": "/dns-query", "domain_resolver": ["server": "opendns", "strategy": "ipv4_only"], "detour": "🇭🇰 香港自动"},
+      {"tag": "cloudflare", "type": "https", "server": "dns.cloudflare.com", "path": "/dns-query", "domain_resolver": ["server": "opendns", "strategy": "ipv4_only"], "detour": "🇺🇲 美国自动"},
+      {"tag": "quad9", "type": "https", "server": "dns.quad9.net", "path": "/dns-query", "domain_resolver": ["server": "opendns", "strategy": "ipv4_only"], "detour": "🇬🇧 英国自动"}
     ],
     "rules": [
       {"clash_mode": "direct", "server": "local"},
@@ -17,7 +17,7 @@
 	  {"rule_set": ["cfg-uk_diy-rule", "cfg-bbc-rule"],	"action": "route", "server": "quad9", "strategy": "ipv4_only"},
 	  {"rule_set": ["cfg-cn_diy-rule"],	"action": "route", "server": "opendns"},
 	  {"rule_set": ["cfg-microsoft-rule", "cfg-apple-rule"], "action": "route", "server": "foreign", "strategy": "ipv4_only"},
-	  {"domain_suffix": ["nodelist-airport.com", "gh-proxy.com", "136605.xyz"], "rule_set": ["cfg-cn_site-rule",	"cfg-private_site-rule"], "action": "route", "server": "local"},
+	  {"domain_suffix": ["nodelist-airport.com", "gh-proxy.com", "136605.xyz"], "rule_set": ["cfg-cn_site-rule", "cfg-private_site-rule"], "action": "route", "server": "local"},
 	  {"rule_set": ["cfg-cn_ip-rule", "cfg-cn_site-rule", "cfg-private_ip-rule", "cfg-private_site-rule", "cfg-cn_diy-rule", "cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule", "cfg-us_diy-rule", "cfg-uk_diy-rule", "cfg-ai-rule", "cfg-bbc-rule", "cfg-spotify-rule", "cfg-microsoft-rule", "cfg-apple-rule"], "invert": true, "action": "route", "server": "foreign", "strategy": "ipv4_only"}
     ],
 	"disable_cache": true,
