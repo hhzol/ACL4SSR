@@ -44,6 +44,7 @@
     "rules": [
       {"protocol": "quic", "action": "reject"},
       {"inbound": "dns-in", "action": "hijack-dns"},
+	  {"ip_is_private": true, "outbound": "🎯 全球直连"},
       {"clash_mode": "direct", "outbound": "🎯 全球直连"},
       {"clash_mode": "global", "outbound": "GLOBAL"},
 	  {"rule_set": ["cfg-us_diy-rule", "cfg-ai-rule"], "action": "route", "outbound": "🇺🇲 美国自动", "tls_record_fragment": true},
