@@ -108,12 +108,11 @@
 	  "type": "tun",
 	  "tag": "tun-in",
 	  "interface_name": "singtun0",
-	  "mtu": 1500,
+	  "mtu": 9000,
 	  "auto_route": true,
 	  "strict_route": true,
 	  "address": [
-	    "172.19.0.1/30",
-	    "fd00::1/126"
+	    "172.19.0.1/30"
 	  ]
 	}
   ],
