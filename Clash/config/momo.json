@@ -113,7 +113,7 @@
 			"fdfe:dcba:9876::1/126"
 		],
 		"mtu": 9000,
-		"auto_route": false,
+		"auto_route": true,
 		"stack": "system",
 		"sniff": true
 	}
