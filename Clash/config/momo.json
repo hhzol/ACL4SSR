@@ -41,7 +41,6 @@
   ],
   "route": {
     "rules": [
-      {"protocol": "quic", "action": "reject"},
       {"inbound": "dns-in", "action": "hijack-dns"},
       {"clash_mode": "direct", "outbound": "🎯 全球直连"},
       {"clash_mode": "global", "outbound": "GLOBAL"},
