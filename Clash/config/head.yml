@@ -12,6 +12,7 @@ dns:
   nameserver-policy:
     geosite:cn,private: [tls://dot.pub,tls://dns.alidns.com]
     rule-set:ZHILIAN: [tls://dns.alidns.com,tls://dot.pub]
+    rule-set:ADBLOCK: [RCODE:5]#🛑 全球拦截
   nameserver: [1.1.1.1#🚦 DNS, 1.0.0.1#🚦 DNS, 9.9.9.9#🚦 DNS, 149.112.112.112#🚦 DNS, 45.11.45.11#🚦 DNS, 208.67.222.222#🚦 DNS, 208.67.220.220#🚦 DNS, 8.8.8.8#🚦 DNS, 8.8.4.4#🚦 DNS]
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
@@ -56,3 +57,4 @@ rule-providers:
      behavior: classical
      url: https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/area.yaml
      path: ./AREA.yaml
+
