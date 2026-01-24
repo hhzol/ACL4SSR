@@ -24,6 +24,8 @@ dns:
     - "dns.msftncsi.com"
     - "www.msftncsi.com"
     - "www.msftconnecttest.com"
+    - "+.136605.xyz"
+    - "hhz.pgw.jp"
 profile:
   store-selected: true
   store-fake-ip: true
@@ -58,6 +60,7 @@ rule-providers:
      behavior: classical
      url: https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/area.yaml
      path: ./AREA.yaml
+
 
 
 
