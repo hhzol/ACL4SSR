@@ -10,7 +10,8 @@ dns:
   default-nameserver: [114.114.114.114, 119.29.29.29, 223.5.5.5]
   proxy-server-nameserver: [114.114.114.114, 119.29.29.29, 223.5.5.5]
   nameserver-policy:
-    rule-set:ADBLOCK,ANTIAD: [RCODE:5]
+    rule-set:ADBLOCK: [RCODE:5]
+    rule-set:ADTIAD: [RCODE:5]
     geosite:cn,private: [tls://dot.pub,tls://dns.alidns.com]
     rule-set:ZHILIAN: [tls://dns.alidns.com,tls://dot.pub]
   nameserver: [1.1.1.1#🚦 DNS, 1.0.0.1#🚦 DNS, 9.9.9.9#🚦 DNS, 149.112.112.112#🚦 DNS, 45.11.45.11#🚦 DNS, 208.67.222.222#🚦 DNS, 208.67.220.220#🚦 DNS, 8.8.8.8#🚦 DNS, 8.8.4.4#🚦 DNS]
@@ -57,6 +58,7 @@ rule-providers:
      behavior: classical
      url: https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/area.yaml
      path: ./AREA.yaml
+
 
 
 
