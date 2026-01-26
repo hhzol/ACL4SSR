@@ -3,6 +3,7 @@
   "rules": [
     {
       "domain_suffix": [
+        "relay.communication.microsoft.com",
         "www.msftconnecttest.com",
         "ipv6.msftconnecttest.com",
         "is.gd",
