@@ -3,6 +3,7 @@
   "rules": [
     {
       "domain_suffix": [
+        "www.msftconnecttest.com",
         "ipv6.msftconnecttest.com",
         "is.gd",
         "926123.tv",
