@@ -70,7 +70,7 @@
 	  {"tag": "cfg-apple-rule", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Apple/Apple.srs"}
 	],
     "auto_detect_interface": true,
-    "final": "🚀 默认代理"
+    "final": "🎯 全球直连"
   },
   "inbounds": [
 	{
