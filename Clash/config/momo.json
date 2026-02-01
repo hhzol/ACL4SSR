@@ -6,7 +6,7 @@
       {"tag": "foreign", "type": "udp", "server": "8.8.8.8", "detour": "🚀 默认代理"},
       {"tag": "dns_sb", "type": "udp", "server": "45.11.45.11", "detour": "🇭🇰 香港自动"},
       {"tag": "cloudflare", "type": "udp", "server": "1.1.1.1", "detour": "🇺🇲 美国自动"},
-      {"tag": "quad9", "type": "udp", "server": "9.9.9.9", "detour": "🇬🇧 英国自动"}
+      {"tag": "quad9", "type": "https", "server": "9.9.9.9", "path": "/dns-query", "detour": "🇬🇧 英国自动"}
     ],
     "rules": [
       {"clash_mode": "direct", "server": "local"},
