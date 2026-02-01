@@ -6,12 +6,13 @@
       {"tag": "foreign", "address": "8.8.8.8", "detour": "🚀 默认代理"},
       {"tag": "dns_sb", "address": "45.11.45.11", "detour": "🇭🇰 香港自动"},
       {"tag": "cloudflare", "address": "1.1.1.1", "detour": "🇺🇲 美国自动"},
-      {"tag": "quad9", "address": "9.9.9.9", "detour": "🇬🇧 英国自动"}
+      {"tag": "quad9", "address": "9.9.9.9", "detour": "🇬🇧 英国自动"},
+      {"tag": "null", "address": "0.0.0.0", "detour": "direct"}
     ],
     "rules": [
       {"clash_mode": "direct", "server": "local"},
       {"clash_mode": "global", "server": "foreign"},
-      {"rule_set": ["cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule"], "action": "reject"},
+      {"rule_set": ["cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule"], "action": "route", "server": "null"},
 	  {"rule_set": ["cfg-spotify-rule"], "action": "route", "server": "dns_sb", "strategy": "ipv4_only"},
 	  {"rule_set": ["cfg-us_diy-rule", "cfg-ai-rule"], "action": "route", "server": "cloudflare", "strategy": "ipv4_only"},
 	  {"rule_set": ["cfg-uk_diy-rule", "cfg-bbc-rule"],	"action": "route", "server": "quad9", "strategy": "ipv4_only"},
