@@ -3,8 +3,8 @@
     "servers": [
       {"tag": "local", "type": "https", "server": "223.5.5.5", "path": "/dns-query"},
       {"tag": "opendns", "type": "udp", "server": "208.67.222.222"},
-      {"tag": "foreign", "type": "https", "server": "8.8.8.8", "path": "/dns-query", "detour": "🚀 默认代理"},
-      {"tag": "dns_google", "type": "https", "server": "dns.google", "path": "/dns-query", "domain_resolver": "local", "detour": "🇭🇰 香港自动"},
+      {"tag": "foreign", "type": "udp", "server": "8.8.8.8", "detour": "🚀 默认代理"},
+      {"tag": "dns_sb", "type": "udp", "server": "45.11.45.11", "detour": "🇭🇰 香港自动"},
       {"tag": "cloudflare", "type": "udp", "server": "1.1.1.1", "detour": "🇺🇲 美国自动"},
       {"tag": "quad9", "type": "udp", "server": "9.9.9.9", "detour": "🇬🇧 英国自动"}
     ],
@@ -12,7 +12,7 @@
       {"clash_mode": "direct", "server": "local"},
       {"clash_mode": "global", "server": "foreign"},
       {"rule_set": ["cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule"], "action": "predefined", "rcode": "NOERROR"},
-	  {"rule_set": ["cfg-spotify-rule"], "action": "route", "server": "dns_google", "strategy": "ipv4_only"},
+	  {"rule_set": ["cfg-spotify-rule"], "action": "route", "server": "dns_sb", "strategy": "ipv4_only"},
 	  {"rule_set": ["cfg-us_diy-rule", "cfg-ai-rule"], "action": "route", "server": "cloudflare", "strategy": "ipv4_only"},
 	  {"rule_set": ["cfg-uk_diy-rule", "cfg-bbc-rule"],	"action": "route", "server": "quad9", "strategy": "ipv4_only"},
 	  {"rule_set": ["cfg-cn_diy-rule"],	"action": "route", "server": "local"},
