@@ -3,10 +3,10 @@
     "servers": [
       {"tag": "local", "type": "https", "server": "223.5.5.5", "path": "/dns-query"},
       {"tag": "opendns", "type": "udp", "server": "208.67.222.222"},
-      {"tag": "foreign", "type": "udp", "server": "8.8.8.8", "detour": "🚀 默认代理"},
-      {"tag": "dns_sb", "type": "udp", "server": "45.11.45.11", "detour": "🇭🇰 香港自动"},
-      {"tag": "cloudflare", "type": "udp", "server": "1.1.1.1", "detour": "🇺🇲 美国自动"},
-      {"tag": "quad9", "type": "udp", "server": "9.9.9.9", "detour": "🇬🇧 英国自动"}
+      {"tag": "foreign", "type": "https", "server": "8.8.8.8", "path": "/dns-query", "detour": "🚀 默认代理"},
+      {"tag": "dns_sb", "type": "https", "server": "45.11.45.11", "path": "/dns-query", "detour": "🇭🇰 香港自动"},
+      {"tag": "cloudflare", "type": "https", "server": "1.1.1.1", "path": "/dns-query", "detour": "🇺🇲 美国自动"},
+      {"tag": "quad9", "type": "https", "server": "9.9.9.9", "path": "/dns-query", "detour": "🇬🇧 英国自动"}
     ],
     "rules": [
       {"clash_mode": "direct", "server": "local"},
