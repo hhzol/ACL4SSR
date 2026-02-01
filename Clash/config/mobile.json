@@ -69,7 +69,6 @@
 	  {"tag": "cfg-apple-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Apple/Apple.srs", "download_detour": "🎯 全球直连"}
 	],
     "auto_detect_interface": true,
-    "default_domain_resolver": {"action": "resolve", "server": "opendns"},
     "final": "🚀 默认代理"
   },
   "inbounds": [
