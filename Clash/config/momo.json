@@ -5,7 +5,7 @@
       {"tag": "opendns", "type": "udp", "server": "208.67.222.222"},
       {"tag": "foreign", "type": "udp", "server": "8.8.8.8", "detour": "🚀 默认代理"},
       {"tag": "dns_sb", "type": "https", "server": "45.11.45.11", "path": "/dns-query", "detour": "🇭🇰 香港自动"},
-      {"tag": "cloudflare", "type": "https", "server": "1.1.1.1", "path": "/dns-query", "detour": "🇺🇲 美国自动"},
+      {"tag": "cloudflare", "type": "https", "server": "dns.cloudflare.com", "path": "/dns-query", "detour": "🇺🇲 美国自动"},
       {"tag": "quad9", "type": "https", "server": "9.9.9.9", "path": "/dns-query", "detour": "🇬🇧 英国自动"}
     ],
     "rules": [
@@ -34,7 +34,7 @@
     {"tag": "🇭🇰 香港自动", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇭🇰|HK|hk|香港|港|HongKong"]}, {"action": "exclude", "keywords": ["免费"]}], "interrupt_exist_connections": true},
     {"tag": "🇯🇵 日本自动", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇯🇵|JP|jp|日本|日|Japan"]}, {"action": "exclude", "keywords": ["免费"]}], "interrupt_exist_connections": true},
     {"tag": "🇸🇬 狮城自动", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["新加坡|坡|狮城|SG|Singapore"]}, {"action": "exclude", "keywords": ["免费"]}], "interrupt_exist_connections": true},
-    {"tag": "🇺🇲 美国自动", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇺🇸|US|us|美国|美|United States|CMCC-IPV6"]}, {"action": "exclude", "keywords": ["AUS|RUS|免费"]}], "interrupt_exist_connections": true},
+    {"tag": "🇺🇲 美国自动", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇺🇸|US|us|美国|美|United States"]}, {"action": "exclude", "keywords": ["AUS|RUS|免费"]}], "interrupt_exist_connections": true},
     {"tag": "🇬🇧 英国自动", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇬🇧|GB|gb|英国|英|United Kingdom"]}, {"action": "exclude", "keywords": ["免费|剩余流量"]}], "interrupt_exist_connections": true},
     {"tag": "GLOBAL", "type": "selector", "outbounds": ["🚀 默认代理", "♻️ 自动选择", "🥷🏽 翻墙机场", "🌥️ cloudflare", "🖁 CMCC-IPV6", "🐸 手动选择", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "🎯 全球直连"]},
     {"tag": "🎯 全球直连", "type": "direct"}
