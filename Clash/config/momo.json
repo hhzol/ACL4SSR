@@ -1,27 +1,28 @@
 {
   "dns": {
     "servers": [
-      {"tag": "local", "type": "https", "server": "223.5.5.5", "path": "/dns-query", "detour": "🎯 全球直连"},
-      {"tag": "backup", "type": "udp", "server": "1.1.1.1", "detour": "🎯 全球直连"},
+      {"tag": "local", "type": "https", "server": "223.5.5.5", "path": "/dns-query"},
+      {"tag": "opendns", "type": "udp", "server": "208.67.222.222"},
       {"tag": "foreign", "type": "udp", "server": "8.8.8.8", "detour": "🚀 默认代理"},
-      {"tag": "dns_hk", "type": "tls", "server": "1.1.1.1", "detour": "🇭🇰 香港自动"},
-      {"tag": "dns_us", "type": "tls", "server": "1.1.1.1", "detour": "🇺🇲 美国自动"},
-      {"tag": "dns_uk", "type": "tls", "server": "1.1.1.1", "detour": "🇬🇧 英国自动"}
+      {"tag": "dns_sb", "type": "https", "server": "45.11.45.11", "path": "/dns-query", "detour": "🇭🇰 香港自动"},
+      {"tag": "cloudflare", "type": "udp", "server": "1.1.1.1", "detour": "🇺🇲 美国自动"},
+      {"tag": "quad9", "type": "https", "server": "9.9.9.9", "path": "/dns-query", "detour": "🇬🇧 英国自动"}
     ],
     "rules": [
       {"clash_mode": "direct", "server": "local"},
       {"clash_mode": "global", "server": "foreign"},
       {"rule_set": ["cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule"], "action": "predefined", "rcode": "NOERROR"},
-	  {"rule_set": ["cfg-spotify-rule"], "action": "route", "server": "dns_hk", "strategy": "ipv4_only"},
-	  {"rule_set": ["cfg-us_diy-rule", "cfg-ai-rule"], "action": "route", "server": "dns_us", "strategy": "ipv4_only"},
-	  {"rule_set": ["cfg-uk_diy-rule", "cfg-bbc-rule"],	"action": "route", "server": "dns_uk", "strategy": "ipv4_only"},
+	  {"rule_set": ["cfg-spotify-rule"], "action": "route", "server": "dns_sb", "strategy": "ipv4_only"},
+	  {"rule_set": ["cfg-us_diy-rule", "cfg-ai-rule"], "action": "route", "server": "cloudflare", "strategy": "ipv4_only"},
+	  {"rule_set": ["cfg-uk_diy-rule", "cfg-bbc-rule"],	"action": "route", "server": "quad9", "strategy": "ipv4_only"},
 	  {"rule_set": ["cfg-cn_diy-rule"],	"action": "route", "server": "local"},
 	  {"rule_set": ["cfg-microsoft-rule", "cfg-apple-rule"], "action": "route", "server": "foreign", "strategy": "ipv4_only"},
 	  {"rule_set": ["cfg-cn_site-rule",	"cfg-private_site-rule"], "action": "route", "server": "local"},
 	  {"rule_set": ["cfg-cn_ip-rule", "cfg-cn_site-rule", "cfg-private_ip-rule", "cfg-private_site-rule", "cfg-cn_diy-rule", "cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule", "cfg-us_diy-rule", "cfg-uk_diy-rule", "cfg-ai-rule", "cfg-bbc-rule", "cfg-spotify-rule", "cfg-microsoft-rule", "cfg-apple-rule"], "invert": true, "action": "route", "server": "foreign", "strategy": "ipv4_only"}
     ],
-    "final": "backup",
-    "disable_cache": true
+    "final": "opendns",
+    "independent_cache": true,
+    "reverse_mapping": true
   },
   "outbounds": [
     {"tag": "🚀 默认代理", "type": "selector", "outbounds": ["♻️ 自动选择", "🥷🏽 翻墙机场", "🌥️ cloudflare", "🖁 CMCC-IPV6", "🐸 手动选择", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动"]},
@@ -68,7 +69,7 @@
 	  {"tag": "cfg-apple-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Apple/Apple.srs", "download_detour": "🎯 全球直连"}
 	],
     "auto_detect_interface": true,
-    "default_domain_resolver": {"action": "resolve", "server": "backup"},
+    "default_domain_resolver": {"action": "resolve", "server": "opendns"},
     "final": "🚀 默认代理"
   },
   "inbounds": [
@@ -131,7 +132,7 @@
   },
   "log": {
     "disabled": false,
-    "level": "error",
+    "level": "info",
     "timestamp": true
   }
 }
