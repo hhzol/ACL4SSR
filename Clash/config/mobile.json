@@ -12,6 +12,7 @@
     "rules": [
       {"clash_mode": "direct", "server": "local"},
       {"clash_mode": "global", "server": "foreign"},
+	  {"domain-suffix"："raw.githubusercontent.com", "action": "route", "server": "local"}
       {"rule_set": ["cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule"], "action": "route", "server": "null"},
 	  {"rule_set": ["cfg-spotify-rule"], "action": "route", "server": "dns_sb"},
 	  {"rule_set": ["cfg-us_diy-rule", "cfg-ai-rule"], "action": "route", "server": "cloudflare"},
