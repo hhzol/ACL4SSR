@@ -73,7 +73,7 @@
   },
   "inbounds": [
 	{
-		"type": "direct",
+		"type": "dns",
 		"tag": "dns-in",
 		"listen": "::",
 		"listen_port": 5333
