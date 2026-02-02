@@ -3,7 +3,7 @@
     "servers": [
       {"tag": "local", "type": "https", "server": "223.5.5.5", "path": "/dns-query"},
       {"tag": "backup", "type": "udp", "server": "1.1.1.1"},
-      {"tag": "foreign", "type": "udp", "server": "8.8.8.8", "detour": "🚀 默认代理"},
+      {"tag": "foreign", "type": "https", "server": "8.8.8.8", "path": "/dns-query", "detour": "🚀 默认代理"},
       {"tag": "dns_hk", "type": "udp", "server": "1.1.1.1", "detour": "🇭🇰 香港自动"},
       {"tag": "dns_us", "type": "udp", "server": "1.1.1.1", "detour": "🇺🇲 美国自动"},
       {"tag": "dns_uk", "type": "udp", "server": "1.1.1.1", "detour": "🇬🇧 英国自动"}
