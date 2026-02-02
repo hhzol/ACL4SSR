@@ -21,8 +21,7 @@
 	  {"rule_set": ["cfg-cn_ip-rule", "cfg-cn_site-rule", "cfg-private_ip-rule", "cfg-private_site-rule", "cfg-cn_diy-rule", "cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule", "cfg-us_diy-rule", "cfg-uk_diy-rule", "cfg-ai-rule", "cfg-bbc-rule", "cfg-spotify-rule", "cfg-microsoft-rule", "cfg-apple-rule"], "invert": true, "action": "route", "server": "foreign", "strategy": "ipv4_only"}
     ],
     "final": "backup",
-    "independent_cache": true,
-    "reverse_mapping": true
+    "disable_cache": true,
   },
   "outbounds": [
     {"tag": "🚀 默认代理", "type": "selector", "outbounds": ["♻️ 自动选择", "🥷🏽 翻墙机场", "🌥️ cloudflare", "🖁 CMCC-IPV6", "🐸 手动选择", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动"]},
@@ -132,7 +131,7 @@
   },
   "log": {
     "disabled": false,
-    "level": "info",
+    "level": "error",
     "timestamp": true
   }
 }
