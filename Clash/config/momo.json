@@ -1,7 +1,7 @@
 {
   "dns": {
     "servers": [
-      {"tag": "default_dns", "type": "udp", {"server": "1.1.1.1"}, {"server": "114.114.114.114"}, {"server": "223.5.5.5"}, {"server": "119.29.29.29"}},
+      {"tag": "default_dns", "type": "udp", "server": "114.114.114.114"},
       {"tag": "local", "type": "https", "server": "dns.alidns.com", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}},
       {"tag": "foreign", "type": "https", "server": "dns.google", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}, "detour": "🚀 默认代理"},
       {"tag": "hk_dns", "type": "https", "server": "doh.dns.sb", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}, "detour": "🇭🇰 香港自动"},
