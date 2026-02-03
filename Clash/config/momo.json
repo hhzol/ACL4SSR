@@ -27,7 +27,7 @@
       {"rule_set": ["cfg-tiktok-rule"], "action": "route", "server": "tiktok_dns", "strategy": "ipv4_only"},
       {"rule_set": ["cfg-netflix-rule"], "action": "route", "server": "netflix_dns", "strategy": "ipv4_only"},
 	  {"rule_set": ["cfg-cn_site-rule",	"cfg-private_site-rule"], "action": "route", "server": "local"},
-	  {"rule_set": ["cfg-cn_ip-rule", "cfg-cn_site-rule", "cfg-private_ip-rule", "cfg-private_site-rule", "cfg-cn_diy-rule", "cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule", "cfg-us_diy-rule", "cfg-uk_diy-rule", "cfg-ai-rule", "cfg-bbc-rule", "cfg-microsoft-rule", "cfg-apple-rule", "cfg-google-rule"，"cfg-spotify-rule"，"cfg-tiktok-rule"，"cfg-netflix-rule"], "invert": true, "action": "route", "server": "foreign", "strategy": "ipv4_only"}
+	  {"rule_set": ["cfg-cn_ip-rule", "cfg-cn_site-rule", "cfg-private_ip-rule", "cfg-private_site-rule", "cfg-cn_diy-rule", "cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule", "cfg-us_diy-rule", "cfg-uk_diy-rule", "cfg-ai-rule", "cfg-bbc-rule", "cfg-microsoft-rule", "cfg-apple-rule", "cfg-google-rule", "cfg-spotify-rule", "cfg-tiktok-rule", "cfg-netflix-rule"], "invert": true, "action": "route", "server": "foreign", "strategy": "ipv4_only"}
     ],
     "final": "default_dns",
 	"reverse_mapping": true
@@ -67,7 +67,7 @@
       {"rule_set": ["cfg-tiktok-rule"], "action": "route", "outbound": "🎵 TikTok"},
       {"rule_set": ["cfg-netflix-rule"], "action": "route", "outbound": "🎬 Netflix"},
       {"rule_set": ["cfg-cn_ip-rule", "cfg-cn_site-rule", "cfg-private_ip-rule", "cfg-private_site-rule", "cfg-cn_diy-rule"], "action": "route", "outbound": "🎯 全球直连"},
-	  {"rule_set": ["cfg-cn_ip-rule", "cfg-cn_site-rule", "cfg-private_ip-rule", "cfg-private_site-rule", "cfg-cn_diy-rule", "cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule", "cfg-us_diy-rule", "cfg-uk_diy-rule", "cfg-ai-rule", "cfg-bbc-rule", "cfg-microsoft-rule", "cfg-apple-rule", "cfg-google-rule"，"cfg-spotify-rule"，"cfg-tiktok-rule"，"cfg-netflix-rule"], "invert": true, "action": "route", "outbound": "🚀 默认代理"}
+	  {"rule_set": ["cfg-cn_ip-rule", "cfg-cn_site-rule", "cfg-private_ip-rule", "cfg-private_site-rule", "cfg-cn_diy-rule", "cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule", "cfg-us_diy-rule", "cfg-uk_diy-rule", "cfg-ai-rule", "cfg-bbc-rule", "cfg-microsoft-rule", "cfg-apple-rule", "cfg-google-rule", "cfg-spotify-rule", "cfg-tiktok-rule", "cfg-netflix-rule"], "invert": true, "action": "route", "outbound": "🚀 默认代理"}
 	],
     "rule_set": [
 	  {"tag": "cfg-cn_ip-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/cn.srs", "download_detour": "🎯 全球直连"},
