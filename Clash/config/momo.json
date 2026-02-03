@@ -4,7 +4,7 @@
       {"tag": "system_dns", "type": "udp", "server": "114.114.114.114"},
       {"tag": "default_dns", "type": "udp", "server": "208.67.222.222"},
       {"tag": "local", "type": "https", "server": "dns.alidns.com", "path": "/dns-query", "domain_resolver": {"server": "system_dns"}},
-      {"tag": "foreign", "type": "udp", "server": "8.8.8.8", "detour": "🚀 默认代理"},
+      {"tag": "foreign", "type": "https", "server": "dns.google", "path": "/dns-query", "domain_resolver": {"server": "local"}, "detour": "🚀 默认代理"},
       {"tag": "us_dns", "type": "https", "server": "dns.cloudflare.com", "path": "/dns-query", "domain_resolver": {"server": "local"}, "detour": "🇺🇲 美国自动"},
       {"tag": "uk_dns", "type": "https", "server": "dns.quad9.net", "path": "/dns-query", "domain_resolver": {"server": "local"}, "detour": "🇬🇧 英国自动"},
 	  {"tag": "microsoft_dns", "type": "https", "server": "dns.cloudflare.com", "path": "/dns-query", "domain_resolver": {"server": "local"}, "detour": "🪟 Microsoft"},
