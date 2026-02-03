@@ -10,7 +10,7 @@
 	  {"tag": "apple_dns", "type": "https", "server": "dns.cloudflare.com", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}, "detour": "🍎 Apple"},
       {"tag": "spotify_dns", "type": "https", "server": "doh.dns.sb", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}, "detour": "🎧 Spotify"},
       {"tag": "tiktok_dns", "type": "https", "server": "dns.cloudflare.com", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}, "detour": "🎵 TikTok"},
-      {"tag": "netflix_dns", "type": "https", "server": "dns.cloudflare.com", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}, "detour": "🎬 Netflix"},
+      {"tag": "netflix_dns", "type": "https", "server": "dns.cloudflare.com", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}, "detour": "🎬 Netflix"}
     ],
     "rules": [
       {"clash_mode": "direct", "server": "local"},
