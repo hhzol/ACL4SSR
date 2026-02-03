@@ -5,7 +5,7 @@
       {"tag": "local", "type": "https", "server": "dns.alidns.com", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}},
       {"tag": "foreign", "type": "https", "server": "dns.google", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}, "detour": "🚀 默认代理"},
       {"tag": "us_dns", "type": "https", "server": "dns.cloudflare.com", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}, "detour": "🇺🇲 美国自动"},
-      {"tag": "uk_dns", "type": "https", "server": "dns.quad9.net", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}, "detour": "🇬🇧 英国自动"}
+      {"tag": "uk_dns", "type": "https", "server": "dns.quad9.net", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}, "detour": "🇬🇧 英国自动"},
 	  {"tag": "microsoft_dns", "type": "https", "server": "dns.cloudflare.com", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}, "detour": "🪟 Microsoft"},
 	  {"tag": "apple_dns", "type": "https", "server": "dns.cloudflare.com", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}, "detour": "🍎 Apple"},
       {"tag": "spotify_dns", "type": "https", "server": "doh.dns.sb", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}, "detour": "🎧 Spotify"},
