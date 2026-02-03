@@ -4,22 +4,26 @@
       {"tag": "default_dns", "type": "udp", "server": "114.114.114.114"},
       {"tag": "local", "type": "https", "server": "dns.alidns.com", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}},
       {"tag": "foreign", "type": "https", "server": "dns.google", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}, "detour": "🚀 默认代理"},
+      {"tag": "us_dns", "type": "https", "server": "dns.cloudflare.com", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}, "detour": "🇺🇲 美国自动"},
+      {"tag": "uk_dns", "type": "https", "server": "dns.quad9.net", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}, "detour": "🇬🇧 英国自动"}
 	  {"tag": "microsoft_dns", "type": "https", "server": "dns.cloudflare.com", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}, "detour": "🪟 Microsoft"},
 	  {"tag": "apple_dns", "type": "https", "server": "dns.cloudflare.com", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}, "detour": "🍎 Apple"},
       {"tag": "spotify_dns", "type": "https", "server": "doh.dns.sb", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}, "detour": "🎧 Spotify"},
-      {"tag": "us_dns", "type": "https", "server": "dns.cloudflare.com", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}, "detour": "🇺🇲 美国自动"},
-      {"tag": "uk_dns", "type": "https", "server": "dns.quad9.net", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}, "detour": "🇬🇧 英国自动"}
+      {"tag": "tiktok_dns", "type": "https", "server": "dns.cloudflare.com", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}, "detour": "🎵 TikTok"},
+      {"tag": "netflix_dns", "type": "https", "server": "dns.cloudflare.com", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}, "detour": "🎬 Netflix"},
     ],
     "rules": [
       {"clash_mode": "direct", "server": "local"},
       {"clash_mode": "global", "server": "foreign"},
       {"rule_set": ["cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule"], "action": "predefined", "rcode": "NOERROR"},
+	  {"rule_set": ["cfg-cn_diy-rule"],	"action": "route", "server": "local"},
 	  {"rule_set": ["cfg-us_diy-rule", "cfg-ai-rule"], "action": "route", "server": "us_dns", "strategy": "ipv4_only"},
 	  {"rule_set": ["cfg-uk_diy-rule", "cfg-bbc-rule"],	"action": "route", "server": "uk_dns", "strategy": "ipv4_only"},
-	  {"rule_set": ["cfg-cn_diy-rule"],	"action": "route", "server": "local"},
 	  {"rule_set": ["cfg-microsoft-rule"], "action": "route", "server": "microsoft_dns", "strategy": "ipv4_only"},
 	  {"rule_set": ["cfg-apple-rule"], "action": "route", "server": "apple_dns", "strategy": "ipv4_only"},
 	  {"rule_set": ["cfg-spotify-rule"], "action": "route", "server": "spotify_dns", "strategy": "ipv4_only"},
+      {"rule_set": ["cfg-tiktok-rule"], "action": "route", "server": "tiktok_dns", "strategy": "ipv4_only"},
+      {"rule_set": ["cfg-netflix-rule"], "action": "route", "server": "netflix_dns", "strategy": "ipv4_only"},
 	  {"rule_set": ["cfg-cn_site-rule",	"cfg-private_site-rule"], "action": "route", "server": "local"},
 	  {"rule_set": ["cfg-cn_ip-rule", "cfg-cn_site-rule", "cfg-private_ip-rule", "cfg-private_site-rule", "cfg-cn_diy-rule", "cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule", "cfg-us_diy-rule", "cfg-uk_diy-rule", "cfg-ai-rule", "cfg-bbc-rule", "cfg-spotify-rule", "cfg-microsoft-rule", "cfg-apple-rule"], "invert": true, "action": "route", "server": "foreign", "strategy": "ipv4_only"}
     ],
@@ -41,6 +45,8 @@
 	{"tag": "🪟 Microsoft", "type": "selector", "outbounds": ["🚀 默认代理", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "🎯 全球直连"]},
     {"tag": "🍎 Apple", "type": "selector", "outbounds": ["🚀 默认代理", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "🎯 全球直连"]},
 	{"tag": "🎧 Spotify", "type": "selector", "outbounds": ["🚀 默认代理", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动"]},
+    {"tag": "🎵 TikTok", "type": "selector", "outbounds": ["🚀 默认代理", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动"]},
+    {"tag": "🎬 Netflix", "type": "selector", "outbounds": ["🚀 默认代理", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动"]},	  
 	{"tag": "GLOBAL", "type": "selector", "outbounds": ["🚀 默认代理", "♻️ 自动选择", "🥷🏽 翻墙机场", "🌥️ cloudflare", "🖁 CMCC-IPV6", "🐸 手动选择", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "🎯 全球直连"]}, 
 	{"tag": "🎯 全球直连", "type": "direct"}
   ],
@@ -72,7 +78,9 @@
 	  {"tag": "cfg-bbc-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://github.com/senshinya/singbox_ruleset/raw/main/rule/BBC/BBC.srs", "download_detour": "🎯 全球直连"},
 	  {"tag": "cfg-spotify-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geosite/spotify.srs", "download_detour": "🎯 全球直连"},
 	  {"tag": "cfg-microsoft-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Microsoft/Microsoft.srs", "download_detour": "🎯 全球直连"},
-	  {"tag": "cfg-apple-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Apple/Apple.srs", "download_detour": "🎯 全球直连"}
+	  {"tag": "cfg-apple-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Apple/Apple.srs", "download_detour": "🎯 全球直连"},
+	  {"tag": "cfg-tiktok-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/TikTok/TikTok.srs", "download_detour": "🎯 全球直连"},
+	  {"tag": "cfg-netflix-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Netflix/Netflix.srs", "download_detour": "🎯 全球直连"}
 	],
     "auto_detect_interface": true,
     "default_domain_resolver": {"action": "resolve", "server": "default_dns"},
