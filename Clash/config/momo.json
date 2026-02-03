@@ -69,7 +69,7 @@
 	  {"tag": "cfg-uk_diy-rule", "type": "remote", "format": "source", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/uk.json", "download_detour": "🎯 全球直连"},
 	  {"tag": "cfg-cn_diy-rule", "type": "remote", "format": "source", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/cn.json", "download_detour": "🎯 全球直连"},
 	  {"tag": "cfg-ai-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-!cn.srs", "download_detour": "🎯 全球直连"},
-	  {"tag": "cfg-bbc-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/bbc.srs", "download_detour": "🎯 全球直连"},
+	  {"tag": "cfg-bbc-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://github.com/senshinya/singbox_ruleset/raw/main/rule/BBC/BBC.srs", "download_detour": "🎯 全球直连"},
 	  {"tag": "cfg-spotify-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geosite/spotify.srs", "download_detour": "🎯 全球直连"},
 	  {"tag": "cfg-microsoft-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Microsoft/Microsoft.srs", "download_detour": "🎯 全球直连"},
 	  {"tag": "cfg-apple-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Apple/Apple.srs", "download_detour": "🎯 全球直连"}
