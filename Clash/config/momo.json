@@ -135,7 +135,6 @@
 	  "stack": "gvisor",
 	  "sniff": false,
 	  "mtu": 1500,
-	  "tcp_mss_clamp": true
 	}
   ],
   "experimental": {
