@@ -1,7 +1,7 @@
 {
   "dns": {
     "servers": [
-      {"tag": "system_dns", "type": "system"},
+      {"tag": "system_dns", "type": "dhcp"},
       {"tag": "default_dns", "type": "udp", "server": "208.67.222.222"},
       {"tag": "local", "type": "https", "server": "dns.alidns.com", "path": "/dns-query", "domain_resolver": {"server": "system_dns"}},
       {"tag": "foreign", "type": "https", "server": "dns.google", "path": "/dns-query", "domain_resolver": {"server": "local"}, "detour": "🚀 默认代理"},
