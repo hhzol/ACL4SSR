@@ -46,12 +46,7 @@
         "time.windows.com",
         "pool.ntp.org",
         "v6.sync.afraid.org",
-        "natchecker.com",
-        "nodelist-airport.com",
         "tmate.io",
-        "www.gstatic.com",
-        "captive.apple.com",
-        "cp.cloudflare.com"
       ],
       "domain_keyword": [
         "letsencrypt.org",
