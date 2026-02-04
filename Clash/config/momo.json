@@ -2,7 +2,7 @@
   "dns": {
     "servers": [
       {"tag": "local", "type": "local"},
-      {"tag": "default_dns", "type": "udp", "server": "208.67.222.222"},
+      {"tag": "default_dns", "type": "https", "server": "doh.opendns.com","path": "/dns-query", "domain_resolver": {"server": "local"}},
       {"tag": "cn_dns", "type": "https", "server": "dns.alidns.com", "path": "/dns-query", "domain_resolver": {"server": "local"}},
       {"tag": "foreign", "type": "https", "server": "dns.google", "path": "/dns-query", "domain_resolver": {"server": "cn_dns"}, "detour": "🚀 默认代理"},
       {"tag": "us_dns", "type": "https", "server": "dns.cloudflare.com", "path": "/dns-query", "domain_resolver": {"server": "cn_dns"}, "detour": "🇺🇲 美国自动"},
