@@ -27,6 +27,7 @@
 	  {"rule_set": ["cfg-spotify-rule"], "action": "route", "server": "spotify_dns", "strategy": "ipv4_only"},
       {"rule_set": ["cfg-tiktok-rule"], "action": "route", "server": "tiktok_dns", "strategy": "ipv4_only"},
       {"rule_set": ["cfg-netflix-rule"], "action": "route", "server": "netflix_dns", "strategy": "ipv4_only"},
+      {"domain_suffix": ["136605.xyz", "nodelist-airport.com", "gh-proxy.com"], "action": "route", "server": "default_dns", "strategy": "ipv4_only"},
 	  {"rule_set": ["cfg-cn_site-rule",	"cfg-private_site-rule"], "action": "route", "server": "cn_dns"},
 	  {"rule_set": ["cfg-cn_ip-rule", "cfg-cn_site-rule", "cfg-private_ip-rule", "cfg-private_site-rule", "cfg-cn_diy-rule", "cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule", "cfg-us_diy-rule", "cfg-uk_diy-rule", "cfg-ai-rule", "cfg-bbc-rule", "cfg-microsoft-rule", "cfg-apple-rule", "cfg-google-rule", "cfg-spotify-rule", "cfg-tiktok-rule", "cfg-netflix-rule"], "invert": true, "action": "route", "server": "foreign", "strategy": "ipv4_only"}
     ],
