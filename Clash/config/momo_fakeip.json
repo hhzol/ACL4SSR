@@ -24,11 +24,11 @@
   	  {"rule_set": ["cfg-microsoft-rule"], "action": "route", "server": "microsoft_dns", "strategy": "ipv4_only"},
   	  {"rule_set": ["cfg-apple-rule"], "action": "route", "server": "apple_dns", "strategy": "ipv4_only"},
       {"rule_set": ["cfg-google-rule"], "action": "route", "server": "google_dns", "strategy": "ipv4_only"},
-	    {"rule_set": ["cfg-spotify-rule"], "action": "route", "server": "spotify_dns", "strategy": "ipv4_only"},
+	  {"rule_set": ["cfg-spotify-rule"], "action": "route", "server": "spotify_dns", "strategy": "ipv4_only"},
       {"rule_set": ["cfg-tiktok-rule"], "action": "route", "server": "tiktok_dns", "strategy": "ipv4_only"},
       {"rule_set": ["cfg-netflix-rule"], "action": "route", "server": "netflix_dns", "strategy": "ipv4_only"},
       {"domain_suffix": ["136605.xyz", "nodelist-airport.com", "gh-proxy.com"], "action": "route", "server": "default_dns", "strategy": "ipv4_only"},
-	    {"rule_set": ["cfg-cn_site-rule",	"cfg-private_site-rule"], "action": "route", "server": "cn_dns"},
+	  {"rule_set": ["cfg-cn_site-rule",	"cfg-private_site-rule"], "action": "route", "server": "cn_dns"},
   	  {"rule_set": ["cfg-cn_ip-rule", "cfg-cn_site-rule", "cfg-private_ip-rule", "cfg-private_site-rule", "cfg-cn_diy-rule", "cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule", "cfg-us_diy-rule", "cfg-uk_diy-rule", "cfg-ai-rule", "cfg-bbc-rule", "cfg-microsoft-rule", "cfg-apple-rule", "cfg-google-rule", "cfg-spotify-rule", "cfg-tiktok-rule", "cfg-netflix-rule"], "invert": true, "action": "route", "server": "foreign", "strategy": "ipv4_only"}
     ],
     "final": "foreign",
@@ -74,8 +74,8 @@
     "rule_set": [
   	  {"tag": "cfg-cn_ip-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/cn.srs", "download_detour": "🎯 全球直连"},
       {"tag": "cfg-cn_site-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geosite/cn.srs", "download_detour": "🎯 全球直连"},
-	    {"tag": "cfg-private_ip-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geoip/private.srs", "download_detour": "🎯 全球直连"},
-	    {"tag": "cfg-private_site-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geosite/private.srs", "download_detour": "🎯 全球直连"},
+      {"tag": "cfg-private_ip-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geoip/private.srs", "download_detour": "🎯 全球直连"},
+      {"tag": "cfg-private_site-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geosite/private.srs", "download_detour": "🎯 全球直连"},
   	  {"tag": "cfg-ad-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/REIJI007/AdBlock_Rule_For_Sing-box/main/adblock_reject.srs", "download_detour": "🎯 全球直连"},
   	  {"tag": "cfg-ad1-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ads-all.srs", "download_detour": "🎯 全球直连"},
   	  {"tag": "cfg-ad_diy-rule", "type": "remote", "format": "source", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/ad.json", "download_detour": "🎯 全球直连"},
@@ -89,7 +89,7 @@
   	  {"tag": "cfg-google-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Google/Google.srs", "download_detour": "🎯 全球直连"},
       {"tag": "cfg-spotify-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geosite/spotify.srs", "download_detour": "🎯 全球直连"},
       {"tag": "cfg-tiktok-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/TikTok/TikTok.srs", "download_detour": "🎯 全球直连"},
-	    {"tag": "cfg-netflix-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Netflix/Netflix.srs", "download_detour": "🎯 全球直连"}
+      {"tag": "cfg-netflix-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Netflix/Netflix.srs", "download_detour": "🎯 全球直连"}
 	],
     "auto_detect_interface": true,
     "default_domain_resolver": {"action": "resolve", "server": "default_dns"},
