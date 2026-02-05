@@ -18,6 +18,7 @@
     "rules": [
       {"clash_mode": "direct", "server": "cn_dns"},
       {"clash_mode": "global", "server": "fakeip"},
+      {"query_type": "HTTPS", "action": "reject"},
       {"rule_set": ["cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule"], "action": "predefined", "rcode": "NOERROR"},
       {"rule_set": ["cfg-cn_diy-rule"],	"action": "route", "server": "cn_dns"},
       {"query_type": ["A", "AAAA"], "server": "fakeip", "rewrite_ttl": 1},
