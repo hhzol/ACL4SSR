@@ -12,15 +12,13 @@
     "rules": [
       {"clash_mode": "direct", "server": "local"},
       {"clash_mode": "global", "server": "foreign"},
-	  {"domain-suffix": "raw.githubusercontent.com", "action": "route", "server": "local"}
-      {"rule_set": ["cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule"], "action": "route", "server": "null"},
-	  {"rule_set": ["cfg-spotify-rule"], "action": "route", "server": "dns_sb"},
-	  {"rule_set": ["cfg-us_diy-rule", "cfg-ai-rule"], "action": "route", "server": "cloudflare"},
-	  {"rule_set": ["cfg-uk_diy-rule", "cfg-bbc-rule"],	"action": "route", "server": "quad9"},
-	  {"rule_set": ["cfg-cn_diy-rule"],	"action": "route", "server": "local"},
-	  {"rule_set": ["cfg-microsoft-rule", "cfg-apple-rule"], "action": "route", "server": "foreign"},
-	  {"rule_set": ["cfg-cn_site-rule",	"cfg-private_site-rule"], "action": "route", "server": "local"},
-	  {"rule_set": ["cfg-cn_ip-rule", "cfg-cn_site-rule", "cfg-private_ip-rule", "cfg-private_site-rule", "cfg-cn_diy-rule", "cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule", "cfg-us_diy-rule", "cfg-uk_diy-rule", "cfg-ai-rule", "cfg-bbc-rule", "cfg-spotify-rule", "cfg-microsoft-rule", "cfg-apple-rule"], "invert": true, "action": "route", "server": "foreign"}
+      {"GeoSite": ["category-ads-all"], "action": "route", "server": "null"},
+	  {"GeoSite": ["spotify"], "action": "route", "server": "dns_sb"},
+	  {"GeoSite": ["category-ai-!cn"], "action": "route", "server": "cloudflare"},
+	  {"GeoSite": ["bbc"],	"action": "route", "server": "quad9"},
+	  {"GeoSite": ["microsoft", "apple"], "action": "route", "server": "foreign"},
+	  {"GeoSite": ["cn", "private"], "action": "route", "server": "local"},
+	  {"GeoSite": ["category-ads-all", "spotify", "category-ai-!cn", "bbc", "microsoft", "apple", "cn", "private"], "invert": true, "action": "route", "server": "foreign"}
     ],
     "final": "opendns",
     "independent_cache": true,
@@ -46,30 +44,13 @@
       {"inbound": "dns-in", "action": "hijack-dns"},
       {"clash_mode": "direct", "outbound": "🎯 全球直连"},
       {"clash_mode": "global", "outbound": "GLOBAL"},
-	  {"rule_set": ["cfg-us_diy-rule", "cfg-ai-rule"], "action": "route", "outbound": "🇺🇲 美国自动"},
-	  {"rule_set": ["cfg-uk_diy-rule", "cfg-bbc-rule"], "action": "route", "outbound": "🇬🇧 英国自动"},
-	  {"rule_set": ["cfg-spotify-rule"], "action": "route", "outbound": "🇭🇰 香港自动"},
-	  {"rule_set": ["cfg-microsoft-rule", "cfg-apple-rule"], "action": "route",	"outbound": "🚀 默认代理"},
-	  {"rule_set": ["cfg-cn_ip-rule", "cfg-cn_site-rule", "cfg-private_ip-rule", "cfg-private_site-rule", "cfg-cn_diy-rule"], "action": "route", "outbound": "🎯 全球直连"},
-	  {"rule_set": ["cfg-cn_ip-rule", "cfg-cn_site-rule", "cfg-private_ip-rule", "cfg-private_site-rule", "cfg-cn_diy-rule", "cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule", "cfg-us_diy-rule", "cfg-uk_diy-rule", "cfg-ai-rule", "cfg-bbc-rule", "cfg-spotify-rule", "cfg-microsoft-rule", "cfg-apple-rule"], "invert": true, "action": "route", "outbound": "🚀 默认代理"}
-	],
-    "rule_set": [
-	  {"tag": "cfg-cn_ip-rule", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/cn.srs"},
-      {"tag": "cfg-cn_site-rule", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geosite/cn.srs"},
-	  {"tag": "cfg-private_ip-rule", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geoip/private.srs"},
-	  {"tag": "cfg-private_site-rule", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geosite/private.srs"},
-	  {"tag": "cfg-ad-rule", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/REIJI007/AdBlock_Rule_For_Sing-box/main/adblock_reject.srs"},
-	  {"tag": "cfg-ad1-rule", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ads-all.srs"},
-	  {"tag": "cfg-ad_diy-rule", "type": "remote", "format": "source", "url": "https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/ad.json"},
-	  {"tag": "cfg-us_diy-rule", "type": "remote", "format": "source", "url": "https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/us.json"},
-	  {"tag": "cfg-uk_diy-rule", "type": "remote", "format": "source", "url": "https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/uk.json"},
-	  {"tag": "cfg-cn_diy-rule", "type": "remote", "format": "source", "url": "https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/cn.json"},
-	  {"tag": "cfg-ai-rule", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-!cn.srs"},
-	  {"tag": "cfg-bbc-rule", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/bbc.srs"},
-	  {"tag": "cfg-spotify-rule", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geosite/spotify.srs"},
-	  {"tag": "cfg-microsoft-rule", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Microsoft/Microsoft.srs"},
-	  {"tag": "cfg-apple-rule", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Apple/Apple.srs"}
-	],
+	  {"GeoSite": ["category-ai-!cn"], "action": "route", "outbound": "🇺🇲 美国自动"},
+	  {"GeoSite": ["bbc"], "action": "route", "outbound": "🇬🇧 英国自动"},
+	  {"GeoSite": ["spotify"], "action": "route", "outbound": "🇭🇰 香港自动"},
+	  {"GeoSite": ["microsofte", "apple"], "action": "route",	"outbound": "🚀 默认代理"},
+	  {"GeoSite": ["cn", "private"], "GeoIP": ["cn", "private"], "action": "route", "outbound": "🎯 全球直连"},
+	  {"GeoSite": ["spotify", "category-ai-!cn", "bbc", "microsoft", "apple", "cn", "private"], "GeoIP": ["cn", "private"], "invert": true, "action": "route", "outbound": "🚀 默认代理"}
+	]
     "auto_detect_interface": true,
     "final": "🎯 全球直连"
   },
