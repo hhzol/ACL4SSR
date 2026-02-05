@@ -15,7 +15,7 @@
       {"GeoSite": ["category-ads-all"], "action": "route", "server": "null"},
 	  {"GeoSite": ["spotify"], "action": "route", "server": "dns_sb"},
 	  {"GeoSite": ["category-ai-!cn"], "action": "route", "server": "cloudflare"},
-	  {"GeoSite": ["bbc"],	"action": "route", "server": "quad9"},
+	  {"GeoSite": ["bbc"], "action": "route", "server": "quad9"},
 	  {"GeoSite": ["microsoft", "apple"], "action": "route", "server": "foreign"},
 	  {"GeoSite": ["cn", "private"], "action": "route", "server": "local"},
 	  {"GeoSite": ["category-ads-all", "spotify", "category-ai-!cn", "bbc", "microsoft", "apple", "cn", "private"], "invert": true, "action": "route", "server": "foreign"}
