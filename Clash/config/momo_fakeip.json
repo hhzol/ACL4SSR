@@ -124,17 +124,15 @@
 			"172.19.0.1/30",
 			"fdfe:dcba:9876::1/126"
 		],
-		"mtu": 9000,
-		"auto_route": false,
-		"stack": "system",
-		"sniff": true
+        "auto_route": false,
+        "auto_redirect": false
 	}
   ],
   "experimental": {
     "cache_file": {
       "enabled": true,
       "path": "/etc/momo/run/cache.db",
-      "store_fakeip": false
+      "store_fakeip": true
     },
     "clash_api": {
       "external_controller": "0.0.0.0:9095",
