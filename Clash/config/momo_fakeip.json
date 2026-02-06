@@ -5,7 +5,7 @@
       {"tag": "cn_dns", "type": "https", "server": "dns.alidns.com", "path": "/dns-query", "domain_resolver": {"server": "local"}},
       {"tag": "default_dns", "type": "udp", "server": "dns.opendns.com", "domain_resolver": {"server": "cn_dns"}},
       {"tag": "foreign", "type": "https", "server": "dns.google", "path": "/dns-query", "domain_resolver": {"server": "cn_dns"}, "detour": "🚀 默认代理"},
-      {"tag": "fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/18"}
+      {"tag": "fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15"}
     ],
     "rules": [
       {"clash_mode": "direct", "server": "cn_dns"},
@@ -54,6 +54,7 @@
       {"rule_set": ["cfg-tiktok-rule"], "action": "route", "outbound": "🎵 TikTok"},
       {"rule_set": ["cfg-netflix-rule"], "action": "route", "outbound": "🎬 Netflix"},
       {"rule_set": ["cfg-cn_site-rule", "cfg-private_site-rule", "cfg-cn_diy-rule"], "action": "route", "outbound": "🎯 全球直连"},
+	  {"action": "resolve"},
       {"rule_set": ["cfg-cn_ip-rule", "cfg-private_ip-rule"], "action": "route", "outbound": "🎯 全球直连"},
 	  {"rule_set": ["cfg-cn_ip-rule", "cfg-cn_site-rule", "cfg-private_ip-rule", "cfg-private_site-rule", "cfg-cn_diy-rule", "cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule", "cfg-us_diy-rule", "cfg-uk_diy-rule", "cfg-ai-rule", "cfg-bbc-rule", "cfg-microsoft-rule", "cfg-apple-rule", "cfg-google-rule", "cfg-spotify-rule", "cfg-tiktok-rule", "cfg-netflix-rule"], "invert": true, "action": "route", "outbound": "🚀 默认代理"}
 	],
@@ -116,9 +117,8 @@
 		"tag": "tun-in",
 		"interface_name": "singtun0",
 		"address": [
-			"172.19.0.1/30",
-			"fdfe:dcba:9876::1/126"
-		],
+			"172.19.0.1/30"
+			],
 		"mtu": 9000,
 		"auto_route": false,
 		"stack": "system",
