@@ -13,6 +13,7 @@
       {"rule_set": ["cfg-cn_diy-rule"], "server": "cn_dns"},
       {"query_type": ["A", "AAAA"], "server": "fakeip", "rewrite_ttl": 1},
       {"rule_set": ["cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule"], "action": "predefined", "rcode": "NOERROR"},
+      {"domain_suffix": ["136605.xyz", "nodelist-airport.com", "gh-proxy.com"], "action": "route", "server": "default_dns", "strategy": "ipv4_only"},
       {"rule_set": ["cfg-cn_site-rule", "cfg-private_site-rule"], "server": "cn_dns"},
 	  {"rule_set": ["cfg-cn_site-rule", "cfg-private_site-rule"], "invert": true, "server": "foreign", "strategy": "ipv4_only"}
     ],
