@@ -10,9 +10,9 @@
     "rules": [
       {"clash_mode": "direct", "server": "cn_dns"},
       {"clash_mode": "global", "server": "fakeip"},
-      {"rule_set": ["cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule"], "action": "predefined", "rcode": "NOERROR"},
       {"rule_set": ["cfg-cn_diy-rule"], "server": "cn_dns"},
       {"query_type": ["A", "AAAA"], "server": "fakeip", "rewrite_ttl": 1},
+      {"rule_set": ["cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule"], "action": "predefined", "rcode": "NOERROR"},
       {"rule_set": ["cfg-cn_site-rule", "cfg-private_site-rule"], "server": "cn_dns"},
 	  {"rule_set": ["cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule", "cfg-cn_diy-rule", "cfg-cn_site-rule", "cfg-private_site-rule"], "invert": true, "server": "foreign", "strategy": "ipv4_only"}
     ],
