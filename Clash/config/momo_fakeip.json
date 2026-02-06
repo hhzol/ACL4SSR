@@ -120,8 +120,10 @@
 			"172.19.0.1/30",
 			"fdfe:dcba:9876::1/126"
 		],
-        "auto_route": false,
-        "auto_redirect": false
+		"mtu": 9000,
+		"auto_route": false,
+		"stack": "system",
+		"sniff": true
 	}
   ],
   "experimental": {
