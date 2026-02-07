@@ -91,6 +91,13 @@
 		"listen_port": 5333
 	},
 	{
+		"type": "redirect",
+		"tag": "redirect-in",
+		"listen": "::",
+		"listen_port": 5331,
+		"sniff": false
+	},
+	{
 	  "type": "tun",
 	  "tag": "tun-in",
 	  "interface_name": "singtun0",
@@ -98,7 +105,7 @@
 		"172.31.0.1/30",
 		"fdfe:dcba:9876::1/126"
 	  ],
-	  "strict_route": true,
+	  "auto_route": true,
 	  "stack": "system",
 	  "sniff": true
 	}
