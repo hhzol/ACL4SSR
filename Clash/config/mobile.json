@@ -85,12 +85,6 @@
   },
   "inbounds": [
 	{
-		"type": "direct",
-		"tag": "dns-in",
-		"listen": "::",
-		"listen_port": 5333
-	},
-	{
 		"type": "redirect",
 		"tag": "redirect-in",
 		"listen": "::",
@@ -107,7 +101,7 @@
 	  ],
 	  "auto_route": true,
 	  "stack": "system",
-	  "sniff": true
+	  "sniff": false
 	}
   ],
   "experimental": {
