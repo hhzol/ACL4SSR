@@ -5,7 +5,7 @@
       {"tag": "cn_dns", "type": "https", "server": "dns.alidns.com", "path": "/dns-query", "domain_resolver": {"server": "local"}},
       {"tag": "default_dns", "type": "udp", "server": "dns.opendns.com", "domain_resolver": {"server": "cn_dns"}},
       {"tag": "foreign", "type": "https", "server": "dns.google", "path": "/dns-query", "domain_resolver": {"server": "cn_dns"}, "detour": "🚀 默认代理"},
-      {"tag": "fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15"}
+      {"tag": "fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/18"}
     ],
     "rules": [
       {"clash_mode": "direct", "server": "cn_dns"},
@@ -85,21 +85,17 @@
   },
   "inbounds": [
 	{
-		"type": "direct",
-		"tag": "dns-in",
-		"listen": "::",
-		"listen_port": 5333
-	},
-	{
-		"type": "tun",
-		"tag": "tun-in",
-		"interface_name": "singtun0",
-		"address": [
-			"172.31.0.1/30"
-		],
-		"auto_route": true,
-		"stack": "system",
-		"sniff": true
+	  "type": "tun",
+	  "tag": "tun-in",
+	  "interface_name": "singtun0",
+	  "address": [
+		"172.31.0.1/30",
+		"fdfe:dcba:9876::1/126"
+	  ],
+	  "auto_route": true,
+	  "strict_route": true,
+	  "stack": "system",
+	  "sniff": true
 	}
   ],
   "experimental": {
