@@ -110,7 +110,6 @@
 		"tag": "tproxy-in",
 		"listen": "::",
 		"listen_port": 5332,
-		"network": "udp",
 		"sniff": false
 	},
 	{
