@@ -85,6 +85,27 @@
   },
   "inbounds": [
 	{
+		"type": "direct",
+		"tag": "dns-in",
+		"listen": "::",
+		"listen_port": 5333
+	},
+	{
+		"type": "mixed",
+		"tag": "mixed-in",
+		"listen": "::",
+		"listen_port": 5330,
+		"sniff": false,
+		"set_system_proxy": false
+	},
+	{
+		"type": "redirect",
+		"tag": "redirect-in",
+		"listen": "::",
+		"listen_port": 5331,
+		"sniff": false
+	},
+	{
 	  "type": "tun",
 	  "tag": "tun-in",
 	  "interface_name": "singtun0",
@@ -92,7 +113,6 @@
 		"172.31.0.1/30",
 		"fdfe:dcba:9876::1/126"
 	  ],
-	  "auto_route": true,
 	  "strict_route": true,
 	  "stack": "system",
 	  "sniff": true
