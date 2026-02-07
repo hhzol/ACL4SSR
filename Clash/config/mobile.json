@@ -12,7 +12,7 @@
       {"clash_mode": "global", "server": "fakeip"},
       {"rule_set": ["cfg-cn_diy-rule"], "server": "default_dns"},
 	  {"rule_set": ["cfg-fakeipfilter-rule"], "server": "default_dns", "strategy": "ipv4_only"},
-      {"query_type": ["A"], "server": "fakeip", "strategy": "ipv4_only", "rewrite_ttl": 1},
+      {"query_type": ["A", "AAAA"], "server": "fakeip", "strategy": "ipv4_only", "rewrite_ttl": 1},
       {"rule_set": ["cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule"], "action": "predefined", "rcode": "NOERROR"},
       {"rule_set": ["cfg-cn_site-rule", "cfg-private_site-rule"], "server": "cn_dns"},
 	  {"rule_set": ["cfg-cn_site-rule", "cfg-private_site-rule"], "invert": true, "server": "default_dns", "strategy": "ipv4_only"}
@@ -94,7 +94,7 @@
 	  ],
 	  "auto_route": true,
 	  "stack": "system",
-	  "sniff": false
+	  "sniff": true
 	}
   ],
   "experimental": {
