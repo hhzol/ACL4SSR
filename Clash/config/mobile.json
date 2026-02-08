@@ -12,10 +12,8 @@
       {"clash_mode": "global", "server": "fakeip"},
       {"rule_set": ["cfg-cn_diy-rule"], "server": "default_dns"},
 	  {"rule_set": ["cfg-fakeipfilter-rule"], "server": "default_dns", "strategy": "ipv4_only"},
-      {"query_type": ["A", "AAAA"], "server": "fakeip", "strategy": "ipv4_only", "rewrite_ttl": 1},
       {"rule_set": ["cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule"], "action": "predefined", "rcode": "NOERROR"},
-      {"rule_set": ["cfg-cn_site-rule", "cfg-private_site-rule"], "server": "cn_dns"},
-	  {"rule_set": ["cfg-cn_site-rule", "cfg-private_site-rule"], "invert": true, "server": "default_dns", "strategy": "ipv4_only"}
+      {"query_type": ["A", "AAAA"], "server": "fakeip", "strategy": "ipv4_only", "rewrite_ttl": 1}
     ],
     "final": "foreign",
 	"strategy": "prefer_ipv4"
@@ -99,9 +97,7 @@
   ],
   "experimental": {
     "cache_file": {
-      "enabled": true,
-      "path": "cache.db",
-      "store_fakeip": true
+      "enabled": false
     },
     "clash_api": {
       "external_controller": "0.0.0.0:9095",
@@ -114,7 +110,7 @@
   },
   "log": {
     "disabled": false,
-    "level": "info",
+    "level": "error",
     "timestamp": true
   }
 }
