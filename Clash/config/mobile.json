@@ -87,10 +87,9 @@
 	  "tag": "tun-in",
 	  "interface_name": "singtun0",
 	  "address": [
-		"172.19.0.1/30",
-		"fdfe:dcba:9876::1/126"
+		"172.19.0.1/30"
 	  ],
-	  "strict_route": true,
+	  "auto_route": true,
 	  "stack": "system",
 	  "sniff": false
 	}
