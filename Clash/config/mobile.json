@@ -93,7 +93,7 @@
 	  ],
 	  "auto_route": true,
 	  "stack": "system",
-	  "sniff": false
+	  "sniff": true
 	}
   ],
   "experimental": {
