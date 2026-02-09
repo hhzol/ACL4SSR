@@ -3,7 +3,7 @@
     "servers": [
       {"tag": "local", "type": "local"},
       {"tag": "cn_dns", "type": "https", "server": "dns.alidns.com", "path": "/dns-query", "domain_resolver": {"server": "local"}},
-      {"tag": "default_dns", "type": "udp", "server": "dns.opendns.com", "domain_resolver": {"server": "cn_dns"}},
+      {"tag": "default_dns", "type": "udp", "server": "dns.opendns.com", "domain_resolver": {"server": "cn_dns"}, "detour": "🚀 默认代理"},
       {"tag": "foreign", "type": "https", "server": "dns.google", "path": "/dns-query", "domain_resolver": {"server": "cn_dns"}, "detour": "🚀 默认代理"},
       {"tag": "us_dns", "type": "https", "server": "dns.cloudflare.com", "path": "/dns-query", "domain_resolver": {"server": "cn_dns"}, "detour": "🇺🇲 美国自动"},
       {"tag": "uk_dns", "type": "https", "server": "dns.quad9.net", "path": "/dns-query", "domain_resolver": {"server": "cn_dns"}, "detour": "🇬🇧 英国自动"},
