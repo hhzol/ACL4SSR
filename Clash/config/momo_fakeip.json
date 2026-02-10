@@ -4,7 +4,7 @@
       {"tag": "local", "type": "local"},
       {"tag": "cn_dns", "type": "https", "server": "dns.alidns.com", "path": "/dns-query", "domain_resolver": {"server": "local"}},
       {"tag": "default_dns", "type": "udp", "server": "208.67.222.222", "detour": "🚀 默认代理"},
-      {"tag": "foreign", "type": "udp", "server": "208.67.222.222", "path": "/dns-query", "detour": "🚀 默认代理"},
+      {"tag": "foreign", "type": "udp", "server": "208.67.222.222", "detour": "🚀 默认代理"},
       {"tag": "fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/18"}
     ],
     "rules": [
