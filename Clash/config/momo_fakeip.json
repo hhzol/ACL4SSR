@@ -43,7 +43,7 @@
       {"inbound": "dns-in", "action": "hijack-dns"},
       {"clash_mode": "direct", "outbound": "🎯 全球直连"},
       {"clash_mode": "global", "outbound": "GLOBAL"},
-	  {"rule_set": ["cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule"], "action": "reject"},
+	  {"rule_set": ["cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule"], "action": "blackhole"},
   	  {"rule_set": ["cfg-us_diy-rule", "cfg-ai-rule"], "action": "route", "outbound": "🇺🇲 美国自动"},
   	  {"rule_set": ["cfg-uk_diy-rule", "cfg-bbc-rule"], "action": "route", "outbound": "🇬🇧 英国自动"},
   	  {"rule_set": ["cfg-microsoft-rule"], "action": "route",	"outbound": "🪟 Microsoft"},
