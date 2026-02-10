@@ -3,7 +3,7 @@
     "servers": [
       {"tag": "local", "type": "local"},
       {"tag": "cn_dns", "type": "https", "server": "dns.alidns.com", "path": "/dns-query", "domain_resolver": {"server": "local"}},
-      {"tag": "default_dns", "type": "udp", "server": "208.67.222.222", "detour": "🚀 默认代理"},
+      {"tag": "default_dns", "type": "udp", "server": "208.67.222.222"},
       {"tag": "foreign", "type": "udp", "server": "208.67.222.222", "detour": "🚀 默认代理"},
       {"tag": "fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/18"}
     ],
@@ -52,7 +52,7 @@
       {"rule_set": ["cfg-tiktok-rule"], "action": "route", "outbound": "🎵 TikTok"},
       {"rule_set": ["cfg-netflix-rule"], "action": "route", "outbound": "🎬 Netflix"},
       {"rule_set": ["cfg-cn_site-rule", "cfg-private_site-rule", "cfg-cn_diy-rule"], "action": "route", "outbound": "🎯 全球直连"},
-  	  {"action": "resolve", "server": "default_dns"},
+  	  {"action": "resolve", "server": "foreign"},
       {"rule_set": ["cfg-cn_ip-rule", "cfg-private_ip-rule"], "action": "route", "outbound": "🎯 全球直连"}
 	],
     "rule_set": [
@@ -77,7 +77,7 @@
       {"tag": "cfg-netflix-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Netflix/Netflix.srs", "download_detour": "🎯 全球直连"}
 	],
     "auto_detect_interface": true,
-    "default_domain_resolver": {"action": "resolve", "server": "default_dns"},
+    "default_domain_resolver": {"action": "resolve", "server": "foreign"},
     "final": "🚀 默认代理"
   },
   "inbounds": [
