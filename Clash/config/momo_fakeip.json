@@ -4,7 +4,7 @@
       {"tag": "local", "type": "local"},
       {"tag": "cn_dns", "type": "https", "server": "dns.alidns.com", "path": "/dns-query", "domain_resolver": {"server": "local"}},
       {"tag": "default_dns", "type": "udp", "server": "dns.opendns.com", "domain_resolver": {"server": "cn_dns"}},
-      {"tag": "foreign", "type": "udp", "server": "dns.google", "domain_resolver": {"server": "cn_dns"}, "detour": "🚀 默认代理"},
+      {"tag": "foreign", "type": "https", "server": "dns.google", "path": "/dns-query", "domain_resolver": {"server": "cn_dns"}, "detour": "🚀 默认代理"},
       {"tag": "fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/18"}
     ],
     "rules": [
@@ -43,7 +43,6 @@
       {"inbound": "dns-in", "action": "hijack-dns"},
       {"clash_mode": "direct", "outbound": "🎯 全球直连"},
       {"clash_mode": "global", "outbound": "GLOBAL"},
-	  {"rule_set": ["cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule"], "action": "reject"},
   	  {"rule_set": ["cfg-us_diy-rule", "cfg-ai-rule"], "action": "route", "outbound": "🇺🇲 美国自动"},
   	  {"rule_set": ["cfg-uk_diy-rule", "cfg-bbc-rule"], "action": "route", "outbound": "🇬🇧 英国自动"},
   	  {"rule_set": ["cfg-microsoft-rule"], "action": "route",	"outbound": "🪟 Microsoft"},
@@ -78,7 +77,7 @@
       {"tag": "cfg-netflix-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Netflix/Netflix.srs", "download_detour": "🎯 全球直连"}
 	],
     "auto_detect_interface": true,
-    "default_domain_resolver": {"action": "resolve", "server": "default_dns"},
+    "default_domain_resolver": {"action": "resolve", "server": "foreign"},
     "final": "🚀 默认代理"
   },
   "inbounds": [
