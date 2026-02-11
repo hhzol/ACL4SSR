@@ -76,7 +76,7 @@
       {"tag": "cfg-netflix-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Netflix/Netflix.srs", "download_detour": "🎯 全球直连"}
 	],
     "auto_detect_interface": true,
-    "default_domain_resolver": {"action": "resolve", "server": "default_dns", "strategy": "ipv4_only"},
+    "default_domain_resolver": {"server": "default_dns", "strategy": "ipv4_only"},
     "final": "🚀 默认代理"
   },
   "inbounds": [
