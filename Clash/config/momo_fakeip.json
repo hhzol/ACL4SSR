@@ -35,7 +35,7 @@
     {"tag": "🎵 TikTok", "type": "selector", "outbounds": ["🚀 默认代理", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动"]},
     {"tag": "🎬 Netflix", "type": "selector", "outbounds": ["🚀 默认代理", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动"]},	  
   	{"tag": "GLOBAL", "type": "selector", "outbounds": ["🚀 默认代理", "♻️ 自动选择", "🥷🏽 翻墙机场", "🌥️ cloudflare", "🖁 CMCC-IPV6", "🐸 手动选择", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "🎯 全球直连"]}, 
-  	{"tag": "🎯 全球直连", "type": "direct"}
+  	{"tag": "🎯 全球直连", "type": "direct", "routing_mark": 100}
   ],
   "route": {
     "rules": [
@@ -99,7 +99,7 @@
 		"tag": "redirect-in",
 		"listen": "::",
 		"listen_port": 5331,
-		"sniff": false
+		"sniff": true
 	},
 	{
 		"type": "tproxy",
@@ -107,18 +107,20 @@
 		"listen": "::",
 		"listen_port": 5332,
 		"network": "udp",
-		"sniff": false
+		"sniff": true
 	},
 	{
 		"type": "tun",
 		"tag": "tun-in",
 		"interface_name": "singtun0",
 		"address": [
-			"172.31.0.1/30",
+			"172.19.0.1/30",
 			"fdfe:dcba:9876::1/126"
 		],
-		"auto_route": true,
-		"stack": "system",
+		"mtu": 9000,
+		"auto_route": false,
+		"endpoint_independent_nat": true,
+		"stack": "mixed",
 		"sniff": true
 	}
   ],
