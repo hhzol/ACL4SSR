@@ -1,7 +1,7 @@
 {
   "dns": {
     "servers": [
-      {"tag": "local", "type": "local"},
+      {"tag": "local", "type": "local", "detour": "🎯 全球直连"},
       {"tag": "cn_dns", "type": "https", "server": "dns.alidns.com", "path": "/dns-query", "domain_resolver": {"server": "local"}},
       {"tag": "default_dns", "type": "udp", "server": "114.114.114.114"},
       {"tag": "foreign", "type": "udp", "server": "dns.google", "domain_resolver": {"server": "cn_dns"}, "detour": "🚀 默认代理"},
@@ -155,7 +155,7 @@
   },
   "log": {
     "disabled": false,
-    "level": "info",
+    "level": "warn",
     "timestamp": true
   }
 }
