@@ -14,6 +14,7 @@
 	  {"rule_set": ["cfg-fakeipfilter-rule"], "server": "default_dns", "disable_cache": true},
       {"query_type": ["A", "AAAA"], "server": "fakeip", "rewrite_ttl": 1}
     ],
+	"disable_cache": true,
     "final": "foreign"
   },
   "outbounds": [
@@ -127,7 +128,7 @@
     "cache_file": {
       "enabled": true,
       "path": "/etc/momo/run/cache.db",
-      "store_fakeip": false
+      "store_fakeip": true
     },
     "clash_api": {
       "external_controller": "0.0.0.0:9095",
