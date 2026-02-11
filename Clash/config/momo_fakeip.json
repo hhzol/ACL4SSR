@@ -1,7 +1,7 @@
 {
   "dns": {
     "servers": [
-      {"tag": "default_dns", "type": "udp", "server": "9.9.9.9"},
+      {"tag": "default_dns", "type": "udp", "server": "208.67.222.222"},
       {"tag": "cn_dns", "type": "tls", "server": "223.5.5.5"},
       {"tag": "foreign", "type": "https", "server": "dns.google", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}, "detour": "🚀 默认代理"},
       {"tag": "fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/18"}
