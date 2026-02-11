@@ -19,8 +19,8 @@
   },
   "outbounds": [
     {"tag": "🚀 默认代理", "type": "selector", "outbounds": ["♻️ 自动选择", "🥷🏽 翻墙机场", "🌥️ cloudflare", "🖁 CMCC-IPV6", "🐸 手动选择", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "🎯 全球直连"]},
-    {"tag": "♻️ 自动选择", "type": "urltest", "outbounds": ["{all}"], "interval": "30s", "tolerance": 100, "interrupt_exist_connections": true},
-    {"tag": "🥷🏽 翻墙机场", "type": "urltest", "outbounds": ["{all}"], "interval": "30s", "tolerance": 100, "filter": [{"action": "include", "keywords": ["B Group"]}], "interrupt_exist_connections": true},
+    {"tag": "♻️ 自动选择", "type": "urltest", "outbounds": ["{all}"], "url": "http://www.gstatic.com/generate_204", "interval": "30s", "tolerance": 100, "interrupt_exist_connections": true},
+    {"tag": "🥷🏽 翻墙机场", "type": "urltest", "outbounds": ["{all}"], "url": "http://www.gstatic.com/generate_204", "interval": "30s", "tolerance": 100, "filter": [{"action": "include", "keywords": ["B Group"]}], "interrupt_exist_connections": true},
     {"tag": "🌥️ cloudflare", "type": "urltest", "outbounds": ["{all}"], "interval": "30s", "tolerance": 100, "filter": [{"action": "include", "keywords": ["cloudflare"]}]},
     {"tag": "🖁 CMCC-IPV6", "type": "urltest", "outbounds": ["{all}"], "interval": "30s", "tolerance": 100, "filter": [{"action": "include", "keywords": ["CMCC-IPV6"]}]},
     {"tag": "🐸 手动选择", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "exclude", "keywords": ["网站|流量|地址|剩余|过期|免费|时间|有效|Traffic|ExpireDate|Expire Date"]}]},
