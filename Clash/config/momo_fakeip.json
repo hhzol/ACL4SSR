@@ -53,7 +53,7 @@
       {"rule_set": ["cfg-cn_site-rule", "cfg-private_site-rule", "cfg-cn_diy-rule"], "action": "route", "outbound": "🎯 全球直连"},
   	  {"action": "resolve", "server": "foreign", "strategy": "ipv4_only", "disable_cache": true},
       {"rule_set": ["cfg-cn_ip-rule", "cfg-private_ip-rule"], "action": "route", "outbound": "🎯 全球直连"},
- 	  {"rule_set": ["cfg-cn_ip-rule", "cfg-private_ip-rule"], “invert”: true, "action": "route", "outbound": "🚀 默认代理"}
+ 	  {"rule_set": ["cfg-cn_ip-rule", "cfg-private_ip-rule"], "invert": true, "action": "route", "outbound": "🚀 默认代理"}
 	],
     "rule_set": [
   	  {"tag": "cfg-cn_ip-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/cn.srs", "download_detour": "🎯 全球直连"},
