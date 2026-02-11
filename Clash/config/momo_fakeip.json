@@ -1,9 +1,10 @@
 {
   "dns": {
     "servers": [
-      {"tag": "default_dns", "type": "udp", "server": "114.114.114.114"},
-      {"tag": "cn_dns", "type": "https", "server": "dns.alidns.com", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}},
-      {"tag": "foreign", "type": "udp", "server": "8.8.8.8", "detour": "🚀 默认代理"},
+      {"tag": "local", "type": "local"},
+      {"tag": "cn_dns", "type": "https", "server": "dns.alidns.com", "path": "/dns-query", "domain_resolver": {"server": "local"}},
+      {"tag": "default_dns", "type": "udp", "server": "dns.opendns.com", "domain_resolver": {"server": "cn_dns"}},
+      {"tag": "foreign", "type": "udp", "server": "1.1.1.1", "detour": "🚀 默认代理"},
       {"tag": "fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/18"}
     ],
     "rules": [
@@ -114,14 +115,12 @@
 		"tag": "tun-in",
 		"interface_name": "singtun0",
 		"address": [
-			"172.19.0.1/30",
+			"172.31.0.1/30",
 			"fdfe:dcba:9876::1/126"
 		],
-		"mtu": 9000,
-		"auto_route": false,
-		"endpoint_independent_nat": true,
-		"stack": "mixed",
-		"sniff": true
+		"auto_route": true,
+		"stack": "system",
+		"sniff": false
 	}
   ],
   "experimental": {
