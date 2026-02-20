@@ -91,7 +91,7 @@
 		"tag": "mixed-in",
 		"listen": "::",
 		"listen_port": 5330,
-		"sniff": true,
+		"sniff": false,
 		"set_system_proxy": false
 	},
 	{
@@ -99,7 +99,7 @@
 		"tag": "redirect-in",
 		"listen": "::",
 		"listen_port": 5331,
-		"sniff": true
+		"sniff": false
 	},
 	{
 		"type": "tproxy",
@@ -107,7 +107,7 @@
 		"listen": "::",
 		"listen_port": 5332,
 		"network": "udp",
-		"sniff": true
+		"sniff": false
 	},
 	{
 		"type": "tun",
@@ -121,7 +121,7 @@
 		"auto_route": false,
 		"endpoint_independent_nat": true,
 		"stack": "mixed",
-		"sniff": true
+		"sniff": false
 	}
   ],
   "experimental": {
