@@ -12,17 +12,16 @@
       {"clash_mode": "direct", "server": "local"},
       {"clash_mode": "global", "server": "foreign"},
       {"rule_set": ["cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule"], "action": "predefined", "rcode": "NOERROR"},
-	  {"rule_set": ["cfg-spotify-rule"], "action": "route", "server": "hk_dns", "strategy": "ipv4_only"},
-	  {"rule_set": ["cfg-us_diy-rule", "cfg-ai-rule"], "action": "route", "server": "us_dns", "strategy": "ipv4_only"},
-	  {"rule_set": ["cfg-uk_diy-rule", "cfg-bbc-rule"],	"action": "route", "server": "uk_dns", "strategy": "ipv4_only"},
-	  {"rule_set": ["cfg-cn_diy-rule"],	"action": "route", "server": "local"},
-	  {"rule_set": ["cfg-microsoft-rule", "cfg-apple-rule"], "action": "route", "server": "foreign", "strategy": "ipv4_only"},
-	  {"rule_set": ["cfg-cn_site-rule",	"cfg-private_site-rule"], "action": "route", "server": "local"},
-	  {"rule_set": ["cfg-cn_ip-rule", "cfg-cn_site-rule", "cfg-private_ip-rule", "cfg-private_site-rule", "cfg-cn_diy-rule", "cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule", "cfg-us_diy-rule", "cfg-uk_diy-rule", "cfg-ai-rule", "cfg-bbc-rule", "cfg-spotify-rule", "cfg-microsoft-rule", "cfg-apple-rule"], "invert": true, "action": "route", "server": "foreign", "strategy": "ipv4_only"}
+	  {"rule_set": ["cfg-spotify-rule"], "action": "route", "server": "hk_dns", "strategy": "ipv4_only", "disable_cache": true},
+	  {"rule_set": ["cfg-us_diy-rule", "cfg-ai-rule"], "action": "route", "server": "us_dns", "strategy": "ipv4_only", "disable_cache": true},
+	  {"rule_set": ["cfg-uk_diy-rule", "cfg-bbc-rule"],	"action": "route", "server": "uk_dns", "strategy": "ipv4_only", "disable_cache": true},
+	  {"rule_set": ["cfg-cn_diy-rule"],	"action": "route", "server": "local", "disable_cache": true},
+	  {"rule_set": ["cfg-microsoft-rule", "cfg-apple-rule"], "action": "route", "server": "foreign", "strategy": "ipv4_only", "disable_cache": true},
+	  {"rule_set": ["cfg-cn_site-rule",	"cfg-private_site-rule"], "action": "route", "server": "local", "disable_cache": true},
+	  {"rule_set": ["cfg-cn_ip-rule", "cfg-cn_site-rule", "cfg-private_ip-rule", "cfg-private_site-rule", "cfg-cn_diy-rule", "cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule", "cfg-us_diy-rule", "cfg-uk_diy-rule", "cfg-ai-rule", "cfg-bbc-rule", "cfg-spotify-rule", "cfg-microsoft-rule", "cfg-apple-rule"], "invert": true, "action": "route", "server": "foreign", "strategy": "ipv4_only", "disable_cache": true}
     ],
     "final": "default_dns",
-    "disable_cache": true,
-	"reverse_mapping": true
+    "disable_cache": true
   },
   "outbounds": [
     {"tag": "🚀 默认代理", "type": "selector", "outbounds": ["♻️ 自动选择", "🥷🏽 翻墙机场", "🌥️ cloudflare", "🖁 CMCC-IPV6", "🐸 手动选择", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动"]},
