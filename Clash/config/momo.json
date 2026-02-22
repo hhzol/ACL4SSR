@@ -18,7 +18,7 @@
       {"clash_mode": "direct", "server": "cn_dns"},
       {"clash_mode": "global", "server": "foreign"},
       {"rule_set": ["cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule"], "action": "predefined", "rcode": "NOERROR"},
-	  {"rule_set": ["cfg-cn_diy-rule"],	"action": "route", "server": "cn_dns", "disable_cache": true},
+	  {"domain": [ "gh-proxy.com" ], "rule_set": ["cfg-cn_diy-rule"], "action": "route", "server": "cn_dns", "disable_cache": true},
 	  {"rule_set": ["cfg-us_diy-rule", "cfg-ai-rule"], "action": "route", "server": "us_dns", "strategy": "ipv4_only", "disable_cache": true},
 	  {"rule_set": ["cfg-uk_diy-rule", "cfg-bbc-rule"],	"action": "route", "server": "uk_dns", "strategy": "ipv4_only", "disable_cache": true},
 	  {"rule_set": ["cfg-microsoft-rule"], "action": "route", "server": "microsoft_dns", "strategy": "ipv4_only", "disable_cache": true},
