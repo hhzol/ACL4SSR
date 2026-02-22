@@ -1,7 +1,7 @@
 {
   "dns": {
     "servers": [
-	  {"tag": "local", "type": "local", "detour": "🎯 全球直连"},
+	    {"tag": "local", "type": "local", "detour": "🎯 全球直连"},
       {"tag": "default_dns", "type": "udp", "server": "114.114.114.114", "detour": "🎯 全球直连"},
       {"tag": "cn_dns", "type": "https", "server": "dns.alidns.com", "path": "/dns-query", "domain_resolver": {"server": "local"}, "detour": "🎯 全球直连"},
       {"tag": "foreign", "type": "udp", "server": "dns.google", "domain_resolver": {"server": "default_dns"}, "detour": "🚀 默认代理"},
@@ -17,7 +17,7 @@
       {"rule_set": ["cfg-uk_diy-rule", "cfg-bbc-rule"],	"action": "route", "server": "uk_dns", "strategy": "ipv4_only", "disable_cache": true},
       {"rule_set": ["cfg-cn_diy-rule"],	"action": "route", "server": "cn_dns", "disable_cache": true},
       {"rule_set": ["cfg-microsoft-rule", "cfg-apple-rule"], "action": "route", "server": "foreign", "strategy": "ipv4_only", "disable_cache": true},
-	  {"rule_set": ["cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule"], "action": "predefined", "rcode": "NOERROR"},
+	    {"rule_set": ["cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule"], "action": "predefined", "rcode": "NOERROR"},
       {"rule_set": ["cfg-cn_site-rule",	"cfg-private_site-rule"], "action": "route", "server": "cn_dns", "disable_cache": true},
       {"rule_set": ["cfg-cn_site-rule", "cfg-private_site-rule", "cfg-cn_diy-rule"], "invert": true, "action": "route", "server": "foreign", "strategy": "ipv4_only", "disable_cache": true}
     ],
