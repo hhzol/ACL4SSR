@@ -2,8 +2,8 @@
   "dns": {
     "servers": [
       {"tag": "local", "type": "local", "detour": "🎯 全球直连"},
-      {"tag": "default_dns", "type": "udp", "server": "114.114.114.114", "detour": "🎯 全球直连"},
       {"tag": "cn_dns", "type": "https", "server": "dns.alidns.com", "path": "/dns-query", "domain_resolver": {"server": "local"}, "detour": "🎯 全球直连"},
+      {"tag": "default_dns", "type": "udp", "server": "114.114.114.114", "detour": "🎯 全球直连"},
       {"tag": "foreign", "type": "udp", "server": "dns.google", "domain_resolver": {"server": "default_dns"}, "detour": "🚀 默认代理"},
       {"tag": "hk_dns", "type": "https", "server": "doh.dns.sb", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}, "detour": "🇭🇰 香港自动"},
       {"tag": "us_dns", "type": "https", "server": "dns.cloudflare.com", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}, "detour": "🇺🇲 美国自动"},
