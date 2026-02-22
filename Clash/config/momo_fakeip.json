@@ -104,14 +104,6 @@
 		"sniff": true
 	},
 	{
-		"type": "tproxy",
-		"tag": "tproxy-in",
-		"listen": "::",
-		"listen_port": 5332,
-		"network": "udp",
-		"sniff": true
-	},
-	{
 		"type": "tun",
 		"tag": "tun-in",
 		"interface_name": "singtun0",
