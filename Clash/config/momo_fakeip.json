@@ -1,10 +1,10 @@
 {
   "dns": {
     "servers": [
-      {"tag": "default_dns", "type": "udp", "server": "208.67.222.222", "detour": "🎯 全球直连"},
-      {"tag": "cn_dns", "type": "https", "server": "dns.alidns.com", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}, "detour": "🎯 全球直连"},
-      {"tag": "foreign", "type": "udp", "server": "dns.google", "domain_resolver": {"server": "default_dns"}, "detour": "🚀 默认代理"},
-      {"tag": "fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/18"}
+		{"tag": "default_dns", "type": "udp", "server": "208.67.222.222", "detour": "🎯 全球直连"},
+		{"tag": "cn_dns", "type": "https", "server": "dns.alidns.com", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}, "detour": "🎯 全球直连"},
+		{"tag": "foreign", "type": "udp", "server": "dns.google", "domain_resolver": {"server": "default_dns"}, "detour": "🚀 默认代理"},
+		{"tag": "fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/18"}
     ],
     "rules": [
 		{"clash_mode": "direct", "server": "cn_dns"},
