@@ -1,4 +1,9 @@
 {
+  "log": {
+  "disabled": false,
+  "level": "warn",
+  "timestamp": true
+  },
   "dns": {
     "servers": [
       {"tag": "default_dns", "type": "udp", "server": "208.67.222.222", "detour": "🎯 全球直连"},
@@ -17,7 +22,44 @@
     "final": "foreign",
 	"disable_cache": true,
 	"strategy": "ipv4_only"
-  },
+  }, 
+  "inbounds": [
+	{
+		"type": "direct",
+		"tag": "dns-in",
+		"listen": "::",
+		"listen_port": 5333
+	},
+	{
+		"type": "mixed",
+		"tag": "mixed-in",
+		"listen": "::",
+		"listen_port": 5330,
+		"sniff": true,
+		"set_system_proxy": false
+	},
+	{
+		"type": "redirect",
+		"tag": "redirect-in",
+		"listen": "::",
+		"listen_port": 5331,
+		"sniff": true
+	},
+	{
+		"type": "tun",
+		"tag": "tun-in",
+		"interface_name": "singtun0",
+		"address": [
+			"172.19.0.1/30",
+			"fdfe:dcba:9876::1/126"
+		],
+		"mtu": 1360,
+		"auto_route": false,
+		"endpoint_independent_nat": true,
+		"stack": "mixed",
+		"sniff": true
+	}
+  ],
   "outbounds": [
     {"tag": "🚀 默认代理", "type": "selector", "outbounds": ["♻️ 自动选择", "🥷🏽 翻墙机场", "🌥️ cloudflare", "🖁 CMCC-IPV6", "🐸 手动选择", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "🎯 全球直连"]},
     {"tag": "♻️ 自动选择", "type": "urltest", "outbounds": ["{all}"], "url": "http://www.gstatic.com/generate_204", "interval": "30s", "tolerance": 100, "interrupt_exist_connections": true},
@@ -81,43 +123,6 @@
     "default_domain_resolver": {"action": "resolve", "server": "default_dns"},
     "final": "🚀 默认代理"
   },
-  "inbounds": [
-	{
-		"type": "direct",
-		"tag": "dns-in",
-		"listen": "::",
-		"listen_port": 5333
-	},
-	{
-		"type": "mixed",
-		"tag": "mixed-in",
-		"listen": "::",
-		"listen_port": 5330,
-		"sniff": true,
-		"set_system_proxy": false
-	},
-	{
-		"type": "redirect",
-		"tag": "redirect-in",
-		"listen": "::",
-		"listen_port": 5331,
-		"sniff": true
-	},
-	{
-		"type": "tun",
-		"tag": "tun-in",
-		"interface_name": "singtun0",
-		"address": [
-			"172.19.0.1/30",
-			"fdfe:dcba:9876::1/126"
-		],
-		"mtu": 1360,
-		"auto_route": false,
-		"endpoint_independent_nat": true,
-		"stack": "mixed",
-		"sniff": true
-	}
-  ],
   "experimental": {
     "cache_file": {
       "enabled": true,
@@ -132,10 +137,5 @@
       "secret": "",
       "default_mode": "rule"
     }
-  },
-  "log": {
-    "disabled": false,
-    "level": "info",
-    "timestamp": true
   }
 }
