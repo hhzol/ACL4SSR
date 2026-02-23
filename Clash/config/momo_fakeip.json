@@ -77,7 +77,7 @@
     ],
     "auto_detect_interface": true,
     "default_domain_resolver": {"action": "resolve", "server": "default_dns"},
-    "final": {"🚀 默认代理", "tls_record_fragment": true}
+    "final": "🚀 默认代理"
   },
   "inbounds": [
     {
