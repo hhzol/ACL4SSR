@@ -9,7 +9,7 @@
     "rules": [
       {"clash_mode": "direct", "server": "cn_dns"},
       {"clash_mode": "global", "server": "fakeip"},
-      {"rule_set": ["cfg-cn_diy-rule"], "server": "default_dns"},
+      {"rule_set": ["cfg-fakeipfilter-rule", "cfg-cn_diy-rule"], "server": "default_dns"},
 	  {"rule_set": ["cfg-ad-rule", "cfg-ad1-rule", "cfg-ad_diy-rule"], "action": "predefined", "rcode": "NOERROR"},
 	  {"rule_set": ["cfg-fakeipfilter-rule"], "server": "default_dns"},
       {"query_type": ["A", "AAAA"], "server": "fakeip", "rewrite_ttl": 1}
