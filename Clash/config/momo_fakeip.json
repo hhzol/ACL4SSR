@@ -3,7 +3,8 @@
     "servers": [
       {"tag": "default_dns", "type": "udp", "server": "208.67.222.222", "detour": "🎯 全球直连"},
       {"tag": "local", "type": "local", "detour": "🎯 全球直连"},
-      {"tag": "foreign", "type": "https", "server": "dns.google", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}, "detour": "🚀 默认代理"},
+      {"tag": "foreign", "type": "udp", "server": "dns.google", "domain_resolver": {"server": "default_dns"}, "detour": "🚀 默认代理"},
+      {"tag": "backup", "type": "https", "server": "dns.google", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}, "detour": "🚀 默认代理"},
       {"tag": "fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/18"}
     ],
     "rules": [
@@ -52,6 +53,7 @@
       {"rule_set": ["cfg-netflix-rule"], "action": "route", "outbound": "🎬 Netflix"},
       {"rule_set": ["cfg-cn_site-rule", "cfg-private_site-rule", "cfg-cn_diy-rule"], "action": "route", "outbound": "🎯 全球直连"},
       {"action": "resolve"},
+      {"outbound": "🌥️ cloudflare", "action": "resolve", "server": "backup"},
       {"rule_set": ["cfg-cn_ip-rule", "cfg-private_ip-rule"], "action": "route", "outbound": "🎯 全球直连"},
       {"rule_set": ["cfg-cn_ip-rule", "cfg-private_ip-rule"], "invert": true, "action": "route", "outbound": "🚀 默认代理"}
     ],
