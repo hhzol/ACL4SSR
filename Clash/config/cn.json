@@ -47,7 +47,8 @@
         "time.windows.com",
         "pool.ntp.org",
         "v6.sync.afraid.org",
-        "tmate.io"
+        "tmate.io",
+        "bc.188766.xyz"
       ],
       "domain_keyword": [
         "letsencrypt.org",
