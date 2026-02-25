@@ -33,7 +33,8 @@
     {"tag": "🔍 Google", "type": "selector", "outbounds": ["🚀 默认代理", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "🎯 全球直连"]},
     {"tag": "🎧 Spotify", "type": "selector", "outbounds": ["🚀 默认代理", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动"]},
     {"tag": "🎵 TikTok", "type": "selector", "outbounds": ["🚀 默认代理", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动"]},
-    {"tag": "🎬 Netflix", "type": "selector", "outbounds": ["🚀 默认代理", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动"]},	  
+    {"tag": "🎬 Netflix", "type": "selector", "outbounds": ["🚀 默认代理", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动"]},
+    {"tag": "🐟 漏网之鱼", "type": "selector", "outbounds": ["🚀 默认代理", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "🎯 全球直连"]},
     {"tag": "GLOBAL", "type": "selector", "outbounds": ["🚀 默认代理", "♻️ 自动选择", "🥷🏽 翻墙机场", "🌥️ cloudflare", "🖁 CMCC-IPV6", "🐸 手动选择", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "🎯 全球直连"]}, 
     {"tag": "🎯 全球直连", "type": "direct"}
   ],
@@ -52,8 +53,7 @@
       {"rule_set": ["netflix-rule"], "action": "route", "outbound": "🎬 Netflix"},
       {"rule_set": ["cn_site-rule", "private_site-rule", "cn_diy-rule"], "action": "route", "outbound": "🎯 全球直连"},
       {"action": "resolve"},
-      {"rule_set": ["cn_ip-rule", "private_ip-rule"], "action": "route", "outbound": "🎯 全球直连"},
-      {"rule_set": ["cn_ip-rule", "private_ip-rule"], "invert": true, "action": "route", "outbound": "🚀 默认代理"}
+      {"rule_set": ["cn_ip-rule", "private_ip-rule"], "action": "route", "outbound": "🎯 全球直连"}
     ],
     "rule_set": [
       {"tag": "cn_ip-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/cn.srs", "download_detour": "🎯 全球直连"},
@@ -77,10 +77,31 @@
       {"tag": "netflix-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Netflix/Netflix.srs", "download_detour": "🎯 全球直连"}
     ],
     "auto_detect_interface": true,
-    "default_domain_resolver": {"action": "resolve", "server": "local"},
-    "final": "🚀 默认代理"
+    "default_domain_resolver": {"action": "resolve", "server": "default_dns"},
+    "final": "🐟 漏网之鱼"
   },
   "inbounds": [
+    {
+      "type": "direct",
+      "tag": "dns-in",
+      "listen": "::",
+      "listen_port": 5333
+    },
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "::",
+      "listen_port": 5330,
+      "sniff": true,
+      "set_system_proxy": false
+    },
+    {
+      "type": "redirect",
+      "tag": "redirect-in",
+      "listen": "::",
+      "listen_port": 5331,
+      "sniff": true
+    },
     {
       "type": "tun",
       "tag": "tun-in",
@@ -98,10 +119,15 @@
   ],
   "experimental": {
     "cache_file": {
-      "enabled": true
+      "enabled": true,
+      "path": "/etc/momo/run/cache.db",
+      "store_fakeip": true
     },
     "clash_api": {
       "external_controller": "0.0.0.0:9095",
+      "external_ui": "/etc/momo/run/ui",
+      "external_ui_download_url": "https://gh-proxy.com/https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip",
+      "external_ui_download_detour": "🎯 全球直连",
       "secret": "",
       "default_mode": "rule"
     }
