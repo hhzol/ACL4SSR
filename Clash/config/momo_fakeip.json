@@ -46,7 +46,7 @@
       {"rule_set": ["ad-rule", "ad1-rule", "ad_diy-rule"], "action": "route", "outbound": "❎ 全球拦截"},      
       {"rule_set": ["us_diy-rule", "ai-rule"], "action": "route", "outbound": "🇺🇲 美国自动"},
       {"rule_set": ["uk_diy-rule", "bbc-rule"], "action": "route", "outbound": "🇬🇧 英国自动"},
-      {"rule_set": ["microsoft-rule"], "action": "route",	"outbound": "🪟 Microsoft"},
+      {"rule_set": ["microsoft-rule"], "action": "route", "outbound": "🪟 Microsoft"},
       {"rule_set": ["apple-rule"], "action": "route",	"outbound": "🍎 Apple"},
       {"rule_set": ["google-rule"], "action": "route",	"outbound": "🔍 Google"},
       {"rule_set": ["spotify-rule"], "action": "route", "outbound": "🎧 Spotify"},
