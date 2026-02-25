@@ -55,7 +55,7 @@
       {"rule_set": ["netflix-rule"], "action": "route", "outbound": "🎬 Netflix"},
       {"rule_set": ["cn_site-rule", "private_site-rule", "cn_diy-rule"], "action": "route", "outbound": "🎯 全球直连"},
       {"action": "resolve"},
-      {"rule_set": ["cn_ip-rule", "private_ip-rule"], "action": "route", "outbound": "🎯 全球直连"},
+      {"rule_set": ["cn_ip-rule", "private_ip-rule"], "action": "route", "outbound": "🎯 全球直连"}
     ],
     "rule_set": [
       {"tag": "cn_ip-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/cn.srs", "download_detour": "🎯 全球直连"},
