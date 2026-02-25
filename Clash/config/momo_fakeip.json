@@ -1,7 +1,7 @@
 {
   "dns": {
     "servers": [
-      {"tag": "default_dns", "type": "udp", "server": "208.67.222.222", "detour": "🎯 全球直连"},
+      {"tag": "default_dns", "type": "udp", "server": "114.114.114.114", "detour": "🎯 全球直连"},
       {"tag": "local", "type": "local", "detour": "🎯 全球直连"},
       {"tag": "foreign", "type": "https", "server": "dns.google", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}, "detour": "🐟 漏网之鱼"},
       {"tag": "fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/18"}
@@ -56,7 +56,6 @@
       {"rule_set": ["cn_site-rule", "private_site-rule", "cn_diy-rule"], "action": "route", "outbound": "🎯 全球直连"},
       {"action": "resolve"},
       {"rule_set": ["cn_ip-rule", "private_ip-rule"], "action": "route", "outbound": "🎯 全球直连"},
-      {"rule_set": ["cn_ip-rule", "private_ip-rule"], "invert": true, "action": "route", "outbound": "🐟 漏网之鱼", "tls_record_fragment": true}
     ],
     "rule_set": [
       {"tag": "cn_ip-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/cn.srs", "download_detour": "🎯 全球直连"},
