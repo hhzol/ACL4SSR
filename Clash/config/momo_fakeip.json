@@ -9,7 +9,7 @@
     "rules": [
       {"clash_mode": "direct", "server": "local"},
       {"clash_mode": "global", "server": "fakeip"},
-      {"rule_set": ["fakeipfilter-rule", "cn_diy-rule"], "server": "default_dns"},
+      {"rule_set": ["fakeipfilter", "cn_diy"], "server": "default_dns"},
       {"query_type": ["A", "AAAA"], "server": "fakeip", "rewrite_ttl": 1}
     ],
     "disable_cache": true,
@@ -53,7 +53,7 @@
       {"rule_set": ["spotify-rule"], "action": "route", "outbound": "🎧 Spotify"},
       {"rule_set": ["tiktok-rule"], "action": "route", "outbound": "🎵 TikTok"},
       {"rule_set": ["netflix-rule"], "action": "route", "outbound": "🎬 Netflix"},
-      {"rule_set": ["cn_site-rule", "private_site-rule", "cn_diy-rule"], "action": "route", "outbound": "🎯 全球直连"},
+      {"rule_set": ["cn_site-rule", "private_site-rule", "cn_diy"], "action": "route", "outbound": "🎯 全球直连"},
       {"action": "resolve"},
       {"rule_set": ["cn_ip-rule", "private_ip-rule"], "action": "route", "outbound": "🎯 全球直连"}
     ],
@@ -68,8 +68,8 @@
       {"tag": "us_diy-rule", "type": "remote", "format": "source", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/us.json", "download_detour": "🎯 全球直连"},
       {"tag": "uk_diy-rule", "type": "remote", "format": "source", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/uk.json", "download_detour": "🎯 全球直连"},
       {"tag": "proxy_diy-rule", "type": "remote", "format": "source", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/proxy.json", "download_detour": "🎯 全球直连"},
-      {"tag": "cn_diy-rule", "type": "remote", "format": "source", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/cn.json", "download_detour": "🎯 全球直连"},
-      {"tag": "fakeipfilter-rule", "type": "remote", "format": "source", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/fakeipfilter.json", "download_detour": "🎯 全球直连"},
+      {"tag": "cn_diy", "type": "remote", "format": "source", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/cn.json", "download_detour": "🎯 全球直连"},
+      {"tag": "fakeipfilter", "type": "remote", "format": "source", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/fakeipfilter.json", "download_detour": "🎯 全球直连"},
       {"tag": "ai-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-!cn.srs", "download_detour": "🎯 全球直连"},
       {"tag": "bbc-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://github.com/senshinya/singbox_ruleset/raw/main/rule/BBC/BBC.srs", "download_detour": "🎯 全球直连"},
       {"tag": "microsoft-rule", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Microsoft/Microsoft.srs", "download_detour": "🎯 全球直连"},
