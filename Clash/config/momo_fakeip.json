@@ -135,7 +135,7 @@
     }
   },
   "log": {
-    "disabled": true,
+    "disabled": false,
     "level": "error",
     "timestamp": true
   }
