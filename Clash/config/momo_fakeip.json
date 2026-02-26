@@ -1,8 +1,8 @@
 {
   "dns": {
     "servers": [
-      {"tag": "default_dns", "type": "tls", "server": "208.67.222.222", "detour": "🖁 CMCC-IPV6"},
-      {"tag": "local", "type": "local", "detour": "🎯 全球直连"},
+      {"tag": "default_dns", "type": "udp", "server": "208.67.222.222"},
+      {"tag": "local", "type": "local"},
       {"tag": "foreign", "type": "https", "server": "dns.google", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}, "detour": "🐟 漏网之鱼"},
       {"tag": "fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/18"}
     ],
