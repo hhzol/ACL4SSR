@@ -3,7 +3,7 @@
     "servers": [
       {"tag": "default_dns", "type": "udp", "server": "208.67.222.222", "detour": "🎯 全球直连"},
       {"tag": "local", "type": "local", "detour": "🎯 全球直连"},
-      {"tag": "foreign", "type": "https", "server": "dns.google", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}, "detour": "🐟 漏网之鱼"},
+      {"tag": "foreign", "type": "https", "server": "doh.opendns.com", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}, "detour": "🐟 漏网之鱼"},
       {"tag": "fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/18"}
     ],
     "rules": [
@@ -13,7 +13,7 @@
       {"query_type": ["A", "AAAA"], "server": "fakeip", "rewrite_ttl": 1}
     ],
     "disable_cache": true,
-    "final": "default_dns"
+    "final": "foreign"
   },
   "outbounds": [
     {"tag": "🚀 默认代理", "type": "selector", "outbounds": ["♻️ 自动选择", "🥷🏽 翻墙机场", "🌥️ cloudflare", "🖁 CMCC-IPV6", "🐸 手动选择", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "🎯 全球直连"]},
