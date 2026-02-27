@@ -44,9 +44,7 @@
         "local.adguard.org",
         "static.adtidy.org",
         "ps.res.netease.com"
-      ]
-    },
-    {
+      ],
       "domain_suffix": [
         ".lan",
         ".localdomain",
@@ -105,9 +103,7 @@
         "zhtcl.com",
         "nas.136605.xyz",
         "nas1.136605.xyz"
-      ]
-    },
-    {
+      ],
       "domain_regex": [
         "^time\\.[^.]+\\.com",
         "^time\\.[^.]+\\.gov",
