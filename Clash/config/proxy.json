@@ -3,7 +3,8 @@
   "rules": [
     {
       "domain_suffix": [
-        "browserleaks.com"
+        "browserleaks.com",
+        "www.gstatic.com"
       ]
     }
   ]
