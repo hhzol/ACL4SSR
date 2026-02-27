@@ -53,7 +53,7 @@
       {"rule_set": ["tiktok"], "action": "route", "outbound": "🎵 TikTok"},
       {"rule_set": ["netflix"], "action": "route", "outbound": "🎬 Netflix"},
       {"rule_set": ["cn_site", "private_site", "cn_diy"], "action": "route", "outbound": "🎯 全球直连"},
-      {"action": "resolve"},
+      {"action": "resolve", "strategy": "ipv4_only"},
       {"rule_set": ["cn_ip", "private_ip"], "action": "route", "outbound": "🎯 全球直连"}
     ],
     "rule_set": [
@@ -79,7 +79,7 @@
       {"tag": "netflix", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Netflix/Netflix.srs", "download_detour": "🎯 全球直连"}
     ],
     "auto_detect_interface": true,
-    "default_domain_resolver": {"action": "resolve", "server": "default_dns"},
+    "default_domain_resolver": {"action": "resolve", "server": "foreign"},
     "final": "🐟 漏网之鱼"
   },
   "inbounds": [
