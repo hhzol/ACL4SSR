@@ -43,15 +43,7 @@
         "anti-ad.net",
         "local.adguard.org",
         "static.adtidy.org",
-        "ps.res.netease.com",
-        "hhz.pgw.jp",
-        "zhtcl.mydns.bz",
-        "hmy.us.to",
-        "hhz.mooo.com",
-        "hhz.fr.to",
-        "zhtcl.com",
-        "nas.136605.xyz",
-        "nas1.136605.xyz"
+        "ps.res.netease.com"
       ]
     },
     {
@@ -105,7 +97,14 @@
         ".orayimg.com",
         ".gcloudcs.com",
         ".gcloudsdk.com",
-        ".spotify.com"
+        "hhz.pgw.jp",
+        "zhtcl.mydns.bz",
+        "hmy.us.to",
+        "hhz.mooo.com",
+        "hhz.fr.to",
+        "zhtcl.com",
+        "nas.136605.xyz",
+        "nas1.136605.xyz"
       ]
     },
     {
