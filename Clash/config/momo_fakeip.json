@@ -9,7 +9,7 @@
     "rules": [
       {"clash_mode": "direct", "server": "local"},
       {"clash_mode": "global", "server": "fakeip"},
-      {"rule_set": ["fakeipfilter1"], "server": "local"},
+      {"rule_set": ["fakeipfilter","fakeipfilter1"], "server": "local"},
       {"rule_set": ["ad", "ad1", "ad_diy"], "action": "predefined", "rcode": "NOERROR"},
       {"query_type": ["A", "AAAA"], "server": "fakeip", "rewrite_ttl": 1}
     ],
@@ -68,7 +68,8 @@
       {"tag": "uk_diy", "type": "remote", "format": "source", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/uk.json", "download_detour": "🎯 全球直连"},
       {"tag": "proxy_diy", "type": "remote", "format": "source", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/proxy.json", "download_detour": "🎯 全球直连"},
       {"tag": "cn_diy", "type": "remote", "format": "source", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/cn.json", "download_detour": "🎯 全球直连"},
-      {"tag": "fakeipfilter1", "type": "remote", "format": "source", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/fakeipfilter.json", "download_detour": "🎯 全球直连"},
+      {"tag": "fakeipfilter", "type": "remote", "format": "source", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/fakeipfilter.json", "download_detour": "🎯 全球直连"},
+      {"tag": "fakeipfilter1", "type": "remote", "format": "source", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/fakeipfilter1.json", "download_detour": "🎯 全球直连"},
       {"tag": "ai", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-!cn.srs", "download_detour": "🎯 全球直连"},
       {"tag": "bbc", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://github.com/senshinya/singbox_ruleset/raw/main/rule/BBC/BBC.srs", "download_detour": "🎯 全球直连"},
       {"tag": "microsoft", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Microsoft/Microsoft.srs", "download_detour": "🎯 全球直连"},
