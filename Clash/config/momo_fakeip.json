@@ -1,8 +1,9 @@
 {
   "dns": {
     "servers": [
-      {"tag": "local", "type": "udp", "server": "223.5.5.5", "detour": "🎯 全球直连"},
-      {"tag": "foreign", "type": "https", "server": "dns.google", "path": "/dns-query", "domain_resolver": {"server": "local"}, "detour": "🐟 漏网之鱼"},
+      {"tag": "local", "type": "local", "detour": "🎯 全球直连"},
+      {"tag": "default_dns", "type": "udp", "server": "dns.opendns.com", "domain_resolver": {"server": "local"}, "detour": "🎯 全球直连"},
+      {"tag": "foreign", "type": "https", "server": "dns.google", "path": "/dns-query", "domain_resolver": {"server": "default_dns"}, "detour": "🐟 漏网之鱼"},
       {"tag": "fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/18"}
     ],
     "rules": [
@@ -35,7 +36,7 @@
     {"tag": "🎬 Netflix", "type": "selector", "outbounds": ["🚀 默认代理", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动"]},
     {"tag": "🐟 漏网之鱼", "type": "selector", "outbounds": ["🚀 默认代理", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "🎯 全球直连"]},
     {"tag": "GLOBAL", "type": "selector", "outbounds": ["🚀 默认代理", "♻️ 自动选择", "🥷🏽 翻墙机场", "🌥️ cloudflare", "🖁 CMCC-IPV6", "🐸 手动选择", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "🎯 全球直连"]}, 
-    {"tag": "🎯 全球直连", "type": "direct"}
+    {"tag": "🎯 全球直连", "type": "direct", "url": "https://connect.rom.miui.com/generate_204"}
   ],
   "route": {
     "rules": [
@@ -78,7 +79,7 @@
       {"tag": "netflix", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Netflix/Netflix.srs", "download_detour": "🎯 全球直连"}
     ],
     "auto_detect_interface": true,
-    "default_domain_resolver": {"action": "resolve", "server": "foreign"},
+    "default_domain_resolver": {"action": "resolve", "server": "default_dns"},
     "final": "🐟 漏网之鱼"
   },
   "inbounds": [
