@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain_suffix": [
+        "ipv6.msftconnecttest.com",
+        "hhz.pgw.jp",
+        "zhtcl.mydns.bz",
+        "hmy.us.to",
+        "hhz.mooo.com",
+        "hhz.fr.to",
+        "zhtcl.com",
+        "nas.136605.xyz",
+        "nas1.136605.xyz"
+      ]
+    }
+  ]
+}
