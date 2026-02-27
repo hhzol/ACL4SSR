@@ -1,7 +1,7 @@
 {
   "dns": {
     "servers": [
-      {"tag": "local", "type": "udp", "server": "223.5.5.5", "detour": "🎯 全球直连"},
+      {"tag": "local", "type": "udp", "server": "223.5.5.5"},
       {"tag": "foreign", "type": "https", "server": "dns.google", "path": "/dns-query", "domain_resolver": {"server": "local"}, "detour": "🐟 漏网之鱼"},
       {"tag": "fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/18"}
     ],
