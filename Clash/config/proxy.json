@@ -3,9 +3,7 @@
   "rules": [
     {
       "domain_suffix": [
-        "browserleaks.com",
-        "136605.xyz",
-        "nodelist-airport.com"
+        "browserleaks.com"
       ]
     }
   ]
