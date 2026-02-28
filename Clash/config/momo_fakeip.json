@@ -68,7 +68,7 @@
       {"tag": "uk_diy", "type": "remote", "format": "source", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/uk.json", "download_detour": "🎯 全球直连"},
       {"tag": "proxy_diy", "type": "remote", "format": "source", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/proxy.json", "download_detour": "🎯 全球直连"},
       {"tag": "cn_diy", "type": "remote", "format": "source", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/cn.json", "download_detour": "🎯 全球直连"},
-      {"tag": "fakeipfilter", "type": "remote", "format": "source", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/fakeipfilter1.json", "download_detour": "🎯 全球直连"},
+      {"tag": "fakeipfilter", "type": "remote", "format": "source", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/fakeipfilter.json", "download_detour": "🎯 全球直连"},
       {"tag": "ai", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-!cn.srs", "download_detour": "🎯 全球直连"},
       {"tag": "bbc", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://github.com/senshinya/singbox_ruleset/raw/main/rule/BBC/BBC.srs", "download_detour": "🎯 全球直连"},
       {"tag": "microsoft", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Microsoft/Microsoft.srs", "download_detour": "🎯 全球直连"},
@@ -94,7 +94,7 @@
       "tag": "mixed-in",
       "listen": "::",
       "listen_port": 5330,
-      "sniff": true,
+      "sniff": false,
       "set_system_proxy": false
     },
     {
@@ -102,7 +102,7 @@
       "tag": "redirect-in",
       "listen": "::",
       "listen_port": 5331,
-      "sniff": true
+      "sniff": false
     },
     {
       "type": "tun",
@@ -116,7 +116,7 @@
       "auto_route": false,
       "endpoint_independent_nat": true,
       "stack": "mixed",
-      "sniff": true
+      "sniff": false
     }
   ],
   "experimental": {
