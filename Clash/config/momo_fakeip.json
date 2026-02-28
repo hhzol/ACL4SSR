@@ -90,6 +90,14 @@
       "listen_port": 5333
     },
     {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "::",
+      "listen_port": 5330,
+      "sniff": true,
+      "set_system_proxy": false
+    },
+    {
       "type": "redirect",
       "tag": "redirect-in",
       "listen": "::",
