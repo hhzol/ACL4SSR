@@ -10,7 +10,6 @@
       {"clash_mode": "direct", "server": "local"},
       {"clash_mode": "global", "server": "fakeip"},
       {"rule_set": ["fakeipfilter"], "server": "default_dns"},
-      {"rule_set": ["ad", "ad1", "ad_diy"], "action": "predefined", "rcode": "NOERROR"},
       {"query_type": ["A", "AAAA"], "server": "fakeip", "rewrite_ttl": 1}
     ],
     "final": "foreign"
