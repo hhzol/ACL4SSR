@@ -92,13 +92,8 @@
 	  ],
 	  "auto_route": true,
 	  "stack": "system",
-	},
-    {
-      "type": "mixed",
-      "tag": "mixed-in",
-      "listen": "::",
-      "listen_port": 7890,
-    },
+	  "sniff": true
+	}
   ],
   "experimental": {
     "cache_file": {
