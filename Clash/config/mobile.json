@@ -82,6 +82,12 @@
     "final": "🐟 漏网之鱼"
   },
   "inbounds": [
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "::",
+      "listen_port": 7890
+    },
 	{
 	  "type": "tun",
 	  "tag": "tun-in",
