@@ -13,7 +13,6 @@
       {"rule_set": ["ad", "ad1", "ad_diy"], "action": "predefined", "rcode": "NOERROR"},
       {"query_type": ["A", "AAAA"], "server": "fakeip", "rewrite_ttl": 1}
     ],
-    "disable_cache": true,
     "final": "foreign"
   },
   "outbounds": [
@@ -53,7 +52,7 @@
       {"rule_set": ["tiktok"], "action": "route", "outbound": "🎵 TikTok"},
       {"rule_set": ["netflix"], "action": "route", "outbound": "🎬 Netflix"},
       {"rule_set": ["cn_site", "private_site", "cn_diy"], "action": "route", "outbound": "🎯 全球直连"},
-      {"action": "resolve", "disable_cache": true},
+      {"action": "resolve"},
       {"rule_set": ["cn_ip", "private_ip"], "action": "route", "outbound": "🎯 全球直连"}
     ],
     "rule_set": [
