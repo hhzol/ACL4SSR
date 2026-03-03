@@ -1,4 +1,4 @@
-{
+9{
   "dns": {
     "servers": [
       {"tag": "local", "type": "local"},
@@ -101,14 +101,7 @@
 		"fdfe:dcba:9876::1/126"
 	  ],
 	  "auto_route": true,
-	  "stack": "system",
-      "platform": {
-        "http_proxy": {
-          "enabled": true,
-          "server": "::",
-          "server_port": 7890
-        }
-      }
+	  "stack": "system"
 	}
   ],
   "experimental": {
