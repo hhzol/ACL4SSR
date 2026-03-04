@@ -94,19 +94,7 @@
       ],
       "mtu": 1360,
       "stack": "system",
-      "auto_route": true,
-      "platform": {
-        "http_proxy": {
-          "enabled": true,
-          "server": "::",
-          "server_port": 7890
-        }
-      }
-    },
-    {
-      "type": "mixed",
-      "listen": "::",
-      "listen_port": 7890
+      "auto_route": true
     }
   ],
   "experimental": {
