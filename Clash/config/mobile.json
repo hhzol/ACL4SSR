@@ -92,8 +92,8 @@
         "172.19.0.0/30",
         "fdfe:dcba:9876::0/126"
       ],
-      "stack": "system",
-      "auto_route": false,
+      "stack": "gvisor",
+      "auto_route": true,
       "platform": {
         "http_proxy": {
           "enabled": true,
