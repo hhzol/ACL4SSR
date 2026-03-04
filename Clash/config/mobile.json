@@ -92,8 +92,8 @@
         "172.19.0.0/30",
         "fdfe:dcba:9876::0/126"
       ],
-      "stack": "mixed",
-      "auto_route": true,
+      "stack": "system",
+      "auto_route": false,
       "platform": {
         "http_proxy": {
           "enabled": true,
