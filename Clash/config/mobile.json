@@ -92,8 +92,8 @@
       "listen": "127.0.0.1",
       "listen_port": 7890
     },
-	{
-	  "type": "tun",
+    {
+      "type": "tun",
 	  "tag": "tun-in",
 	  "interface_name": "singtun0",
 	  "address": [
@@ -102,7 +102,7 @@
 	  ],
 	  "auto_route": true,
 	  "stack": "system"
-	}
+    }
   ],
   "experimental": {
     "cache_file": {
