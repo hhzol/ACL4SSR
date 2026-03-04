@@ -87,12 +87,6 @@
   },
   "inbounds": [
     {
-      "type": "mixed",
-      "tag": "mixed-in",
-      "listen": "127.0.0.1",
-      "listen_port": 7890
-    },
-    {
       "type": "tun",
 	  "tag": "tun-in",
 	  "interface_name": "singtun0",
