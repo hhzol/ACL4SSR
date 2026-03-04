@@ -1,4 +1,4 @@
-99{
+{
   "dns": {
     "servers": [
       {"tag": "local", "type": "local"},
