@@ -7,14 +7,9 @@ dns:
   enable: true
   listen: :7874
   ipv6: true
-  default-nameserver: [114.114.114.114, 119.29.29.29, 223.5.5.5]
-  proxy-server-nameserver: [114.114.114.114, 119.29.29.29, 223.5.5.5]
+  default-nameserver: [114.114.114.114]
   nameserver-policy:
-    rule-set:ADBLOCK: [RCODE:0]
-    rule-set:ANTIAD: [RCODE:0]
-    geosite:cn,private: [tls://dot.pub,tls://dns.alidns.com]
-    rule-set:ZHILIAN: [tls://dns.alidns.com,tls://dot.pub]
-  nameserver: [1.1.1.1#🚦 DNS, 1.0.0.1#🚦 DNS, 9.9.9.9#🚦 DNS, 149.112.112.112#🚦 DNS, 45.11.45.11#🚦 DNS, 208.67.222.222#🚦 DNS, 208.67.220.220#🚦 DNS, 8.8.8.8#🚦 DNS, 8.8.4.4#🚦 DNS]
+  nameserver: [8.8.8.8#🐟 漏网之鱼]
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter: # fake ip 白名单列表，如果你不知道这个参数的作用，请勿修改
@@ -61,6 +56,7 @@ rule-providers:
      behavior: classical
      url: https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/area.yaml
      path: ./AREA.yaml
+
 
 
 
