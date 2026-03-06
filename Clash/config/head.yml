@@ -17,7 +17,7 @@ dns:
     - '*.lan'
     - '*.local'
     - rule-set:FAKEIPFILTER
-    - geosite:cn
+    - geosite:private
 profile:
   store-selected: true
   store-fake-ip: true
@@ -64,6 +64,7 @@ rule-providers:
      url: https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/fakeipfilter.yaml
      interval: 86400
      path: fakeipfilter.yaml
+
 
 
 
