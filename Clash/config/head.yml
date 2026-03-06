@@ -3,25 +3,20 @@ allow-lan: true
 bind-address: '*'
 mode: rule
 log-level: info
+hosts:
+ homeassistant.local: 192.168.10.9
 dns:
   enable: true
   listen: :7874
   ipv6: true
   default-nameserver: [114.114.114.114]
-  nameserver-policy:
   nameserver: [8.8.8.8#🐟 漏网之鱼]
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
-  fake-ip-filter: # fake ip 白名单列表，如果你不知道这个参数的作用，请勿修改
+  fake-ip-filter:
     - '*.lan'
-    - 'nas'
-    - 'openwrt'
-    - "dns.msftncsi.com"
-    - "www.msftncsi.com"
-    - "www.msftconnecttest.com"
-    - "+.136605.xyz"
-    - "hhz.pgw.jp"
-    - "zhtcl.mydns.bz"
+    - '*.local'
+    - rule-set:FAKEIPFILTER
 profile:
   store-selected: true
   store-fake-ip: true
@@ -29,33 +24,46 @@ rule-providers:
    ANTIAD:
      type: http
      behavior: classical
-     url: https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/Additional_antiAD.yaml
-     path: ./ANTIAD.yaml
+     url: https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/ad.yaml
+     interval: 86400
+     path: ANTIAD.yaml
    ADBLOCK:
      type: http
      behavior: classical
-     url: https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/adblock.yaml
-     path: ./adblock.yaml
+     url: https://raw.githubusercontent.com/hhzol/update_adblock/main/rule_provider/adblock.yaml
+     interval: 86400
+     path: adblock.yaml
    ZHILIAN:
      type: http
      behavior: classical
-     url: https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/cf_direct.yaml
-     path: ./ZHILIAN.yaml
+     url: https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/cn.yaml
+     interval: 86400
+     path: ZHILIAN.yaml
    US:
      type: http
      behavior: classical
      url: https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/us.yaml
-     path: ./US.yaml
+     interval: 86400
+     path: US.yaml
    UK:
      type: http
      behavior: classical
      url: https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/uk.yaml
-     path: ./UK.yaml
-   AREA:
+     interval: 86400
+     path: UK.yaml
+   PROXY:
      type: http
      behavior: classical
-     url: https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/area.yaml
-     path: ./AREA.yaml
+     url: https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/proxy.yaml
+     interval: 86400
+     path: proxy.yaml
+   FAKEIPFILTER:
+     type: http
+     behavior: classical
+     url: https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/fakeipfilter.yaml
+     interval: 86400
+     path: fakeipfilter.yaml
+
 
 
 
