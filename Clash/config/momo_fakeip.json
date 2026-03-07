@@ -13,7 +13,7 @@
       {"rule_set": ["ad", "ad1", "ad_diy"], "action": "predefined", "rcode": "NOERROR"},
       {"query_type": ["A", "AAAA"], "server": "fakeip", "rewrite_ttl": 1}
     ],
-    "final": "default_dns"
+    "final": "foreign"
   },
   "outbounds": [
     {"tag": "🚀 默认代理", "type": "selector", "outbounds": ["♻️ 自动选择", "🥷🏽 翻墙机场", "🌥️ cloudflare", "🖁 CMCC-IPV6", "🐸 手动选择", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "🎯 全球直连"]},
@@ -80,7 +80,7 @@
       {"tag": "netflix", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Netflix/Netflix.srs", "download_detour": "🎯 全球直连"}
     ],
     "auto_detect_interface": true,
-    "default_domain_resolver": {"action": "resolve", "server": "foreign"},
+    "default_domain_resolver": {"action": "resolve", "server": "default_dns"},
     "final": "🐟 漏网之鱼"
   },
   "inbounds": [
