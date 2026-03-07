@@ -37,7 +37,7 @@
     {"tag": "🇺🇲 美国自动", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇺🇸|US|us|美国|美|United States"]}, {"action": "exclude", "keywords": ["AUS|RUS|免费"]}], "interrupt_exist_connections": true},
     {"tag": "🇬🇧 英国自动", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇬🇧|GB|gb|英国|英|United Kingdom"]}, {"action": "exclude", "keywords": ["免费|剩余流量"]}], "interrupt_exist_connections": true},
     {"tag": "GLOBAL", "type": "selector", "outbounds": ["🚀 默认代理", "♻️ 自动选择", "🥷🏽 翻墙机场", "🌥️ cloudflare", "🖁 CMCC-IPV6", "🐸 手动选择", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "🎯 全球直连"]},
-    {"tag": "🎯 全球直连", "type": "direct", "routing_mark": 129}
+    {"tag": "🎯 全球直连", "type": "direct"}
   ],
   "route": {
     "rules": [
