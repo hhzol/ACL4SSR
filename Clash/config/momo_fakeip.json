@@ -58,7 +58,7 @@
       {"rule_set": ["cn_ip", "private_ip"], "action": "route", "outbound": "DIRECT"}
     ],
     "rule_set": [
-      {"tag": "cn_ip", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/cn.srs", "download_detour": "DIRECT"},
+      {"tag": "cn_ip", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/cn.srs", "download_detour": "DIRECT", "update_interval": "24h"},
       {"tag": "cn_site", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geosite/cn.srs", "download_detour": "DIRECT"},
       {"tag": "private_ip", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geoip/private.srs", "download_detour": "DIRECT"},
       {"tag": "private_site", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geosite/private.srs", "download_detour": "DIRECT"},
