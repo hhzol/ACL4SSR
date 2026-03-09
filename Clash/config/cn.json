@@ -38,7 +38,8 @@
         "pool.ntp.org",
         "v6.sync.afraid.org",
         "tmate.io",
-        "164746.xyz"
+        "164746.xyz",
+        "op.136605.xyz"
       ],
       "domain_keyword": [
         "letsencrypt.org",
