@@ -3,7 +3,7 @@
     "servers": [
       {"tag": "local", "type": "local"},
       {"tag": "default_dns", "type": "udp", "server": "dns.opendns.com", "domain_resolver": {"server": "local"}},
-      {"tag": "foreign", "type": "tls", "server": "8.8.8.8", "detour": "🐟 漏网之鱼"},
+      {"tag": "foreign", "type": "tls", "server": "dns.google", "domain_resolver": {"server": "default_dns"}, "detour": "🐟 漏网之鱼"},
       {"tag": "fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/18"}
     ],
     "rules": [
