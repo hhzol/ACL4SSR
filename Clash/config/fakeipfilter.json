@@ -57,7 +57,8 @@
       "domain_suffix": [
         "lan",
         "local",
-        "openwrt"
+        "openwrt",
+        "nodelist-airport.com"
       ]
     },
     {
