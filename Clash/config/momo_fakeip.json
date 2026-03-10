@@ -54,7 +54,6 @@
       {"rule_set": ["tiktok"], "action": "route", "outbound": "🎵 TikTok"},
       {"rule_set": ["netflix"], "action": "route", "outbound": "🎬 Netflix"},
       {"rule_set": ["cn_site", "private_site", "cn_diy"], "action": "route", "outbound": "DIRECT"},
-      {"action": "resolve"},
       {"rule_set": ["cn_ip", "private_ip"], "action": "route", "outbound": "DIRECT"}
     ],
     "rule_set": [
