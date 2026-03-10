@@ -3,7 +3,7 @@
     "servers": [
       {"tag": "local", "type": "local"},
       {"tag": "default_dns", "type": "udp", "server": "dns.opendns.com", "domain_resolver": {"server": "local"}},
-      {"tag": "foreign", "type": "tls", "server": "dns.google", "domain_resolver": {"server": "default_dns"}, "detour": "🐟 漏网之鱼"},
+      {"tag": "foreign", "type": "udp", "server": "8.8.8.8", "detour": "🐟 漏网之鱼"},
       {"tag": "fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/18"}
     ],
     "rules": [
@@ -95,7 +95,7 @@
       "tag": "mixed-in",
       "listen": "::",
       "listen_port": 5330,
-      "sniff": false,
+      "sniff": true,
       "set_system_proxy": false
     },
     {
@@ -103,7 +103,15 @@
       "tag": "redirect-in",
       "listen": "::",
       "listen_port": 5331,
-      "sniff": false
+      "sniff": true
+    },
+    {
+      "type": "tproxy",
+      "tag": "tproxy-in",
+      "listen": "::",
+      "listen_port": 5332,
+      "network": "udp",
+      "sniff": true
     },
     {
       "type": "tun",
@@ -113,11 +121,11 @@
         "172.19.0.1/30",
         "fdfe:dcba:9876::1/126"
       ],
-      "mtu": 9000,
+      "mtu": 1360,
       "auto_route": false,
       "endpoint_independent_nat": true,
       "stack": "mixed",
-      "sniff": false
+      "sniff": true
     }
   ],
   "experimental": {
