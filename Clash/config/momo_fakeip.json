@@ -16,7 +16,7 @@
     "final": "foreign"
   },
   "outbounds": [
-    {"tag": "🐟 漏网之鱼", "type": "selector", "outbounds": ["♻️ 自动选择", "🥷🏽 翻墙机场", "🌥️ cloudflare", "🖁 CMCC-IPV6", "🐸 手动选择", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "DIRECT"]},
+    {"tag": "🚀 默认代理", "type": "selector", "outbounds": ["♻️ 自动选择", "🥷🏽 翻墙机场", "🌥️ cloudflare", "🖁 CMCC-IPV6", "🐸 手动选择", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "DIRECT"]},
     {"tag": "♻️ 自动选择", "type": "urltest", "outbounds": ["{all}"], "interval": "30s", "tolerance": 100, "interrupt_exist_connections": true},
     {"tag": "🥷🏽 翻墙机场", "type": "urltest", "outbounds": ["{all}"], "interval": "30s", "tolerance": 100, "filter": [{"action": "include", "keywords": ["B Group"]}], "interrupt_exist_connections": true},
     {"tag": "🌥️ cloudflare", "type": "urltest", "outbounds": ["{all}"], "interval": "30s", "tolerance": 100, "filter": [{"action": "include", "keywords": ["cloudflare"]}], "interrupt_exist_connections": true},
@@ -35,6 +35,7 @@
     {"tag": "🎧 Spotify", "type": "selector", "outbounds": ["🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "🐟 漏网之鱼", "🐸 手动选择"]},
     {"tag": "🎬 Netflix", "type": "selector", "outbounds": ["🇯🇵 日本自动", "🇸🇬 狮城自动", "🇭🇰 香港自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "🐟 漏网之鱼", "🐸 手动选择"]},
     {"tag": "🎵 TikTok", "type": "selector", "outbounds": ["🇸🇬 狮城自动", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "🐟 漏网之鱼", "🐸 手动选择"]},
+    {"tag": "🐟 漏网之鱼", "type": "selector", "outbounds": ["🚀 默认代理", "🇸🇬 狮城自动", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "🐸 手动选择"]},
     {"tag": "GLOBAL", "type": "selector", "outbounds": ["🐟 漏网之鱼", "♻️ 自动选择", "🥷🏽 翻墙机场", "🌥️ cloudflare", "🖁 CMCC-IPV6", "🐸 手动选择", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "DIRECT"]}, 
     {"tag": "DIRECT", "type": "direct"}
   ],
