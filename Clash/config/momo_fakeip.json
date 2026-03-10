@@ -124,7 +124,7 @@
       "mtu": 1360,
       "auto_route": false,
       "endpoint_independent_nat": true,
-      "stack": "mixed",
+      "stack": "gvisor",
       "sniff": true
     }
   ],
