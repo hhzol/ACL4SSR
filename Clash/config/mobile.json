@@ -2,8 +2,8 @@
   "dns": {
     "servers": [
       {"tag": "local", "type": "local"},
-      {"tag": "default_dns", "type": "udp", "server": "208.67.222.222"},
-      {"tag": "foreign", "type": "udp", "server": "8.8.8.8", "detour": "🐟 漏网之鱼"},
+      {"tag": "default_dns", "type": "udp", "server": "114.114.114.114", "domain_resolver": {"server": "local"}},
+      {"tag": "foreign", "type": "udp", "server": "dns.opendns.com", "domain_resolver": {"server": "default_dns"}},
       {"tag": "fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/18"}
     ],
     "rules": [
@@ -56,7 +56,6 @@
       {"rule_set": ["tiktok"], "action": "route", "outbound": "🎵 TikTok"},
       {"rule_set": ["netflix"], "action": "route", "outbound": "🎬 Netflix"},
       {"rule_set": ["cn_site", "private_site", "cn_diy"], "action": "route", "outbound": "🎯 全球直连"},
-      {"action": "resolve"},
       {"rule_set": ["cn_ip", "private_ip"], "action": "route", "outbound": "🎯 全球直连"}
     ],
     "rule_set": [
