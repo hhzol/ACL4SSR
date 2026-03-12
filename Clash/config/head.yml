@@ -9,9 +9,9 @@ dns:
   enable: true
   listen: :7874
   ipv6: true
-  default-nameserver: [223.5.5.5]
-  default-proxy-server: [dns.quad9.net]
-  nameserver: [dns.quad9.net]
+  default-nameserver: [114.114.114.114]
+  proxy-server-nameserver: [dns.adgurd-dns.com]
+  nameserver: [dns.google]
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
@@ -64,20 +64,3 @@ rule-providers:
      url: https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/fakeipfilter.yaml
      interval: 86400
      path: fakeipfilter.yaml
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
