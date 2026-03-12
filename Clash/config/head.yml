@@ -11,7 +11,7 @@ dns:
   ipv6: true
   default-nameserver: [223.5.5.5]
   default-proxy-server: [quic://dns.quad9.net:853]
-  nameserver: [quic://dns.quad9.net:853]
+  nameserver: [dns.quad9.net:853]
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
@@ -64,6 +64,7 @@ rule-providers:
      url: https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/fakeipfilter.yaml
      interval: 86400
      path: fakeipfilter.yaml
+
 
 
 
