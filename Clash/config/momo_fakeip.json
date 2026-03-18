@@ -9,8 +9,8 @@
     "rules": [
       {"clash_mode": "direct", "server": "local"},
       {"clash_mode": "global", "server": "fakeip"},
-      {"rule_set": ["fakeipfilter", "geosite_cn", "cn_diy"], "server": "local"},
       {"rule_set": ["ad", "ad_diy"], "action": "predefined", "rcode": "NOERROR"},
+      {"rule_set": ["fakeipfilter", "geosite_cn", "cn_diy"], "server": "local"},
       {"query_type": ["A", "AAAA"], "server": "fakeip", "rewrite_ttl": 1}
     ],
     "final": "foreign"
