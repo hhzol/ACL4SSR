@@ -54,6 +54,7 @@
       {"rule_set": ["spotify"], "action": "route", "outbound": "🎧 Spotify"},
       {"rule_set": ["tiktok"], "action": "route", "outbound": "🎵 TikTok"},
       {"rule_set": ["netflix"], "action": "route", "outbound": "🎬 Netflix"},
+      {"domain_suffix": ["music.163.com", "126.net"], "action": bypass"},
       {"rule_set": ["geosite_cn", "geosite_private", "cn_diy"], "action": "route", "outbound": "🎯 本地直连"},
       {"action": "resolve"},
       {"rule_set": ["geoip_cn", "geoip_private"], "action": "route", "outbound": "🎯 本地直连"}
