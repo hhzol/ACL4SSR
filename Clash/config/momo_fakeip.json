@@ -48,7 +48,7 @@
       {"rule_set": ["proxy_diy"], "action": "route", "outbound": "🐟 漏网之鱼"},
       {"rule_set": ["microsoft"], "action": "route", "outbound": "🪟 Microsoft"},
       {"rule_set": ["apple"], "action": "route", "outbound": "🍎 Apple"},
-      {"rule_set": ["google"], "action": "route",	"outbound": "🔍 Google"},
+      {"rule_set": ["google"], "action": "route", "outbound": "🔍 Google"},
       {"rule_set": ["us_diy", "ai"], "action": "route", "outbound": "🧠 AI"},
       {"rule_set": ["uk_diy", "bbc"], "action": "route", "outbound": "📻 BBC"},
       {"rule_set": ["spotify"], "action": "route", "outbound": "🎧 Spotify"},
