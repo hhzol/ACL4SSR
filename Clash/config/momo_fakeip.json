@@ -22,7 +22,7 @@
     {"tag": "🌥️ cloudflare", "type": "urltest", "outbounds": ["{all}"], "interval": "30s", "tolerance": 100, "filter": [{"action": "include", "keywords": ["cloudflare|CF优选"]}], "interrupt_exist_connections": true},
     {"tag": "🖁 CMCC-IPV6", "type": "urltest", "outbounds": ["{all}"], "interval": "30s", "tolerance": 100, "filter": [{"action": "include", "keywords": ["CMCC-IPV6"]}], "interrupt_exist_connections": true},
     {"tag": "🐸 手动选择", "type": "selector", "outbounds": ["{all}"]},
-    {"tag": "🇭🇰 香港自动", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇭🇰|HK|hk|香港|港|HongKong"]}], "interrupt_exist_connections": true},
+    {"tag": "🇭🇰 香港自动", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇭🇰|HK|香港|港|HongKong"]}], "interrupt_exist_connections": true},
     {"tag": "🇯🇵 日本自动", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇯🇵|JP|jp|日本|日|Japan"]}], "interrupt_exist_connections": true},
     {"tag": "🇸🇬 狮城自动", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["新加坡|坡|狮城|SG|Singapore"]}], "interrupt_exist_connections": true},
     {"tag": "🇺🇲 美国自动", "type": "urltest", "outbounds": ["{all}"], "interval": "30s", "tolerance": 100, "filter": [{"action": "include", "keywords": ["California"]}], "interrupt_exist_connections": true},
