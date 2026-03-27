@@ -6,7 +6,6 @@
         "localhost",
         "time-ios.apple.com",
         "time1.cloud.tencent.com",
-        "music.163.com",
         "musicapi.taihe.com",
         "music.taihe.com",
         "songsearch.kugou.com",
@@ -58,7 +57,8 @@
         "lan",
         "local",
         "openwrt",
-        "mydrivers.com"
+        "mydrivers.com",
+        "music.163.com",
       ]
     },
     {
