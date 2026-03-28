@@ -26,6 +26,7 @@
     {"tag": "🇸🇬 狮城自动", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["新加坡|坡|狮城|SG|Singapore"]}], "interrupt_exist_connections": true},
     {"tag": "🇺🇲 美国自动", "type": "urltest", "outbounds": ["{all}"], "interval": "30s", "tolerance": 100, "filter": [{"action": "include", "keywords": ["California"]}], "interrupt_exist_connections": true},
     {"tag": "🇬🇧 英国自动", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇬🇧|GB|gb|英国|英|United Kingdom"]}, {"action": "exclude", "keywords": ["流量"]}], "interrupt_exist_connections": true},
+    {"tag": "🗑️ 广告过滤", "type": "selector", "outbounds": ["🛡️ 全球拦截", "🎯 本地直连", "🐟 漏网之鱼"]},
     {"tag": "🪟 Microsoft", "type": "selector", "outbounds": ["🐟 漏网之鱼", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "🎯 本地直连"]},
     {"tag": "🍎 Apple", "type": "selector", "outbounds": ["🐟 漏网之鱼", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "🎯 本地直连"]},
     {"tag": "🔍 Google", "type": "selector", "outbounds": ["🐟 漏网之鱼", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "🎯 本地直连"]},
@@ -35,9 +36,8 @@
     {"tag": "🎬 Netflix", "type": "selector", "outbounds": ["🇯🇵 日本自动", "🇸🇬 狮城自动", "🇭🇰 香港自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "🐟 漏网之鱼", "🐸 手动选择"]},
     {"tag": "🎵 TikTok", "type": "selector", "outbounds": ["🇸🇬 狮城自动", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "🐟 漏网之鱼", "🐸 手动选择"]},
     {"tag": "🐟 漏网之鱼", "type": "selector", "outbounds": ["🚀 默认代理", "🇸🇬 狮城自动", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "🐸 手动选择"]},
-    {"tag": "🛡️ 全球拦截", "type": "block"},
-    {"tag": "🗑️ 广告过滤", "type": "selector", "outbounds": ["🛡️ 全球拦截", "🐟 漏网之鱼", "🎯 本地直连"]},
     {"tag": "GLOBAL", "type": "selector", "outbounds": ["🚀 默认代理", "♻️ 自动选择", "🥷🏽 翻墙机场", "🌥️ cloudflare", "🖁 CMCC-IPV6", "🐸 手动选择", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "🎯 本地直连"]}, 
+    {"tag": "🛡️ 全球拦截", "type": "block"},
     {"tag": "🎯 本地直连", "type": "direct"}
   ],
   "route": {
