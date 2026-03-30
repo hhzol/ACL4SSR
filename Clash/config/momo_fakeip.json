@@ -24,7 +24,7 @@
     {"tag": "🇭🇰 香港自动", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇭🇰|HK|香港|港|HongKong"]}], "interrupt_exist_connections": true},
     {"tag": "🇯🇵 日本自动", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇯🇵|JP|jp|日本|日|Japan"]}], "interrupt_exist_connections": true},
     {"tag": "🇸🇬 狮城自动", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["新加坡|坡|狮城|SG|Singapore"]}], "interrupt_exist_connections": true},
-    {"tag": "🇺🇲 美国自动", "type": "urltest", "outbounds": ["{all}"], "interval": "30s", "tolerance": 100, "filter": [{"action": "include", "keywords": ["🇺🇸|US|us|美国|美|United States"]}], "interrupt_exist_connections": true},
+    {"tag": "🇺🇲 美国自动", "type": "urltest", "outbounds": ["{all}"], "interval": "30s", "tolerance": 100, "filter": [{"action": "include", "keywords": ["🇺🇸|US|美国|美|United States"]}], "interrupt_exist_connections": true},
     {"tag": "🇬🇧 英国自动", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇬🇧|GB|gb|英国|英|United Kingdom"]}, {"action": "exclude", "keywords": ["流量"]}], "interrupt_exist_connections": true},
     {"tag": "🗑️ 广告过滤", "type": "selector", "outbounds": ["🛡️ 拦截", "🎯 直连", "🐟 漏网之鱼"]},
     {"tag": "🪟 Microsoft", "type": "selector", "outbounds": ["🐟 漏网之鱼", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "🎯 直连"]},
