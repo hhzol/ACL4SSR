@@ -85,7 +85,7 @@
   },
   "inbounds": [
     {"type": "tun", "address": ["172.19.0.1/30", "fdfe:dcba:9876::1/126"], "mtu": 9000, "auto_route": false, "endpoint_independent_nat": true, "stack": "gvisor", "sniff": true}
-    {"type": "mixed",  "tag": "mixed-in", "listen": "::", "listen_port": 7890, "sniff": true, "set_system_proxy": false}
+    {"type": "mixed", "listen": "::", "listen_port": 7890, "sniff": true}
   ],
   "experimental": {
     "cache_file": {"enabled": true},
