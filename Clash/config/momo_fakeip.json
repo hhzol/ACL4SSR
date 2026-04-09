@@ -84,68 +84,15 @@
     "final": "🐟 漏网之鱼"
   },
   "inbounds": [
-    {
-      "type": "direct",
-      "tag": "dns-in",
-      "listen": "::",
-      "listen_port": 5333
-    },
-    {
-      "type": "mixed",
-      "tag": "mixed-in",
-      "listen": "::",
-      "listen_port": 5330,
-      "sniff": true,
-      "set_system_proxy": false
-    },
-    {
-      "type": "redirect",
-      "tag": "redirect-in",
-      "listen": "::",
-      "listen_port": 5331,
-      "sniff": true
-    },
-    {
-      "type": "tproxy",
-      "tag": "tproxy-in",
-      "listen": "::",
-      "listen_port": 5332,
-      "network": "udp",
-      "sniff": true
-    },
-    {
-      "type": "tun",
-      "tag": "tun-in",
-      "interface_name": "momo",
-      "address": [
-        "172.19.0.1/30",
-        "fdfe:dcba:9876::1/126"
-      ],
-      "mtu": 9000,
-      "auto_route": false,
-      "endpoint_independent_nat": true,
-      "stack": "gvisor",
-      "sniff": true
-    }
+    {"type": "direct", "tag": "dns-in", "listen": "::", "listen_port": 5333},
+    {"type": "mixed",  "tag": "mixed-in", "listen": "::", "listen_port": 5330, "sniff": true, "set_system_proxy": false},
+    {"type": "redirect", "tag": "redirect-in", "listen": "::", "listen_port": 5331, "sniff": true},
+    {"type": "tproxy", "tag": "tproxy-in", "listen": "::", "listen_port": 5332, "network": "udp", "sniff": true},
+    {"type": "tun", "tag": "tun-in", "interface_name": "momo", "address": ["172.19.0.1/30", "fdfe:dcba:9876::1/126"], "mtu": 9000, "auto_route": false, "endpoint_independent_nat": true, "stack": "gvisor", "sniff": true}
   ],
   "experimental": {
-    "cache_file": {
-      "enabled": true,
-      "path": "/etc/momo/run/cache.db",
-      "store_fakeip": true
-    },
-    "clash_api": {
-      "external_controller": "0.0.0.0:9095",
-      "external_ui": "/etc/momo/run/ui",
-      "external_ui_download_url": "https://gh-proxy.com/https://github.com/Zephyruso/zashboard/releases/latest/download/dist-no-fonts.zip",
-      "external_ui_download_detour": "🎯 直连",
-      "secret": "",
-      "default_mode": "rule"
-    }
+    "cache_file": {"enabled": true, "path": "/etc/momo/run/cache.db", "store_fakeip": true},
+    "clash_api": {"external_controller": "0.0.0.0:9095", "external_ui": "/etc/momo/run/ui", "external_ui_download_url": "https://gh-proxy.com/https://github.com/Zephyruso/zashboard/releases/latest/download/dist-no-fonts.zip", "external_ui_download_detour": "🎯 直连", "secret": "", "default_mode": "rule"}
   },
-  "log": {
-    "disabled": false,
-    "level": "warning",
-    "timestamp": true
-  }
+  "log": {"disabled": false, "level": "warning", "timestamp": true}
 }
