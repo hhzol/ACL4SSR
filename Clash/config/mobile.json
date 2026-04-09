@@ -43,6 +43,7 @@
       {"inbound": "dns-in", "action": "hijack-dns"},
       {"clash_mode": "direct", "outbound": "🎯 直连"},
       {"clash_mode": "global", "outbound": "GLOBAL"},
+      {"domain_suffix": ["tiktok.com", "tiktokcdn.com", "byteoversea.com"], "network": "udp", "action": "block"},
       {"rule_set": ["proxy_diy"], "action": "route", "outbound": "🐟 漏网之鱼"},
       {"rule_set": ["ad", "ad_diy"], "action": "reject", "method": "drop"},
       {"rule_set": ["microsoft"], "action": "route", "outbound": "🪟 Microsoft"},
