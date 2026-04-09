@@ -84,8 +84,7 @@
     "final": "🐟 漏网之鱼"
   },
   "inbounds": [
-    {"type": "mixed", "listen": "::", "listen_port": 7890},
-    {"type": "tun", "address": ["172.19.0.0/30", "fdfe:dcba:9876::0/126"], "auto_route": true, "sniff": true}
+    {"type": "mixed", "listen": "::", "listen_port": 7890}
   ],
   "experimental": {
     "cache_file": {"enabled": true},
