@@ -84,7 +84,7 @@
     "final": "🐟 漏网之鱼"
   },
   "inbounds": [
-    {"type": "tun", "interface_name": "singtun", "address": ["172.19.0.1/30", "fdfe:dcba:9876::1/126"], "auto_route": false, "stack": "gvisor", "sniff": true}
+    {"type": "tun", "address": ["172.19.0.1/30", "fdfe:dcba:9876::1/126"], "auto_route": false, "stack": "gvisor", "sniff": true}
   ],
   "experimental": {
     "cache_file": {"enabled": true},
