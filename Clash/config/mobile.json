@@ -81,6 +81,7 @@
       {"tag": "tiktok", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/TikTok/TikTok.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
       {"tag": "netflix", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Netflix/Netflix.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
       {"tag": "youtube", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/YouTube/YouTube.srs", "download_detour": "🎯 直连", "update_interval": "24h"}    ],
+    ],
     "auto_detect_interface": true,
     "default_domain_resolver": "local",
     "final": "🐟 漏网之鱼"
