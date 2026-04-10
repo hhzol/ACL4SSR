@@ -28,7 +28,6 @@
     {"tag": "🇬🇧 英国自动", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇬🇧|GB|gb|英国|英|United Kingdom"]}, {"action": "exclude", "keywords": ["流量"]}]},
     {"tag": "🪟 Microsoft", "type": "selector", "outbounds": ["🐟 漏网之鱼", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "🎯 直连"]},
     {"tag": "🍎 Apple", "type": "selector", "outbounds": ["🐟 漏网之鱼", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "🎯 直连"]},
-    {"tag": "🔍 Google", "type": "selector", "outbounds": ["🐟 漏网之鱼", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "🎯 直连"]},
     {"tag": "🧠 AI", "type": "selector", "outbounds": ["🐟 漏网之鱼", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇺🇲 美国自动1", "🇬🇧 英国自动", "🐸 手动选择"], "default": "🇺🇲 美国自动"},
     {"tag": "📻 BBC", "type": "selector", "outbounds": ["🐟 漏网之鱼", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "🐸 手动选择"], "default": "🇬🇧 英国自动"},
     {"tag": "🎧 Spotify", "type": "selector", "outbounds": ["🐟 漏网之鱼", "🇭🇰 香港自动", "🇯🇵 日本自动", "🇸🇬 狮城自动", "🇺🇲 美国自动", "🇬🇧 英国自动", "🐸 手动选择"], "default": "🇭🇰 香港自动"},
@@ -48,7 +47,6 @@
       {"rule_set": ["ad", "ad_diy"], "action": "reject", "method": "drop"},
       {"rule_set": ["microsoft"], "action": "route", "outbound": "🪟 Microsoft"},
       {"rule_set": ["apple"], "action": "route", "outbound": "🍎 Apple"},
-      {"rule_set": ["google","youtube"], "action": "route", "outbound": "🔍 Google"},
       {"rule_set": ["us_diy", "ai"], "action": "route", "outbound": "🧠 AI"},
       {"rule_set": ["uk_diy", "bbc"], "action": "route", "outbound": "📻 BBC"},
       {"rule_set": ["spotify"], "action": "route", "outbound": "🎧 Spotify"},
@@ -74,11 +72,9 @@
       {"tag": "bbc", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/BBC/BBC.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
       {"tag": "microsoft", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Microsoft/Microsoft.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
       {"tag": "apple", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Apple/Apple.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
-      {"tag": "google", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Google/Google.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
       {"tag": "spotify", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com//senshinya/singbox_ruleset/raw/main/rule/Spotify/Spotify.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
       {"tag": "tiktok", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/TikTok/TikTok.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
-      {"tag": "netflix", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Netflix/Netflix.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
-      {"tag": "youtube", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/YouTube/YouTube.srs", "download_detour": "🎯 直连", "update_interval": "24h"}
+      {"tag": "netflix", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Netflix/Netflix.srs", "download_detour": "🎯 直连", "update_interval": "24h"}
     ],
     "auto_detect_interface": false,
     "default_domain_resolver": "local",
