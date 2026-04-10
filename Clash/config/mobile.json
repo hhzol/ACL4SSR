@@ -82,13 +82,12 @@
       {"tag": "netflix", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Netflix/Netflix.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
       {"tag": "youtube", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/YouTube/YouTube.srs", "download_detour": "🎯 直连", "update_interval": "24h"}
     ],
-    "auto_detect_interface": true,
+    "auto_detect_interface": false,
     "default_domain_resolver": "local",
     "final": "🐟 漏网之鱼"
   },
   "inbounds": [
-    {"type": "tun", "address": ["172.19.0.0/30", "fdfe:dcba:9876::0/126"], "stack": "gvisor", "auto_route": true, "platform": {"http_proxy": {"enabled": true, "server": "::", "server_port": 7890}}},
-    {"type": "mixed", "listen": "::", "listen_port": 7890}
+    {"type": "tun", "address": ["172.19.0.0/30", "fdfe:dcba:9876::0/126"], "stack": "gvisor", "auto_route": false, "strict_route": true, "endpoint_independent_nat": true}
   ],
   "experimental": {
     "cache_file": {"enabled": true},
