@@ -17,6 +17,7 @@
       {"clash_mode": "global", "server": "foreign"},
       {"rule_set": ["ad", "ad_diy"], "action": "predefined", "rcode": "NOERROR"},
       {"rule_set": ["cn_diy"], "action": "route", "server": "local"},
+      {"rule_set": ["proxy_diy"], "action": "route", "server": "foreign", "strategy": "ipv4_only"},
       {"rule_set": ["us_diy", "ai"], "action": "route", "server": "us_dns", "strategy": "ipv4_only"},
       {"rule_set": ["uk_diy", "bbc"],	"action": "route", "server": "uk_dns", "strategy": "ipv4_only"},
       {"rule_set": ["spotify"], "action": "route", "server": "hk_dns", "strategy": "ipv4_only"},
