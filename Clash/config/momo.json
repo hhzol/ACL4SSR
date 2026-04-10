@@ -3,7 +3,7 @@
     "servers": [
       {"tag": "local", "type": "quic", "server": "223.5.5.5", "server_port": 853},
       {"tag": "foreign", "type": "udp", "server": "dns.google", "domain_resolver": "local", "detour": "🚀 默认代理"},
-      {"tag": "us_dns", "type": "https", "server": "dns.google", "path": "/dns-query", "domain_resolver": {"server": "us_dns"}, "detour": "🇺🇲 美国自动"},
+      {"tag": "us_dns", "type": "https", "server": "dns.google", "path": "/dns-query", "domain_resolver": {"server": "local"}, "detour": "🇺🇲 美国自动"},
       {"tag": "uk_dns", "type": "https", "server": "dns.google", "path": "/dns-query", "domain_resolver": {"server": "local"}, "detour": "🇬🇧 英国自动"},
       {"tag": "hk_dns", "type": "https", "server": "dns.google", "path": "/dns-query", "domain_resolver": {"server": "local"}, "detour": "🇭🇰 香港自动"},
       {"tag": "sg_dns", "type": "https", "server": "dns.google", "path": "/dns-query", "domain_resolver": {"server": "local"}, "detour": "🇸🇬 狮城自动"},
