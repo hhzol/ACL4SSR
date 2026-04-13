@@ -86,7 +86,7 @@
     {"type": "mixed", "listen": "::", "listen_port": 7890}
   ],
   "experimental": {
-    "cache_file": {"enabled": true, "path": "cache.db", "store_fakeip": true},
+    "cache_file": {"enabled": true},
     "clash_api": {"external_controller": "0.0.0.0:9090", "secret": "", "default_mode": "rule"}
   },
   "log": {"disabled": true, "level": "warning", "timestamp": true}
