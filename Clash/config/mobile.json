@@ -88,5 +88,5 @@
     "cache_file": {"enabled": true, "path": "cache.db", "store_fakeip": true},
     "clash_api": {"external_controller": "0.0.0.0:9090", "secret": "", "default_mode": "rule"}
   },
-  "log": {"disabled": false, "level": "warning", "timestamp": true}
+  "log": {"disabled": true, "level": "warning", "timestamp": true}
 }
