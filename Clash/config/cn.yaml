@@ -1,11 +1,5 @@
 payload:
-- DOMAIN-SUFFIX,relay.communication.microsoft.com
-- DOMAIN-SUFFIX,dcg.microsoft.com
-- DOMAIN-SUFFIX,dns.msftncsi.com
-- DOMAIN-SUFFIX,www.msftconnecttest.com
 - DOMAIN-SUFFIX,ipv6.msftconnecttest.com
-- GEOSITE,youku
-- DOMAIN-SUFFIX,baidu.com
 - DOMAIN-SUFFIX,chinamobile.com
 - DOMAIN-SUFFIX,is.gd
 - DOMAIN-KEYWORD,letsencrypt.org
