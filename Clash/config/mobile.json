@@ -2,6 +2,7 @@
   "dns": {
     "servers": [
       {"tag": "local", "type": "quic", "server": "223.5.5.5", "server_port": 853},
+      {"tag": "node_dns", "type": "quic", "server": "dns.quad9.net", "server_port": 853, "domain_resolver": "local"},
       {"tag": "foreign", "type": "https", "server": "dns.google", "path": "/dns-query","domain_resolver": "local", "detour": "🐟 漏网之鱼"},  
       {"tag": "fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/18"}
     ],
@@ -78,7 +79,7 @@
       {"tag": "netflix", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Netflix/Netflix.srs", "download_detour": "🎯 直连", "update_interval": "24h"}
     ],
     "auto_detect_interface": false,
-    "default_domain_resolver": "local",
+    "default_domain_resolver": "node_dns",
     "final": "🐟 漏网之鱼"
   },
   "inbounds": [
