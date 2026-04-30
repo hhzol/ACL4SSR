@@ -2,6 +2,7 @@ payload:
 - DOMAIN-KEYWORD,cambridge.org
 - DOMAIN-SUFFIX,zowiejump.com
 - DOMAIN-SUFFIX,cdns.eu1.gigya.com
+- DOMAIN-SUFFIX,cdn.ampproject.org
 - GEOSITE,bbc
 - DOMAIN-SUFFIX,bbcx-internal.com
 - DOMAIN-SUFFIX,live.bidi.net.uk
