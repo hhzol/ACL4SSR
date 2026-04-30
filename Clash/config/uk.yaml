@@ -3,6 +3,7 @@ payload:
 - DOMAIN-SUFFIX,html-load.com
 - DOMAIN-SUFFIX,cdn.ampproject.org
 - DOMAIN-SUFFIX,zowiejump.com
+- DOMAIN-SUFFIX,cdns.eu1.gigya.com
 - GEOSITE,bbc
 - DOMAIN-SUFFIX,bbcx-internal.com
 - DOMAIN-SUFFIX,live.bidi.net.uk
