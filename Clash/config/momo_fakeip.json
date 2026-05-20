@@ -77,7 +77,9 @@
       {"tag": "apple", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Apple/Apple.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
       {"tag": "spotify", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Spotify/Spotify.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
       {"tag": "tiktok", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/TikTok/TikTok.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
-      {"tag": "netflix", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Netflix/Netflix.srs", "download_detour": "🎯 直连", "update_interval": "24h"}
+      {"tag": "netflix", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Netflix/Netflix.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
+      {"tag": "tencent", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Tencent/Tencent.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
+      {"tag": "alibaba", "type": "remote", "format": "binary", "url": "https://gh-proxy.com/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Alibaba/Alibaba.srs", "download_detour": "🎯 直连", "update_interval": "24h"}
     ],
     "auto_detect_interface": false,
     "default_domain_resolver": "node_dns",
