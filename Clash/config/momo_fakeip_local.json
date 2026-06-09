@@ -9,7 +9,8 @@
     "rules": [
       {"clash_mode": "direct", "server": "local"},
       {"clash_mode": "global", "server": "fakeip"},
-      {"rule_set": ["fakeipfilter"], "server": "local"},
+			{"rule_set": ["ad", "ad_diy"], "action": "predefined", "rcode": "NOERROR"},
+      {"rule_set": ["fakeipfilter", "geosite_cn", "geosite_private", "tencent", "alibaba"], "server": "local"},
       {"query_type": ["A", "AAAA"], "server": "fakeip", "rewrite_ttl": 1}
     ],
     "final": "foreign",
@@ -46,8 +47,6 @@
       {"clash_mode": "direct", "outbound": "🎯 直连"},
       {"clash_mode": "global", "outbound": "GLOBAL"},
       {"rule_set": ["proxy_diy"], "action": "route", "outbound": "🐟 漏网之鱼"},
-      {"rule_set": ["cn_diy"], "action": "route", "outbound": "🎯 直连"},
-      {"rule_set": ["ad", "ad_diy"], "action": "reject", "method": "drop"},
       {"rule_set": ["microsoft"], "action": "route", "outbound": "🪟 Microsoft"},
       {"rule_set": ["apple"], "action": "route", "outbound": "🍎 Apple"},
       {"rule_set": ["us_diy", "ai"], "action": "route", "outbound": "🧠 AI"},
@@ -55,7 +54,7 @@
       {"rule_set": ["spotify"], "action": "route", "outbound": "🎧 Spotify"},
       {"rule_set": ["tiktok"], "action": "route", "outbound": "🎵 TikTok"},
       {"rule_set": ["netflix"], "action": "route", "outbound": "🎬 Netflix"},
-      {"rule_set": ["geosite_cn", "geosite_private", "tencent", "alibaba"], "action": "route", "outbound": "🎯 直连"},
+      {"rule_set": ["geosite_cn", "geosite_private", "tencent", "alibaba", "cn_diy"], "action": "route", "outbound": "🎯 直连"},
       {"action": "resolve"},
       {"rule_set": ["geoip_cn", "geoip_private"], "action": "route", "outbound": "🎯 直连"}
     ],
