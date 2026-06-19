@@ -3,7 +3,6 @@
   "rules": [
     {
       "domain_suffix": [
-        "cdn.ampproject.org",
         "bbcx-internal.com"
        ],
        "domain_keyword": [
