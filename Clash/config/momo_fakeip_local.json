@@ -81,7 +81,7 @@
       {"tag": "alibaba", "type": "local", "format": "binary", "path": "ruleset/Alibaba.srs"}
     ],
     "auto_detect_interface": false,
-    "default_domain_resolver": "node_dns",
+    "default_domain_resolver": "local",
     "final": "🐟 漏网之鱼"
   },
   "inbounds": [
