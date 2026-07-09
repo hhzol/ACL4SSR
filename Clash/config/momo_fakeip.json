@@ -59,26 +59,26 @@
       {"rule_set": ["geoip_cn", "geoip_private"], "action": "route", "outbound": "🎯 直连"}
     ],
     "rule_set": [
-      {"tag": "geoip_cn", "type": "remote", "format": "binary", "url": "https://ui.ghproxy.cc/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geoip/cn.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
-      {"tag": "geosite_cn", "type": "remote", "format": "binary", "url": "https://ui.ghproxy.cc/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geosite/cn.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
-      {"tag": "geoip_private", "type": "remote", "format": "binary", "url": "https://ui.ghproxy.cc/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geoip/private.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
-      {"tag": "geosite_private", "type": "remote", "format": "binary", "url": "https://ui.ghproxy.cc/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geosite/private.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
-      {"tag": "ad", "type": "remote", "format": "binary", "url": "https://ui.ghproxy.cc/https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblocksingbox.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
-      {"tag": "ad_diy", "type": "remote", "format": "source", "url": "https://ui.ghproxy.cc/https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/ad.json", "download_detour": "🎯 直连", "update_interval": "24h"},
-      {"tag": "us_diy", "type": "remote", "format": "source", "url": "https://ui.ghproxy.cc/https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/us.json", "download_detour": "🎯 直连", "update_interval": "24h"},
-      {"tag": "uk_diy", "type": "remote", "format": "source", "url": "https://ui.ghproxy.cc/https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/uk.json", "download_detour": "🎯 直连", "update_interval": "24h"},
-      {"tag": "proxy_diy", "type": "remote", "format": "source", "url": "https://ui.ghproxy.cc/https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/proxy.json", "download_detour": "🎯 直连", "update_interval": "24h"},
-      {"tag": "cn_diy", "type": "remote", "format": "source", "url": "https://ui.ghproxy.cc/https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/cn.json", "download_detour": "🎯 直连", "update_interval": "24h"},
-      {"tag": "fakeipfilter", "type": "remote", "format": "source", "url": "https://ui.ghproxy.cc/https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/fakeipfilter.json", "download_detour": "🎯 直连", "update_interval": "24h"},
-      {"tag": "ai", "type": "remote", "format": "binary", "url": "https://ui.ghproxy.cc/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-!cn.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
-      {"tag": "bbc", "type": "remote", "format": "binary", "url": "https://ui.ghproxy.cc/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/BBC/BBC.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
-      {"tag": "microsoft", "type": "remote", "format": "binary", "url": "https://ui.ghproxy.cc/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Microsoft/Microsoft.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
-      {"tag": "apple", "type": "remote", "format": "binary", "url": "https://ui.ghproxy.cc/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Apple/Apple.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
-      {"tag": "spotify", "type": "remote", "format": "binary", "url": "https://ui.ghproxy.cc/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Spotify/Spotify.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
-      {"tag": "tiktok", "type": "remote", "format": "binary", "url": "https://ui.ghproxy.cc/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/TikTok/TikTok.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
-      {"tag": "netflix", "type": "remote", "format": "binary", "url": "https://ui.ghproxy.cc/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Netflix/Netflix.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
-      {"tag": "tencent", "type": "remote", "format": "binary", "url": "https://ui.ghproxy.cc/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Tencent/Tencent.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
-      {"tag": "alibaba", "type": "remote", "format": "binary", "url": "https://ui.ghproxy.cc/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Alibaba/Alibaba.srs", "download_detour": "🎯 直连", "update_interval": "24h"}
+      {"tag": "geoip_cn", "type": "remote", "format": "binary", "url": "http://ui.ghproxy.cc/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geoip/cn.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
+      {"tag": "geosite_cn", "type": "remote", "format": "binary", "url": "http://ui.ghproxy.cc/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geosite/cn.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
+      {"tag": "geoip_private", "type": "remote", "format": "binary", "url": "http://ui.ghproxy.cc/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geoip/private.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
+      {"tag": "geosite_private", "type": "remote", "format": "binary", "url": "http://ui.ghproxy.cc/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geosite/private.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
+      {"tag": "ad", "type": "remote", "format": "binary", "url": "http://ui.ghproxy.cc/https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblocksingbox.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
+      {"tag": "ad_diy", "type": "remote", "format": "source", "url": "http://ui.ghproxy.cc/https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/ad.json", "download_detour": "🎯 直连", "update_interval": "24h"},
+      {"tag": "us_diy", "type": "remote", "format": "source", "url": "http://ui.ghproxy.cc/https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/us.json", "download_detour": "🎯 直连", "update_interval": "24h"},
+      {"tag": "uk_diy", "type": "remote", "format": "source", "url": "http://ui.ghproxy.cc/https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/uk.json", "download_detour": "🎯 直连", "update_interval": "24h"},
+      {"tag": "proxy_diy", "type": "remote", "format": "source", "url": "http://ui.ghproxy.cc/https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/proxy.json", "download_detour": "🎯 直连", "update_interval": "24h"},
+      {"tag": "cn_diy", "type": "remote", "format": "source", "url": "http://ui.ghproxy.cc/https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/cn.json", "download_detour": "🎯 直连", "update_interval": "24h"},
+      {"tag": "fakeipfilter", "type": "remote", "format": "source", "url": "http://ui.ghproxy.cc/https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/fakeipfilter.json", "download_detour": "🎯 直连", "update_interval": "24h"},
+      {"tag": "ai", "type": "remote", "format": "binary", "url": "http://ui.ghproxy.cc/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-!cn.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
+      {"tag": "bbc", "type": "remote", "format": "binary", "url": "http://ui.ghproxy.cc/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/BBC/BBC.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
+      {"tag": "microsoft", "type": "remote", "format": "binary", "url": "http://ui.ghproxy.cc/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Microsoft/Microsoft.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
+      {"tag": "apple", "type": "remote", "format": "binary", "url": "http://ui.ghproxy.cc/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Apple/Apple.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
+      {"tag": "spotify", "type": "remote", "format": "binary", "url": "http://ui.ghproxy.cc/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Spotify/Spotify.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
+      {"tag": "tiktok", "type": "remote", "format": "binary", "url": "http://ui.ghproxy.cc/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/TikTok/TikTok.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
+      {"tag": "netflix", "type": "remote", "format": "binary", "url": "http://ui.ghproxy.cc/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Netflix/Netflix.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
+      {"tag": "tencent", "type": "remote", "format": "binary", "url": "http://ui.ghproxy.cc/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Tencent/Tencent.srs", "download_detour": "🎯 直连", "update_interval": "24h"},
+      {"tag": "alibaba", "type": "remote", "format": "binary", "url": "http://ui.ghproxy.cc/https://raw.githubusercontent.com/senshinya/singbox_ruleset/main/rule/Alibaba/Alibaba.srs", "download_detour": "🎯 直连", "update_interval": "24h"}
     ],
     "auto_detect_interface": false,
     "default_domain_resolver": "local",
@@ -93,7 +93,7 @@
   ],
   "experimental": {
     "cache_file": {"enabled": true, "path": "/etc/momo/run/cache1.db", "store_fakeip": true},
-    "clash_api": {"external_controller": "0.0.0.0:9095", "external_ui": "/etc/momo/run/ui", "external_ui_download_url": "https://ui.ghproxy.cc/https://github.com/Zephyruso/zashboard/releases/latest/download/dist-no-fonts.zip", "external_ui_download_detour": "🎯 直连", "secret": "", "default_mode": "rule"}
+    "clash_api": {"external_controller": "0.0.0.0:9095", "external_ui": "/etc/momo/run/ui", "external_ui_download_url": "http://ui.ghproxy.cc/https://github.com/Zephyruso/zashboard/releases/latest/download/dist-no-fonts.zip", "external_ui_download_detour": "🎯 直连", "secret": "", "default_mode": "rule"}
   },
   "log": {"disabled": false, "level": "warning", "timestamp": true}
 }
