@@ -492,15 +492,7 @@
         "wan.360.cn",
         "yasuo.360.cn",
         "yule.360.com",
-        "360ads.com"
-      ],
-      "domain_suffix": [
-        "bigamybigot.space",
-        "magsrv.com",
-        "twlxxl.cn",
-        "glum-mortgage.com",
-        "registeridm.com",
-        "tonec.com",
+        "360ads.com",
         "ade.googlesyndication.com",
         "pagead.googlesyndication.com",
         "pagead1.googlesyndication.com",
@@ -510,7 +502,15 @@
         "www.googleadservices.com",
         "static.doubleclick.net",
         "ads.youtube.com",
-        "ad.youtube.com",
+        "ad.youtube.com"
+      ],
+      "domain_suffix": [
+        "bigamybigot.space",
+        "magsrv.com",
+        "twlxxl.cn",
+        "glum-mortgage.com",
+        "registeridm.com",
+        "tonec.com",
         "ggvaucher.com",
         "nqdrbwtcsu.com",
         "playafterdark.com",
