@@ -2,9 +2,6 @@
   "version": 2,
   "rules": [
     {
-      "domain_suffix": [
-        "bbcx-internal.com"
-       ],
        "domain_keyword": [
         "cambridge.org",
         "zowiejump.com",
