@@ -23,12 +23,12 @@ profile:
   store-selected: true
   store-fake-ip: true
 rule-providers:
-   ANTIAD: {type: http,behavior: classical,url: https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/ad.yaml,interval: 86400,path: ANTIAD.yaml}
+   antiad: {type: http,behavior: classical,url: https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/ad.yaml,interval: 86400,path: ANTIAD.yaml}
    US: {type: http,behavior: classical,url: https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/us.yaml,interval: 86400,path: US.yaml}
-   UK: {type: http,behavior: classical,url: https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/uk.yaml,interval: 86400,path: UK.yaml}
-   netflix: {type: http,format: mrs,behavior: domain,url: https://gh-proxy.org/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.mrs,path: geolocation-!cn.mrs,interval: 86400}
-   spotify: {type: http,format: mrs,behavior: domain,url: https://gh-proxy.org/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/spotify.mrs,path: geolocation-!cn.mrs,interval: 86400}
-   tiktok: {type: http,format: mrs,behavior: domain,url: https://gh-proxy.org/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tiktok.mrs,path: geolocation-!cn.mrs,interval: 86400}
+   bbc: {type: http,format: mrs,behavior: domain,url: https://gh-proxy.org/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/bbc.mrs,path: bbc.mrs,interval: 86400}
+   netflix: {type: http,format: mrs,behavior: domain,url: https://gh-proxy.org/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.mrs,path: netflix.mrs,interval: 86400}
+   spotify: {type: http,format: mrs,behavior: domain,url: https://gh-proxy.org/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/spotify.mrs,path: spotify.mrs,interval: 86400}
+   tiktok: {type: http,format: mrs,behavior: domain,url: https://gh-proxy.org/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tiktok.mrs,path: tiktok.mrs,interval: 86400}
    geosite-private: {type: http,format: mrs,behavior: domain,url: https://gh-proxy.org/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs,path: geosite-private.mrs,interval: 86400}
    geoip-private: {type: http,format: mrs,behavior: domain,url: https://gh-proxy.org/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosip/private.mrs,path: geoip-private.mrs,interval: 86400}
    geoip-cn: {type: http,format: mrs,behavior: domain,url: https://gh-proxy.org/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.mrs,path: geoip-cn.mrs,interval: 86400}
