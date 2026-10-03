@@ -18,10 +18,10 @@ dns:
   fake-ip-filter:
     - '*.lan'
     - '*.local'
-
 profile:
   store-selected: true
   store-fake-ip: true
+
 rule-providers:
    antiad: {type: http,behavior: classical,url: https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/ad.yaml,interval: 86400,path: ANTIAD.yaml}
    US: {type: http,behavior: classical,url: https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/us.yaml,interval: 86400,path: US.yaml}
