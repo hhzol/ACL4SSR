@@ -26,7 +26,6 @@ dns:
     - hhz.pgw.jp
     - zhtcl.mydns.bz
     - rule-set:geosite-cn
-    - rule-set:youtube
 profile:
   store-selected: true
   store-fake-ip: true
@@ -39,7 +38,6 @@ rule-providers:
   netflix: {type: http,format: mrs,behavior: domain,url: https://gh-proxy.org/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.mrs,path: netflix.mrs,interval: 86400}
   spotify: {type: http,format: mrs,behavior: domain,url: https://gh-proxy.org/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/spotify.mrs,path: spotify.mrs,interval: 86400}
   tiktok: {type: http,format: mrs,behavior: domain,url: https://gh-proxy.org/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tiktok.mrs,path: tiktok.mrs,interval: 86400}
-  youtube: {type: http,format: mrs,behavior: domain,url: https://gh-proxy.org/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs,path: youtube.mrs,interval: 86400}
   geosite-private: {type: http,format: mrs,behavior: domain,url: https://gh-proxy.org/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs,path: geosite-private.mrs,interval: 86400}
   geoip-private: {type: http,format: mrs,behavior: ipcidr,url: https://gh-proxy.org/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/private.mrs,path: geoip-private.mrs,interval: 86400}
   geosite-cn: {type: http,format: mrs,behavior: domain,url: https://gh-proxy.org/https://raw.githubusercontent.com/hhzol/ruleset/main/Clash/cn-without-ms-apple.mrs,path: geosite-cn.mrs,interval: 86400}
