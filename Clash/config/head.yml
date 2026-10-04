@@ -3,8 +3,7 @@ allow-lan: true
 bind-address: '*'
 mode: rule
 log-level: info
-hosts:
- homeassistant.local: 192.168.10.9
+
 dns:
   enable: true
   listen: :7874
@@ -23,12 +22,10 @@ dns:
     - nas1.136605.xyz
     - hhz.pgw.jp
     - zhtcl.mydns.bz
+    - rule-set:geosite-cn
 profile:
   store-selected: true
   store-fake-ip: true
-
-geox-url:
-  mmdb: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb"
   
 rule-providers:
   antiad: {type: http,behavior: classical,url: https://raw.githubusercontent.com/hhzol/ACL4SSR/main/Clash/config/ad.yaml,interval: 86400,path: ANTIAD.yaml}
