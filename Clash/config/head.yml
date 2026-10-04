@@ -17,15 +17,13 @@ dns:
   fake-ip-ttl: 1
   fake-ip-range: 198.18.0.0/16
   fake-ip-range6: fc00::/18
-  fake-ip-filter-mode: blacklist
+  fake-ip-filter-mode: whitelist
   fake-ip-filter:
-    - '*.lan'
-    - '*.local'
-    - nas.136605.xyz
-    - nas1.136605.xyz
-    - hhz.pgw.jp
-    - zhtcl.mydns.bz
-    - rule-set:geosite-cn
+    - rule-set:AI
+    - rule-set:bbc
+    - rule-set:netflix
+    - rule-set:spotify
+    - rule-set:tiktok    
 profile:
   store-selected: true
   store-fake-ip: true
